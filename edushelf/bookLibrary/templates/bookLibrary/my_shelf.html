@@ -1,0 +1,43 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Моя полка{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header.html' %}
+{% endblock %}
+{% block content %}
+    <h2 class="my_shelf_h2">Моя полка</h2>
+<div class="profile-container">
+    {% if books %}
+    <div class="books-grid">
+        {% for book in books %}
+        <a href="{% url 'bookLibrary:description_book' book.pk %}" class="book-link">
+            <div class="book-card">
+                <img src="{{ book.photo_book.url }}" alt="{{ book.book_title }}" class="book-image">
+                <div class="book-info">
+                    <p class="book-title">{{ book.book_title }}</p>
+                    <p class="book-author">{{ book.author.first_name }} {{ book.author.last_name }}</p>
+                    <p class="book-genre">{{ book.genre.genre_name }}</p>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+        {% else %}
+        <p>У вас нет книг на полке.</p>
+        {% endif %}
+    </div>
+</div>
+<div class="pagination">
+    {% if books.has_previous %}
+        <a href="?page=1{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}" class="page-btn">««</a>
+        <a href="?page={{ books.previous_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}" class="page-btn">«</a>
+    {% endif %}
+
+    <span class="current-page">{{ books.number }}</span>
+
+    {% if books.has_next %}
+        <a href="?page={{ books.next_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}" class="page-btn">»</a>
+        <a href="?page={{ books.paginator.num_pages }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}" class="page-btn">»»</a>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Главная{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header.html' %}
+{% endblock %}
+{% block baner %}
+    <div class="baner_catalog">
+        <img src="{% static 'img/Frame_79.png' %}" alt="банер">
+    </div>
+{% endblock %}
+{% block content %}
+<div class="book-container">
+    {% for book in books %}
+    <a href="{% url 'bookLibrary:description_book' book.pk %}" class="book-link">
+        <div class="book-card">
+            <img src="{{ book.photo_book.url }}" alt="{{ book.book_title }}" class="book-image">
+            <div class="book-info">
+                <p class="book-title">{{ book.book_title }}</p>
+                <p class="book-author">{{ book.author.first_name }} {{ book.author.last_name }}</p>
+                <p class="book-genre">{{ book.genre.genre_name }}</p>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<div class="pagination">
+    {% if books.has_previous %}
+        <a href="?page=1" class="page-btn">««</a>
+        <a href="?page={{ books.previous_page_number }}" class="page-btn">«</a>
+    {% endif %}
+
+    <span class="current-page">{{ books.number }}</span>
+
+    {% if books.has_next %}
+        <a href="?page={{ books.next_page_number }}" class="page-btn">»</a>
+        <a href="?page={{ books.paginator.num_pages }}" class="page-btn">»»</a>
+    {% endif %}
+</div>
+{% endblock %}

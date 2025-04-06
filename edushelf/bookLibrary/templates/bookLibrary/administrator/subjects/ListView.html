@@ -1,0 +1,49 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр предмета{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:SubjectsCreateView' %}">Добавить</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Предмет</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for subject in SubjectsListView %}
+                <tr>
+                    <td>{{ subject.subject_name }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:SubjectsDetailView' subject.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:SubjectsUpdateView' subject.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Subjects_Delete' subject.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if SubjectsListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ SubjectsListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ SubjectsListView.number }}</span>
+
+        {% if SubjectsListView.has_next %}
+            <a href="?page={{ SubjectsListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ SubjectsListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

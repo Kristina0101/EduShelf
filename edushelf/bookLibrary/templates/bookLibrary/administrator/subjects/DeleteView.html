@@ -1,0 +1,19 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Удаление предмета{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+{% block content %}
+<a class="btn-action" href="{% url 'bookLibrary:SubjectsListView' %}"><p>Назад</p></a>
+<div class="form-wrapper1">
+    <form method="post" action="{% url 'bookLibrary:Subjects_Delete' pk=subject.pk %}">
+        {% csrf_token %}
+        <label>
+            <h1>Удалить - {{SubjectsDeleteView.subject_name}}</h1>
+            <button type="submit" class="btn-action">Удалить</button>
+        </label>
+    </form>
+</div>
+{% endblock %}

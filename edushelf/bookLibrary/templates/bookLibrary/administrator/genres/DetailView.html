@@ -1,0 +1,27 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Подробная информация о жанре{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+{% block content %}
+<br>
+<div class="content-wrapper">
+    <a class="btn-action" href="{% url 'bookLibrary:GenresListView' %}"><p>Назад</p></a>
+        <div class='form-wrapper'>
+            <h1 class="name_oparetion" style="text-align: center;">Просмотр</h1>
+            <div class="status-details">
+                <div class="status-info">
+                    <h2 class="status-name">{{ GenresListView.genre_name }}</h2>
+                    <div class="up-del-buttons">
+                        <a href = "{% url 'bookLibrary:GenresUpdateView' GenresListView.pk %}"><p>Обновить</p></a>
+                        <a href = "{% url 'bookLibrary:Genres_Delete' GenresListView.pk %}"><p>Удалить</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>    
+{% endblock %}
+
+

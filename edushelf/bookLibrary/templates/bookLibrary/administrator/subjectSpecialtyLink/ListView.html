@@ -1,0 +1,53 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр предмет-специальность{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:SubjectSpecialtyLinkCreateView' %}">Добавить</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Специальность</th>
+                <th>Предмет</th>
+                <th>Курс</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for SubjectSpecialty in SubjectSpecialtyLinkListView %}
+                <tr>
+                    <td>{{ SubjectSpecialty.specialty.specialty_name }}</td>
+                    <td>{{ SubjectSpecialty.subject.subject_name }}</td>
+                    <td>{{ SubjectSpecialty.course }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:SubjectSpecialtyLinkDetailView' SubjectSpecialty.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:SubjectSpecialtyLinkUpdateView' SubjectSpecialty.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:SubjectSpecialty_Delete' SubjectSpecialty.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if SubjectSpecialtyLinkListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ SubjectSpecialtyLinkListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ SubjectSpecialtyLinkListView.number }}</span>
+
+        {% if SubjectSpecialtyLinkListView.has_next %}
+            <a href="?page={{ SubjectSpecialtyLinkListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ SubjectSpecialtyLinkListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

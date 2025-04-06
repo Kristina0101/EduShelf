@@ -1,0 +1,56 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Профиль{% endblock %}
+{% block header %}
+    {% include 'Includes/header.html' %}
+{% endblock %}
+{% block content %}
+<div class="profile-container-custom">
+    <div class="profile-card">
+        <div class="profile-photo">
+            <img class="profile-img" src="{{ user.profile.image.url }}" alt="Profile Image">
+        </div>
+        <div class="profile-info">
+            <form method="POST" enctype="multipart/form-data" class="profile-form">
+                {% csrf_token %}
+                <h2 class="profile-title">Профиль</h2>
+                
+                <div class="form-group-custom">
+                    <label>Логин:</label>
+                    {{ u_form.username }}
+                </div>
+                <div class="form-group-custom">
+                    <label>Электронная почта:</label>
+                    {{ u_form.email }}
+                </div>
+                <div class="form-group-custom">
+                    <label>Имя:</label>
+                    {{ student.first_name }}
+                </div>
+                <div class="form-group-custom">
+                    <label>Фамилия:</label>
+                    {{ student.last_name }}
+                </div>
+                <div class="form-group-custom">
+                    <label>Отчество:</label>
+                    {{ student.middle_name|default_if_none:"" }}
+                </div>
+                <div class="form-group-custom">
+                    <label>Курс:</label>
+                    {{ student.course }}
+                </div>
+                <div class="form-group-custom">
+                    <label>Специальность:</label>
+                    {{ student.specialty.specialty_name }}
+                </div>
+                <div class="form-group-custom">
+                    <label>Фото:</label>
+                    {{ p_form.image }}
+                </div>
+                
+                <button class="profile-btn" type="submit">Изменить</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

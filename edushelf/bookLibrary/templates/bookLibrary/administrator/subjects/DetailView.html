@@ -1,0 +1,27 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Подробная информация о предмете{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+{% block content %}
+<br>
+<div class="content-wrapper">
+    <a class="btn-action" href="{% url 'bookLibrary:SubjectsListView' %}"><p>Назад</p></a>
+        <div class='form-wrapper'>
+            <h1 class="name_oparetion" style="text-align: center;">Просмотр</h1>
+            <div class="status-details">
+                <div class="status-info">
+                    <h2 class="status-name">{{ SubjectsListView.subject_name }}</h2>
+                    <div class="up-del-buttons">
+                        <a href = "{% url 'bookLibrary:SubjectsUpdateView' SubjectsListView.pk %}"><p>Обновить</p></a>
+                        <a href = "{% url 'bookLibrary:Subjects_Delete' SubjectsListView.pk %}"><p>Удалить</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}
+
+

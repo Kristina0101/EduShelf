@@ -1,0 +1,62 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр студентов{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_bd_admin.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:StudentsCreateView' %}">Добавить</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Отчество</th>
+                <th>Электронная почта</th>
+                <th>Статус</th>
+                <th>Курс</th>
+                <th>Специальность</th>
+                <th>Пользователь</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in StudentsListView %}
+                <tr>
+                    <td>{{ student.first_name }}</td>
+                    <td>{{ student.last_name }}</td>
+                    <td>{{ student.middle_name }}</td>
+                    <td>{{ student.email }}</td>
+                    <td>{{ student.status }}</td>
+                    <td>{{ student.course }}</td>
+                    <td>{{ student.specialty.specialty_name }}</td>
+                    <td>{{ student.user.username }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:StudentsDetailView' student.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:StudentsUpdateView' student.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Students_delete' student.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if StudentsListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ StudentsListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ StudentsListView.number }}</span>
+
+        {% if StudentsListView.has_next %}
+            <a href="?page={{ StudentsListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ StudentsListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

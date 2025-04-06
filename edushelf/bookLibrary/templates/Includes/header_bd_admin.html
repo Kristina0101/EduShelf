@@ -1,0 +1,20 @@
+<header>
+    <div class="logo">
+        <h1>EduShelf</h1>
+        <p>Администратор баз данных</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{% url 'bookLibrary:UsersListView' %}">Пользователи</a></li>
+            <li><a href="{% url 'bookLibrary:StudentsListView' %}">Студенты</a></li>
+            <li><a href="{% url 'bookLibrary:RolesListView' %}">Роли</a></li>
+            <li><a href="{% url 'bookLibrary:log_view' %}">Логирование</a></li>
+            <li>
+                <form action="{% url 'logout' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="nav-button">Выйти</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+</header>

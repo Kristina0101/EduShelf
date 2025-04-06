@@ -1,0 +1,51 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр специальности{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:SpecialtiesCreateView' %}">Добавить</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название специальности</th>
+                <th>Учебное заведение</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for specialty in SpecialtiesListView %}
+                <tr>
+                    <td>{{ specialty.specialty_name }}</td>
+                    <td>{{ specialty.institution.institution_name }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:SpecialtiesDetailView' specialty.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:SpecialtiesUpdateView' specialty.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Specialties_Delete' specialty.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if SpecialtiesListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ SpecialtiesListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ SpecialtiesListView.number }}</span>
+
+        {% if SpecialtiesListView.has_next %}
+            <a href="?page={{ SpecialtiesListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ SpecialtiesListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

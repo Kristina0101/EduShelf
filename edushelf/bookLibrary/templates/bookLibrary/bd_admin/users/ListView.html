@@ -1,0 +1,55 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр пользователей{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_bd_admin.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:UsersCreateView' %}">Добавить</a>
+    <form action="{% url 'bookLibrary:backup_database' %}" method="get">
+        <button type="submit" class="btn-action">Создать резервную копию базы данных</button>
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Логин</th>
+                <th>Электронная почта</th>
+                <th>Роль</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in UsersListView %}
+                <tr>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.role.role_name }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:UsersDetailView' user.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:UsersUpdateView' user.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Users_Delete' user.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if UsersListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ UsersListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ UsersListView.number }}</span>
+
+        {% if UsersListView.has_next %}
+            <a href="?page={{ UsersListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ UsersListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

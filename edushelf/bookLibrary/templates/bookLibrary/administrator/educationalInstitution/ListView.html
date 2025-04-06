@@ -1,0 +1,53 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр учебного заведения{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:EducationalInstitutionCreateView' %}">Добавить</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название учебного заведения</th>
+                <th>Дата заключения договора</th>
+                <th>Срок действия договора</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for institution in EducationalInstitutionListView %}
+                <tr>
+                    <td>{{ institution.institution_name }}</td>
+                    <td>{{ institution.contract_date }}</td>
+                    <td>{{ institution.contract_duration }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:EducationalInstitutionDetailView' institution.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:EducationalInstitutionUpdateView' institution.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Institution_Delete' institution.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if EducationalInstitutionListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ EducationalInstitutionListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ EducationalInstitutionListView.number }}</span>
+
+        {% if EducationalInstitutionListView.has_next %}
+            <a href="?page={{ EducationalInstitutionListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ EducationalInstitutionListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

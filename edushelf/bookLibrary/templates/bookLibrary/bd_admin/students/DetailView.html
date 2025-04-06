@@ -1,0 +1,34 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Подробная информация о студенте{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_bd_admin.html' %}
+{% endblock %}
+{% block content %}
+<br>
+<div class="content-wrapper">
+    <a class="btn-action" href="{% url 'bookLibrary:StudentsListView' %}"><p>Назад</p></a>
+        <div class='form-wrapper'>
+            <h1 class="name_oparetion" style="text-align: center;">Просмотр</h1>
+            <div class="status-details">
+                <div class="status-info">
+                    <h2 class="status-name">{{ StudentsListView.first_name }}</h2>
+                    <h2 class="status-name">{{ StudentsListView.last_name }}</h2>
+                    <h2 class="status-name">{{ StudentsListView.middle_name }}</h2>
+                    <h2 class="status-name">{{ StudentsListView.email }}</h2>
+                    <h2 class="status-name">{{ StudentsListView.status }}</h2>
+                    <h2 class="status-name">{{ StudentsListView.course }}</h2>
+                    <h2 class="status-name">{{ StudentsListView.specialty.specialty_name }}</h2>
+                    <h2 class="status-name">{{ StudentsListView.user.username }}</h2>
+                    <div class="up-del-buttons">
+                        <a href = "{% url 'bookLibrary:StudentsUpdateView' StudentsListView.pk %}"><p>Обновить</p></a>
+                        <a href = "{% url 'bookLibrary:Students_delete' StudentsListView.pk %}"><p>Удалить</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}
+
+

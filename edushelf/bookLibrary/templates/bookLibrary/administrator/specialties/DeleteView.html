@@ -1,0 +1,19 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Удаление специальности{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+{% block content %}
+<a class="btn-action" href="{% url 'bookLibrary:SpecialtiesListView' %}"><p>Назад</p></a>
+<div class="form-wrapper1">
+    <form method="post" action="{% url 'bookLibrary:Specialties_Delete' pk=specialty.pk %}">
+        {% csrf_token %}
+        <label>
+            <h1>Удалить - {{SpecialtiesDeleteView.specialty_name}}</h1>
+            <button type="submit" class="btn-action">Удалить</button>
+        </label>
+    </form>
+</div>
+{% endblock %}

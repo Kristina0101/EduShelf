@@ -1,0 +1,29 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Подробная информация об авторе{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+{% block content %}
+<br>
+<div class="content-wrapper">
+<a class="btn-action" href="{% url 'bookLibrary:AuthorsListView' %}"><p>Назад</p></a>
+    <div class='form-wrapper'>
+        <h1 class="name_oparetion" style="text-align: center;">Просмотр</h1>
+        <div class="status-details">
+            <div class="status-info">
+                <h2 class="status-name">{{ AuthorsListView.first_name }}</h2>
+                <h2 class="status-name">{{ AuthorsListView.last_name }}</h2>
+                <h2 class="status-name">{{ AuthorsListView.middle_name }}</h2>
+                <div class="up-del-buttons">
+                    <a href = "{% url 'bookLibrary:AuthorsUpdateView' AuthorsListView.pk %}"><p>Обновить</p></a>
+                    <a href = "{% url 'bookLibrary:Authors_Delete' AuthorsListView.pk %}"><p>Удалить</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+

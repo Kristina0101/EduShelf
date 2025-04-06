@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/Логотип.ico' %}" type="image/x-icon">
+    {% if request.path == '/' or '/catalog/' in request.path or '/description_book/' in request.path or '/register/' in request.path or '/login/' in request.path or '/logout/' in request.path or '/profile/' in request.path or '/my_shelf/' in request.path %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% else %}
+    <link rel="stylesheet" href="{% static 'css/bd_admin.css' %}">
+    {% endif %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+
+    {% block header %}
+    {% endblock %}
+
+    {% block baner %}
+    {% endblock %}
+
+    {% if messages %}
+        	{% for message in messages %}
+            <div class="mes_error">
+                <div class="alert alert-{{ message.tags }}">
+            	    {{ message }}
+          	    </div>
+            </div>
+        	{% endfor %}
+    {% endif %}
+    
+    {% block content %}
+    {% endblock %}
+    <br>
+    <footer>
+        {% include 'Includes/footer.html'%}
+    </footer>
+    <script src="{% static 'js/script.js'%}"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Создание специальности{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+{% block content %}
+<a class="come_back_button" href="{% url 'bookLibrary:SpecialtiesListView' %}"><p>Назад</p></a>
+<div class="form-wrapper">
+    <header class="centered-content">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <label><br>
+                <button type="submit">Добавить</button>
+            </label>
+        </form>
+    </header>
+</div>
+{% endblock %}
+
+

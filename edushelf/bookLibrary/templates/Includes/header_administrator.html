@@ -1,0 +1,27 @@
+<header>
+    <div class="logo">
+        <h1>EduShelf</h1>
+        <p>Администратор</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{% url 'bookLibrary:StudListView' %}">Студенты</a></li>
+            <li><a href="{% url 'bookLibrary:SubjectsListView' %}">Предметы</a></li>
+            <li><a href="{% url 'bookLibrary:SpecialtiesListView' %}">Специальности</a></li>
+            <li><a href="{% url 'bookLibrary:EducationalInstitutionListView' %}">Учебные заведения</a></li>
+            <li><a href="{% url 'bookLibrary:BooksListView' %}">Книги</a></li>
+            <li><a href="{% url 'bookLibrary:GenresListView' %}">Жанры</a></li>
+            <li><a href="{% url 'bookLibrary:AuthorsListView' %}">Авторы</a></li>
+            <li><a href="{% url 'bookLibrary:PublishersListView' %}">Издательства</a></li>
+            <li><a href="{% url 'bookLibrary:ReviewsListView' %}">Отзывы</a></li>
+            <li><a href="{% url 'bookLibrary:StatusListView' %}">Статус</a></li>
+            <li><a href="{% url 'bookLibrary:SubjectSpecialtyLinkListView' %}">Предмет-специальность</a></li>
+            <li>
+                <form action="{% url 'logout' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="nav-button">Выйти</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+</header>

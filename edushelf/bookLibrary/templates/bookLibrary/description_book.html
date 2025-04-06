@@ -1,0 +1,182 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+
+{% block title %}{{ book.book_title }}{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="book-container1">
+    <div class="book-card1">
+        <img src="{{ book.photo_book.url }}" alt="{{ book.book_title }}" class="book-image1">
+        <div class="book-info1">
+            <h2>{{ book.book_title }}</h2>
+            <p><strong>Автор:</strong> {{ book.author.first_name }} {{ book.author.last_name }}</p>
+            <p><strong>Жанр:</strong> {{ book.genre.genre_name }}</p>
+            <p><strong>Издательство:</strong> {{ book.publisher.publisher_name }}</p>
+            <p><strong>Год издания:</strong> {{ book.publication_year }}</p>
+            <p><strong>Предмет:</strong> {{ book.subject.subject_name }}</p>
+            <p><strong>Количество страниц:</strong> {{ total_pages }}</p>
+        </div>
+    </div>
+
+    <div class="pagination1">
+        <button onclick="changePage(-1)" id="prev-btn" class="nav-btn" {% if page_number == 1 %}disabled{% endif %}>&larr;</button>
+        <span>Страница: <input type="number" id="page-input" value="{{ page_number }}" min="1" max="{{ total_pages }}" onchange="goToPage()"> / {{ total_pages }}</span>
+        <button onclick="changePage(1)" id="next-btn" class="nav-btn" {% if page_number == total_pages %}disabled{% endif %}>&rarr;</button>
+        <button onclick="addBookmark()" class="nav-btn">Добавить закладку</button>
+    </div>
+    
+    <div class="pdf-viewer" data-total-pages="{{ total_pages }}">
+        <embed id="pdf-viewer" src="{{ book.book_file.url }}#page={{ page_number }}&toolbar=0" type="application/pdf" width="800px" height="900px">
+    </div>
+
+    <div class="bookmarks-section">
+        <h3>Закладки:</h3>
+        <table class="bookmarks-table">
+            <tr>
+                <th>Страница</th>
+                <th>Дата добавления</th>
+                <th>Действия</th>
+            </tr>
+            {% for bookmark in bookmarks %}
+            <tr>
+                <td><a href="?page={{ bookmark.page_number }}">{{ bookmark.page_number }}</a></td>
+                <td>{{ bookmark.date_added|date:"d.m.Y H:i" }}</td>
+                <td>
+                    <form method="POST" action="{% url 'bookLibrary:delete_bookmark' bookmark.bookmark_id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn-action">Удалить</button>
+                    </form>
+                </td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="3">Нет закладок</td></tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="notes-section">
+        <h3>Заметки:</h3>
+        <form method="POST">
+            {% csrf_token %}
+            {{ note_form.as_p }}
+            <button type="submit" name="add_note">Добавить</button>
+        </form>
+        <table class="notes-table">
+            <tr>
+                <th>Заметка</th>
+                <th>Страница</th>
+                <th>Действия</th>
+            </tr>
+            {% for note in notes %}
+            <tr>
+                <td>{{ note.note_content }}</td>
+                <td>{{ note.page_number }}</td>
+                <td>
+                    {% if note.user == request.user %}
+                    <form method="POST" action="{% url 'bookLibrary:delete_note' note.note_id %}">
+                        {% csrf_token %}
+                        <button name="add_note" type="submit">Удалить</button>
+                    </form>
+                    {% endif %}
+                </td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="3">Нет заметок</td></tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="reviews-section">
+        <h3>Отзывы:</h3>
+        <form method="POST">
+            {% csrf_token %}
+            {{ review_form.as_p }}
+            <button type="submit" name="add_review" class="login-button">Отправить</button>
+        </form>
+        <table class="reviews-table">
+            <tr>
+                <th>Имя пользователя</th>
+                <th>Рейтинг</th>
+                <th>Отзыв</th>
+                <th>Дата</th>
+                <th>Действия</th>
+            </tr>
+            {% for review in reviews %}
+            <tr>
+                <td>{{ review.user.username }}</td>
+                <td>{{ review.rating }}⭐</td>
+                <td>{{ review.review_text }}</td>
+                <td>{{ review.date_created }}</td>
+                <td>
+                    {% if review.user == request.user %}
+                        <form method="POST" action="{% url 'bookLibrary:delete_review' review.review_id %}">
+                            {% csrf_token %}
+                            <button class="login-button" type="submit">Удалить</button>
+                        </form>
+                    {% endif %}
+                </td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="5">Нет отзывов</td></tr>
+            {% endfor %}
+        </table>
+    </div>
+
+<script>
+    function changePage(offset) {
+        let pageInput = document.getElementById('page-input');
+        let totalPages = parseInt(document.querySelector('.pdf-viewer').dataset.totalPages);
+        
+        let newPage = parseInt(pageInput.value) + offset;
+        if (newPage >= 1 && newPage <= totalPages) {
+            window.location.href = "?page=" + newPage;
+        }
+    }
+
+    function goToPage() {
+        let pageInput = document.getElementById('page-input');
+        let totalPages = parseInt(document.querySelector('.pdf-viewer').dataset.totalPages);
+        
+        let newPage = parseInt(pageInput.value);
+        if (newPage >= 1 && newPage <= totalPages) {
+            window.location.href = "?page=" + newPage;
+        } else {
+            alert("Неверный номер страницы");
+        }
+    }
+
+    function addBookmark() {
+        let pageInput = document.getElementById('page-input');
+        let currentPage = parseInt(pageInput.value);
+        
+        fetch('{% url "bookLibrary:add_bookmark" book.book_id %}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': '{{ csrf_token }}'
+            },
+            body: JSON.stringify({
+                page_number: currentPage
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Закладка добавлена!');
+                location.reload();
+            } else {
+                alert(data.message || 'Ошибка при добавлении закладки');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Произошла ошибка');
+        });
+    }
+</script>
+
+{% endblock %}

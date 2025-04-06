@@ -1,0 +1,49 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр статусов{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:StatusCreateView' %}">Добавить</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название статуса</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for status in StatusListView %}
+                <tr>
+                    <td>{{ status.status_name }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:StatusDetailView' status.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:StatusUpdateView' status.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Status_Delete' status.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if StatusListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ StatusListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ StatusListView.number }}</span>
+
+        {% if StatusListView.has_next %}
+            <a href="?page={{ StatusListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ StatusListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр книг{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:BooksCreateView' %}">Добавить</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Фото книги</th>
+                <th>Название книги</th>
+                <th>Автор</th>
+                <th>Год публикации</th>
+                <th>Количество страниц</th>
+                <th>Жанр</th>
+                <th>Издательство</th>
+                <th>Предмет</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in BooksListView %}
+                <tr>
+                    <td><img style="max-height: 100px;" src="{{ book.photo_book.url }}" /></td>
+                    <td>{{ book.book_title }}</td>
+                    <td>{{ book.author.first_name }} {{ book.author.last_name }}</td>
+                    <td>{{ book.publication_year }}</td>
+                    <td>{{ book.page_count }}</td>
+                    <td>{{ book.genre.genre_name }}</td>
+                    <td>{{ book.publisher.publisher_name }}</td>
+                    <td>{{ book.subject.subject_name }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:BooksDetailView' book.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:BooksUpdateView' book.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Books_Delete' book.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if BooksListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ BooksListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ BooksListView.number }}</span>
+
+        {% if BooksListView.has_next %}
+            <a href="?page={{ BooksListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ BooksListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

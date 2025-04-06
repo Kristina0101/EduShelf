@@ -1,0 +1,56 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр отзывов{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Пользователь</th>
+                <th>Книга</th>
+                <th>Рейтинг</th>
+                <th>Отзыв</th>
+                <th>Дата создания</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for review in ReviewsListView %}
+                <tr>
+                    <td>{{ review.user.username }}</td>
+                    <td>{{ review.book.book_title }}</td>
+                    <td>{{ review.rating }}</td>
+                    <td>{{ review.review_text }}</td>
+                    <td>{{ review.date_created }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:ReviewsDetailView' review.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:ReviewsUpdateView' review.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Reviews_Delete' review.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if ReviewsListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ ReviewsListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ ReviewsListView.number }}</span>
+
+        {% if ReviewsListView.has_next %}
+            <a href="?page={{ ReviewsListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ ReviewsListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр ролей{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_bd_admin.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:RolesCreateView' %}">Добавить</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название роли</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for role in RolesListView %}
+                <tr>
+                    <td>{{ role.role_name }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:RolesDetailView' role.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:RolesUpdateView' role.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Roles_Delete' role.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if RolesListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ RolesListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ RolesListView.number }}</span>
+
+        {% if RolesListView.has_next %}
+            <a href="?page={{ RolesListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ RolesListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

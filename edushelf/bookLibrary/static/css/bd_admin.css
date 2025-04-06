@@ -1,0 +1,264 @@
+body{
+    background-color: #FEEED7;
+}
+/* Шапка */
+header {
+    text-align: center;
+    color: #000;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 24px;
+    color: #666;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+
+nav ul li a, .nav-button {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+}
+
+nav ul li a:hover, .nav-button:hover {
+    text-decoration: none;
+}
+
+
+/* Футер */
+.foot1 {
+    padding: 30px 20px;
+    border-top: 1px solid #000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Логотип с иконкой */
+.logo_footer {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.logo_footer img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.copyright {
+    font-size: 28px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.page-btn, .current-page {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    min-width: 40px;
+}
+
+.current-page {
+    font-weight: bold;
+}
+
+.page-btn:hover {
+    background-color: #e0d4c4;
+}
+
+/* Стили для таблицы */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.table th, .table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #b09b9b;
+    font-weight: bold;
+}
+
+/* Стили для кнопок */
+.btn-action {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.btn-action:hover {
+    background-color: #724b2f;
+}
+
+/* Стили для пагинации */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.page-btn, .current-page {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    min-width: 40px;
+}
+
+.current-page {
+    background-color: #FFF6F0;
+    font-weight: bold;
+}
+
+.page-btn:hover {
+    background-color: #e0d4c4;
+}
+
+.content-wrapper {
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.name-operation {
+    text-align: center;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.status-details {
+    background-color: #f8efe3;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.status-info {
+    margin-bottom: 20px;
+}
+
+.status-name {
+    font-size: 28px;
+    color: #8b5e3c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Кнопки обновления и удаления */
+.up-del-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.up-del-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #8b5e3c;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.up-del-buttons a:hover {
+    background-color: #724b2f;
+}
+
+/* Кнопка "Назад" */
+.btn-action {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #724b2f;
+}

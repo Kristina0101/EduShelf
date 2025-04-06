@@ -1,0 +1,29 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Подробная информация о предмет-специальность{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+{% block content %}
+<br>
+<div class="content-wrapper">
+    <a class="btn-action" href="{% url 'bookLibrary:SubjectSpecialtyLinkListView' %}"><p>Назад</p></a>
+        <div class='form-wrapper'>
+            <h1 class="name_oparetion" style="text-align: center;">Просмотр</h1>
+            <div class="status-details">
+                <div class="status-info">
+                    <h2 class="status-name">{{ SubjectSpecialtyLinkListView.specialty.specialty_name }}</h2>
+                    <h2 class="status-name">{{ SubjectSpecialtyLinkListView.subject.subject_name }}</h2>
+                    <h2 class="status-name">{{ SubjectSpecialtyLinkListView.course }}</h2>
+                    <div class="up-del-buttons">
+                        <a href = "{% url 'bookLibrary:SubjectSpecialtyLinkUpdateView' SubjectSpecialtyLinkListView.pk %}"><p>Обновить</p></a>
+                        <a href = "{% url 'bookLibrary:SubjectSpecialty_Delete' SubjectSpecialtyLinkListView.pk %}"><p>Удалить</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,25 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Войти{% endblock %}
+{% block header %}
+    {% include 'Includes/header.html' %}
+{% endblock %}
+{% block content %}
+<div class="login-container">
+    <div class="login-box">
+        <h2>Войти</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_username">Логин:</label>
+                <input type="text" name="username" id="id_username" required>
+            </div>
+            <div class="form-group">
+                <label for="id_password">Пароль:</label>
+                <input type="password" name="password" id="id_password" required>
+            </div>
+            <button type="submit" class="login-button">Войти</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

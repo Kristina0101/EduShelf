@@ -1,0 +1,49 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр издательств{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:PublishersCreateView' %}">Добавить</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название издательства</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for publisher in PublishersListView %}
+                <tr>
+                    <td>{{ publisher.publisher_name }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:PublishersDetailView' publisher.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:PublishersUpdateView' publisher.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Publishers_Delete' publisher.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if PublishersListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ PublishersListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ PublishersListView.number }}</span>
+
+        {% if PublishersListView.has_next %}
+            <a href="?page={{ PublishersListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ PublishersListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}

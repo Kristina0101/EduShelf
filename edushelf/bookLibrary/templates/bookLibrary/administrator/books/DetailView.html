@@ -1,0 +1,35 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Подробная информация о книгах{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+{% block content %}
+<br>
+<div class="content-wrapper">
+    <a class="btn-action" href="{% url 'bookLibrary:BooksListView' %}"><p>Назад</p></a>
+        <div class='form-wrapper'>
+            <h1 class="name_oparetion" style="text-align: center;">Просмотр</h1>
+            <div class="status-details">
+                <div class="status-info">
+                    <h2 class=""><img style="max-height: 200px;" src="{{ book.photo_book.url }}" /></h2>
+                    <h2 class="status-name">Название: {{ BooksListView.book_title }}</h2>
+                    <h2 class="status-name">Автор: {{ BooksListView.author.first_name }} {{ BooksListView.author.last_name }}</h2>
+                    <h2 class="status-name">Год издания: {{ BooksListView.publication_year }}</h2>
+                    <h2 class="status-name">Количество страниц: {{ BooksListView.page_count }}</h2>
+                    <h2 class="status-name">Жанр: {{ BooksListView.genre.genre_name }}</h2>
+                    <h2 class="status-name">Издание: {{ BooksListView.publisher.publisher_name }}</h2>
+                    <h2 class="status-name">Предмет: {{ BooksListView.subject.subject_name }}</h2>
+                    <h2 class="status-name">Файл книги: {{ BooksListView.book_file }}</h2>
+                    <div class="up-del-buttons">
+                        <a href = "{% url 'bookLibrary:BooksUpdateView' BooksListView.pk %}"><p>Обновить</p></a>
+                        <a href = "{% url 'bookLibrary:Books_Delete' BooksListView.pk %}"><p>Удалить</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}
+
+

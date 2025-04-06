@@ -1,0 +1,35 @@
+<header>
+    <div class="logo">
+        <h1>EduShelf</h1>
+        <p>Online library</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{% url 'bookLibrary:main_page' %}">Главная</a></li>
+            <li><a href="{% url 'bookLibrary:catalog' %}">Каталог</a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'bookLibrary:my_shelf' %}">Моя полка</a></li>
+            <li><a href="{% url 'profile' %}">Профиль</a></li>
+            <li>
+                <form action="{% url 'logout' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="nav-button">Выйти</button>
+                </form>
+            </li>
+            {% else %}
+            <li><a href="{% url 'login' %}">Войти</a></li>
+            <li><a href="{% url 'register' %}">Регистрация</a></li>
+            {% endif %}
+        </ul>
+
+        {% if '/catalog/' in request.path %}
+        <div class="search-box">
+            <form method="GET" action="{% url 'bookLibrary:catalog' %}">
+                <label for="search">Поиск</label>
+                <input type="text" id="search" name="search" placeholder="Поиск по названию или автору" value="{{ search_query }}">
+                <button type="submit" class="search-icon">&#128269;</button>
+            </form>
+        </div>
+        {% endif %}
+    </nav>
+</header>

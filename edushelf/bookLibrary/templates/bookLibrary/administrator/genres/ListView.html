@@ -1,0 +1,49 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Просмотр жанра{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <a class="btn-action add_button" href="{% url 'bookLibrary:GenresCreateView' %}">Добавить</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название жанра</th>
+                <th>Детали</th>
+                <th>Изменение</th>
+                <th>Удаление</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for genre in GenresListView %}
+                <tr>
+                    <td>{{ genre.genre_name }}</td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:GenresDetailView' genre.pk %}">Подробнее</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:GenresUpdateView' genre.pk %}">Изменить</a></td>
+                    <td><a class="btn-action" href="{% url 'bookLibrary:Genres_Delete' genre.pk %}">Удалить</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        {% if GenresListView.has_previous %}
+            <a href="?page=1" class="page-btn">««</a>
+            <a href="?page={{ GenresListView.previous_page_number }}" class="page-btn">«</a>
+        {% endif %}
+
+        <span class="current-page">{{ GenresListView.number }}</span>
+
+        {% if GenresListView.has_next %}
+            <a href="?page={{ GenresListView.next_page_number }}" class="page-btn">»</a>
+            <a href="?page={{ GenresListView.paginator.num_pages }}" class="page-btn">»»</a>
+        {% endif %}
+    </div>
+
+</header>
+{% endblock %}
