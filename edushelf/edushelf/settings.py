@@ -30,7 +30,7 @@ DEBUG = True
 X_FRAME_OPTIONS = 'SAMEORIGIN'  # Разрешает встраивание только с того же домена
 SECURE_CONTENT_TYPE_NOSNIFF = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 ENCRYPTION_KEY = b'7tUuRLIg3ELrwfgF-qDNf3XaopmorlP8fyNHgCYVaL0='
 
 # Application definition

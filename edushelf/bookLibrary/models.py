@@ -15,7 +15,6 @@ class EducationalInstitution(models.Model):
         return self.institution_name
 
     class Meta:
-        managed = False
         db_table = 'educational_institution'
 
 class Specialties(models.Model):
@@ -27,7 +26,6 @@ class Specialties(models.Model):
         return self.specialty_name
 
     class Meta:
-        managed = False
         db_table = 'specialties'
 
 class Status(models.Model):
@@ -37,7 +35,6 @@ class Status(models.Model):
     def __str__(self):
         return self.status_name
     class Meta:
-        managed = False
         db_table = 'status'
 
 class Subjects(models.Model):
@@ -47,7 +44,6 @@ class Subjects(models.Model):
     def __str__(self):
         return self.subject_name
     class Meta:
-        managed = False
         db_table = 'subjects'
 
 class SubjectSpecialtyLink(models.Model):
@@ -60,7 +56,6 @@ class SubjectSpecialtyLink(models.Model):
         return self.subject_specialty_id
 
     class Meta:
-        managed = False
         db_table = 'subject_specialty_link'
 
 class UserRoles(models.Model):
@@ -107,7 +102,6 @@ class Students(models.Model):
         return f"{self.first_name} {self.last_name}"
     
     class Meta:
-        managed = False
         db_table = 'students'
 
 class Genres(models.Model):
@@ -118,7 +112,6 @@ class Genres(models.Model):
         return self.genre_name
     
     class Meta:
-        managed = False
         db_table = 'genres'
 
 class Authors(models.Model):
@@ -130,7 +123,6 @@ class Authors(models.Model):
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
     class Meta:
-        managed = False
         db_table = 'authors'
 
 class Publishers(models.Model):
@@ -140,7 +132,6 @@ class Publishers(models.Model):
     def __str__(self):
         return self.publisher_name
     class Meta:
-        managed = False
         db_table = 'publishers'
 
 class Books(models.Model):
@@ -158,7 +149,6 @@ class Books(models.Model):
     def __str__(self):
         return self.book_title
     class Meta:
-        managed = False
         db_table = 'books'
 
 class Notes(models.Model):
@@ -173,7 +163,6 @@ class Notes(models.Model):
         return f'Заметка на странице {self.page_number} от {self.user.username}'
     
     class Meta:
-        managed = False
         db_table = 'notes'
 
 class Bookmarks(models.Model):
@@ -187,7 +176,6 @@ class Bookmarks(models.Model):
         return self.user
     
     class Meta:
-        managed = False
         db_table = 'bookmarks'
 
 class Reviews(models.Model):
@@ -202,7 +190,6 @@ class Reviews(models.Model):
         return f"Отзыв от {self.user.username} о книге {self.book.book_title}"
 
     class Meta:
-        managed = False
         db_table = 'reviews'
         verbose_name = "Отзыв"
         verbose_name_plural = "Отзывы"

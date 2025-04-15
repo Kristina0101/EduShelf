@@ -98,6 +98,12 @@ class ReviewsForm(forms.ModelForm):
             'review_text': 'Текст отзыва'
         }
 
+        def clean_rating(self):
+            rating = self.cleaned_data.get('rating')
+            if rating > 5:
+                raise forms.ValidationError("Рейтинг не может быть больше 5.")
+            return rating
+
 class StatusForm(forms.ModelForm):
     class Meta:
         model = Status

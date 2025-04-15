@@ -61,18 +61,21 @@ def description_book(request, id):
 
     # Обработка формы для отзывов
     if request.method == "POST" and "add_review" in request.POST:
-        if request.user.is_authenticated:
-            review_form = ReviewsForm(request.POST)
-            if review_form.is_valid():
+        review_form = ReviewsForm(request.POST)
+        if review_form.is_valid():
+            rating = review_form.cleaned_data.get("rating")
+            if rating > 5:
+                messages.error(request, "Рейтинг не может быть больше 5.")
+            elif rating < 1:
+                messages.error(request, "Рейтинг не может быть меньше 1.")
+            else:
                 review = review_form.save(commit=False)
                 review.book = book
                 review.user = request.user
                 review.save()
                 messages.success(request, "Отзыв успешно добавлен!")
                 return redirect("bookLibrary:description_book", id=book.book_id)
-        else:
-            messages.error(request, "Вы должны войти в систему, чтобы оставить отзыв.")
-            return redirect("login")
+
 
     # Получаем заметки, отзывы и закладки
     notes = Notes.objects.filter(book=book, user=request.user)
