@@ -1,3 +1,6 @@
+
+
+
 class AllowPDFMiddleware:
     def __init__(self, get_response):
         self.get_response = get_response
@@ -10,3 +13,4 @@ class AllowPDFMiddleware:
             response["Content-Disposition"] = "inline"
         
         return response
+    

@@ -1,5 +1,6 @@
 {% extends "bookLibrary/base.html" %}
 {% load static %}
+{% load querystring %}
 {% block title %}Каталог{% endblock %}
 
 {% block header %}
@@ -7,6 +8,14 @@
 {% endblock %}
 
 {% block content %}
+<div class="sort-options">
+    <span>Сортировать:</span>
+    <a href="{% url 'bookLibrary:catalog' %}?sort=none" {% if sort_field == 'none' %}class="selected"{% endif %}>По умолчанию</a> |
+    <a href="{% url 'bookLibrary:catalog' %}?sort=title_asc" {% if sort_field == 'title_asc' %}class="selected"{% endif %}>Название А-Я</a> |
+    <a href="{% url 'bookLibrary:catalog' %}?sort=title_desc" {% if sort_field == 'title_desc' %}class="selected"{% endif %}>Название Я-А</a> |
+    <a href="{% url 'bookLibrary:catalog' %}?sort=author_asc" {% if sort_field == 'author_asc' %}class="selected"{% endif %}>Автор А-Я</a> |
+    <a href="{% url 'bookLibrary:catalog' %}?sort=author_desc" {% if sort_field == 'author_desc' %}class="selected"{% endif %}>Автор Я-А</a>
+</div>
 <div class="profile-container">
     <aside class="category-panel">
         <h2>Категории</h2>
@@ -29,8 +38,9 @@
             </ul>
         </form>
     </aside>
+    
 
-    <div class="books-grid">
+    <div class="book-container">
         {% for book in books %}
         <a href="{% url 'bookLibrary:description_book' book.pk %}" class="book-link">
             <div class="book-card">
@@ -50,15 +60,16 @@
 
 <div class="pagination">
     {% if books.has_previous %}
-        <a href="?page=1{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}" class="page-btn">««</a>
-        <a href="?page={{ books.previous_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}" class="page-btn">«</a>
+        <a href="?page=1{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}{% if sort_field %}&sort={{ sort_field }}{% endif %}" class="page-btn">««</a>
+        <a href="?page={{ books.previous_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}{% if sort_field %}&sort={{ sort_field }}{% endif %}" class="page-btn">«</a>
     {% endif %}
 
     <span class="current-page">{{ books.number }}</span>
 
     {% if books.has_next %}
-        <a href="?page={{ books.next_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}" class="page-btn">»</a>
-        <a href="?page={{ books.paginator.num_pages }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}" class="page-btn">»»</a>
+        <a href="?page={{ books.next_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}{% if sort_field %}&sort={{ sort_field }}{% endif %}" class="page-btn">»</a>
+        <a href="?page={{ books.paginator.num_pages }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}{% if sort_field %}&sort={{ sort_field }}{% endif %}" class="page-btn">»»</a>
     {% endif %}
 </div>
+
 {% endblock %}

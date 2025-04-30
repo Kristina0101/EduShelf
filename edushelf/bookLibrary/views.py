@@ -18,6 +18,8 @@ from django.contrib.auth.decorators import login_required
 import logging
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
+from datetime import timedelta
+from django.db.models import Count
 
 # Create your views here.
 def main_page(request):
@@ -169,50 +171,81 @@ def catalog(request):
     geners = Genres.objects.all()
     subjects = Subjects.objects.all()
 
-    # Получаем параметры фильтрации из GET-запроса
     selected_genre = request.GET.get('genre')
     selected_subject = request.GET.get('subject')
-
-    # Получаем параметры поиска из GET-запроса
     search_query = request.GET.get('search', '')
+    sort_field = request.GET.get('sort', 'title_asc')
 
-    # Фильтруем книги по выбранному жанру и предмету
-    books_list = Books.objects.all()
+    books_list = Books.objects.select_related('author', 'genre', 'subject')
 
     if selected_genre:
         books_list = books_list.filter(genre__genre_id=selected_genre)
     if selected_subject:
         books_list = books_list.filter(subject__subject_id=selected_subject)
-    
-    # Добавляем фильтрацию по названию книги и/или автору
+
     if search_query:
         books_list = books_list.filter(
-            Q(book_title__icontains=search_query) | 
-            Q(author__first_name__icontains=search_query) | 
+            Q(book_title__icontains=search_query) |
+            Q(author__first_name__icontains=search_query) |
             Q(author__last_name__icontains=search_query)
         )
 
-    paginator = Paginator(books_list, 8)  # По 8 книг на страницу
+    if sort_field == 'title_desc':
+        books_list = books_list.order_by('-book_title')
+    elif sort_field == 'author_asc':
+        books_list = books_list.order_by('author__last_name', 'author__first_name')
+    elif sort_field == 'author_desc':
+        books_list = books_list.order_by('-author__last_name', '-author__first_name')
+    else:
+        books_list = books_list.order_by('book_title')
+
+    paginator = Paginator(books_list, 8)
     page_number = request.GET.get('page')
     books = paginator.get_page(page_number)
 
     return render(
-        request, 
-        'bookLibrary/catalog.html', 
+        request,
+        'bookLibrary/catalog.html',
         {
-            'books': books, 
-            'geners': geners, 
-            'subjects': subjects, 
-            'selected_genre': selected_genre, 
+            'books': books,
+            'geners': geners,
+            'subjects': subjects,
+            'selected_genre': selected_genre,
             'selected_subject': selected_subject,
-            'search_query': search_query
+            'search_query': search_query,
+            'sort_field': sort_field,
         }
     )
 
 
 
+
 def bd_admin_page(request):
     return render(request, 'bookLibrary/bd_admin/bd_admin_page.html')
+
+def statistic(request):
+    total_users = User.objects.count()
+    registered_students = Students.objects.filter(user__isnull=False).count()
+
+    total_bookmarks = Bookmarks.objects.count()
+    total_notes = Notes.objects.count()
+    total_reviews = Reviews.objects.count()
+
+    # Статистика регистрации пользователей по дням за последние 7 дней
+    last_7_days = now() - timedelta(days=7)
+    recent_users = User.objects.filter(date_joined__gte=last_7_days)
+    user_registration_stats = recent_users.extra({'day': "date(date_joined)"}).values('day').annotate(count=Count('id')).order_by('day')
+
+    context = {
+        'total_users': total_users,
+        'registered_students': registered_students,
+        'total_bookmarks': total_bookmarks,
+        'total_notes': total_notes,
+        'total_reviews': total_reviews,
+        'user_registration_stats': user_registration_stats,
+    }
+
+    return render(request, 'bookLibrary/administrator/statistic.html', context)
 
 
 def log_view(request):
@@ -423,6 +456,7 @@ class RolesDeleteView(DeleteView):
         context['pk'] = self.kwargs['pk']
         context['role'] = get_object_or_404(UserRoles, pk=self.kwargs['pk'])
         return context
+    
 
 def my_shelf(request):
     # Получаем книги с заметками, закладками или отзывами для текущего пользователя
@@ -440,6 +474,19 @@ def my_shelf(request):
     books = paginator.get_page(page_number)
 
     return render(request, 'bookLibrary/my_shelf.html', {'books': books})
+
+
+@login_required(login_url="login")
+def remove_from_shelf(request, book_id):
+    book = get_object_or_404(Books, pk=book_id)
+    
+    # Delete all user-related data for this book
+    Notes.objects.filter(book=book, user=request.user).delete()
+    Bookmarks.objects.filter(book=book, user=request.user).delete()
+    Reviews.objects.filter(book=book, user=request.user).delete()
+    
+    messages.success(request, "Книга удалена с вашей полки.")
+    return redirect("bookLibrary:my_shelf")
 
 
 def administrator_page(request):

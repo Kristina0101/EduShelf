@@ -53,7 +53,7 @@ class SubjectSpecialtyLink(models.Model):
     course = models.IntegerField()
 
     def __str__(self):
-        return self.subject_specialty_id
+        return f"{self.subject.subject_name} — {self.specialty.specialty_name} (Курс {self.course})"
 
     class Meta:
         db_table = 'subject_specialty_link'
@@ -173,7 +173,7 @@ class Bookmarks(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.user
+        return f"Закладка: {self.user.username} — {self.book.book_title} (стр. {self.page_number})"
     
     class Meta:
         db_table = 'bookmarks'

@@ -16,10 +16,11 @@
             <li><a href="{% url 'bookLibrary:ReviewsListView' %}">Отзывы</a></li>
             <li><a href="{% url 'bookLibrary:StatusListView' %}">Статус</a></li>
             <li><a href="{% url 'bookLibrary:SubjectSpecialtyLinkListView' %}">Предмет-специальность</a></li>
+            <li><a href="{% url 'bookLibrary:statistic' %}">Статистика</a></li>
             <li>
                 <form action="{% url 'logout' %}" method="post">
                     {% csrf_token %}
-                    <button type="submit" class="nav-button">Выйти</button>
+                    <button type="submit" class="nav-button"><p>Выйти</p></button>
                 </form>
             </li>
         </ul>

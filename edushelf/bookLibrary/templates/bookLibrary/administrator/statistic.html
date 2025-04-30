@@ -1,0 +1,96 @@
+{% extends "bookLibrary/base.html" %}
+{% load static %}
+{% block title %}Статистика{% endblock %}
+
+{% block header %}
+    {% include 'Includes/header_administrator.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="content-wrapper">
+    <h2 class="name-operation">Общая статистика</h2>
+
+    <div class="status-details">
+        <div class="status-info">
+            <p><strong>Всего пользователей:</strong> {{ total_users }}</p>
+            <p><strong>Зарегистрировано студентов:</strong> {{ registered_students }}</p>
+            <p><strong>Всего закладок:</strong> {{ total_bookmarks }}</p>
+            <p><strong>Всего заметок:</strong> {{ total_notes }}</p>
+            <p><strong>Всего отзывов:</strong> {{ total_reviews }}</p>
+        </div>
+    </div>
+
+    <h3 class="name-operation" style="margin-top: 30px;">Соотношение пользователей</h3>
+    <div class="status-details" style="display: flex; justify-content: center; align-items: center; padding: 10px;">
+        <div style="width: 220px; height: 220px;">
+            <canvas id="userPieChart"></canvas>
+        </div>
+    </div>
+    
+    <h3 class="name-operation" style="margin-top: 40px;">Регистрация пользователей за последние 7 дней</h3>
+    <div class="status-details">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Количество регистраций</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stat in user_registration_stats %}
+                <tr>
+                    <td>{{ stat.day }}</td>
+                    <td>{{ stat.count }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="2">Нет данных за последние 7 дней.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Подключение Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('userPieChart').getContext('2d');
+    const total = parseInt("{{ total_users }}"); 
+    const students = parseInt("{{ registered_students }}");  
+    const others = total - students;
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Студенты', 'Другие пользователи'],
+            datasets: [{
+                label: 'Соотношение',
+                data: [students, others],
+                backgroundColor: [
+                    '#8b5e3c',
+                    '#f0e6d6'
+                ],
+                borderColor: '#000',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let percentage = (context.raw / total * 100).toFixed(1);
+                            return `${context.label}: ${context.raw} (${percentage}%)`;
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

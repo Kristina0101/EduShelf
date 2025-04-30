@@ -11,16 +11,22 @@
     {% if books %}
     <div class="books-grid">
         {% for book in books %}
-        <a href="{% url 'bookLibrary:description_book' book.pk %}" class="book-link">
-            <div class="book-card">
-                <img src="{{ book.photo_book.url }}" alt="{{ book.book_title }}" class="book-image">
-                <div class="book-info">
-                    <p class="book-title">{{ book.book_title }}</p>
-                    <p class="book-author">{{ book.author.first_name }} {{ book.author.last_name }}</p>
-                    <p class="book-genre">{{ book.genre.genre_name }}</p>
+        <div class="book-card-container">
+            <a href="{% url 'bookLibrary:description_book' book.pk %}" class="book-link">
+                <div class="book-card">
+                    <img src="{{ book.photo_book.url }}" alt="{{ book.book_title }}" class="book-image">
+                    <div class="book-info">
+                        <p class="book-title">{{ book.book_title }}</p>
+                        <p class="book-author">{{ book.author.first_name }} {{ book.author.last_name }}</p>
+                        <p class="book-genre">{{ book.genre.genre_name }}</p>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+            <form method="post" action="{% url 'bookLibrary:remove_from_shelf' book.pk %}" class="remove-from-shelf-form">
+                {% csrf_token %}
+                <button type="submit" class="remove-from-shelf-btn">Удалить с полки</button>
+            </form>
+        </div>
         {% endfor %}
         {% else %}
         <p>У вас нет книг на полке.</p>
