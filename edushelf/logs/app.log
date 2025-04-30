@@ -14204,3 +14204,4 @@ INFO 2025-05-01 01:02:56,288 basehttp "GET /logs/ HTTP/1.1" 200 1955554
 WARNING 2025-05-01 01:02:56,634 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
 INFO 2025-05-01 01:03:03,106 basehttp "POST /logout/ HTTP/1.1" 200 1447
 WARNING 2025-05-01 01:03:03,170 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-01 01:56:39,822 autoreload Watching for file changes with StatReloader
