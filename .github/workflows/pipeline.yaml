@@ -3,11 +3,11 @@ name: Educhelf
 on:
   push:
     branches:
-      - repo
+      - temp-branch
 
   pull_request: 
     branches:
-      - repo
+      - temp-branch
 jobs:
   checkstyle_project:
     runs-on: ubuntu-latest

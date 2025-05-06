@@ -119,3 +119,24 @@ INFO 2025-05-06 23:31:21,242 basehttp "GET /catalog/? HTTP/1.1" 200 12324
 WARNING 2025-05-06 23:31:21,278 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
 INFO 2025-05-06 23:31:25,397 basehttp "GET /catalog/?search=%D0%B0%D0%BB%D0%B3 HTTP/1.1" 200 7735
 WARNING 2025-05-06 23:31:25,433 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-06 23:45:01,591 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 23:45:40,688 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 23:54:25,591 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 23:54:31,957 basehttp "GET /login/ HTTP/1.1" 200 1983
+WARNING 2025-05-06 23:54:32,055 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-06 23:54:32,055 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 304 0
+INFO 2025-05-06 23:54:32,133 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 304 0
+INFO 2025-05-06 23:54:33,892 basehttp "GET /catalog/ HTTP/1.1" 200 12324
+WARNING 2025-05-06 23:54:33,940 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-06 23:54:34,231 basehttp "GET /catalog/ HTTP/1.1" 200 12324
+WARNING 2025-05-06 23:54:34,267 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-06 23:54:35,265 basehttp "GET / HTTP/1.1" 200 7951
+WARNING 2025-05-06 23:54:35,321 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-06 23:54:35,952 basehttp "GET /catalog/ HTTP/1.1" 200 12324
+WARNING 2025-05-06 23:54:35,991 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-06 23:54:36,427 basehttp "GET / HTTP/1.1" 200 7951
+WARNING 2025-05-06 23:54:36,468 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-06 23:54:37,698 basehttp "GET / HTTP/1.1" 200 7951
+WARNING 2025-05-06 23:54:37,727 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-06 23:54:38,053 basehttp "GET /catalog/ HTTP/1.1" 200 12324
+WARNING 2025-05-06 23:54:38,100 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
