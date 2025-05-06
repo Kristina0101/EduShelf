@@ -17,9 +17,12 @@
             <p><strong>Всего закладок:</strong> {{ total_bookmarks }}</p>
             <p><strong>Всего заметок:</strong> {{ total_notes }}</p>
             <p><strong>Всего отзывов:</strong> {{ total_reviews }}</p>
+            <p><strong>Всего активных пользователей:</strong> {{ total_active_users }}</p>
+            <p><strong>Авторизовалось за 7 дней:</strong> {{ active_users_7days }}</p>
         </div>
     </div>
 
+    <!-- График соотношения пользователей -->
     <h3 class="name-operation" style="margin-top: 30px;">Соотношение пользователей</h3>
     <div class="status-details" style="display: flex; justify-content: center; align-items: center; padding: 10px;">
         <div style="width: 220px; height: 220px;">
@@ -27,6 +30,7 @@
         </div>
     </div>
     
+    <!-- Статистика регистраций -->
     <h3 class="name-operation" style="margin-top: 40px;">Регистрация пользователей за последние 7 дней</h3>
     <div class="status-details">
         <table class="table">
@@ -50,11 +54,36 @@
             </tbody>
         </table>
     </div>
+
+    <!-- Статистика авторизаций -->
+    <h3 class="name-operation" style="margin-top: 40px;">Авторизации пользователей за последние 7 дней</h3>
+    <div class="status-details">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Количество входов</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stat in login_stats %}
+                <tr>
+                    <td>{{ stat.day }}</td>
+                    <td>{{ stat.count }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="2">Нет данных за последние 7 дней.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
 
-<!-- Подключение Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+    // График соотношения пользователей
     const ctx = document.getElementById('userPieChart').getContext('2d');
     const total = parseInt("{{ total_users }}"); 
     const students = parseInt("{{ registered_students }}");  

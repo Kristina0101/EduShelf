@@ -8,6 +8,15 @@
 {% endblock %}
 
 {% block content %}
+{% if messages %}
+    {% for message in messages %}
+    <div class="mes_error">
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+    </div>
+    {% endfor %}
+{% endif %}
 <div class="book-container1">
     <div class="book-card1">
         <img src="{{ book.photo_book.url }}" alt="{{ book.book_title }}" class="book-image1">
@@ -21,7 +30,7 @@
             <p><strong>Количество страниц:</strong> {{ total_pages }}</p>
         </div>
     </div>
-
+    
     <div class="pagination1">
         <button onclick="changePage(-1)" id="prev-btn" class="nav-btn" {% if page_number == 1 %}disabled{% endif %}>&larr;</button>
         <span>Страница: <input type="number" id="page-input" value="{{ page_number }}" min="1" max="{{ total_pages }}" onchange="goToPage()"> / {{ total_pages }}</span>

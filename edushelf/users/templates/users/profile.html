@@ -47,7 +47,15 @@
                     <label>Фото:</label>
                     {{ p_form.image }}
                 </div>
-                
+                {% if messages %}
+                    {% for message in messages %}
+                    <div class="mes_error">
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% endif %}
                 <button class="profile-btn" type="submit">Изменить</button>
             </form>
         </div>

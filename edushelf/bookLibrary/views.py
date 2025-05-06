@@ -1,4 +1,5 @@
 import json
+from django.forms import ValidationError
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import *
 from django.urls import *
@@ -24,7 +25,7 @@ from django.db.models import Count
 # Create your views here.
 def main_page(request):
     books_list = Books.objects.all()
-    paginator = Paginator(books_list, 8)  # По 8 книг на страницу
+    paginator = Paginator(books_list, 8)
     page_number = request.GET.get('page')
     books = paginator.get_page(page_number)
     
@@ -36,16 +37,13 @@ def main_page(request):
 def description_book(request, id):
     book = get_object_or_404(Books, pk=id)
 
-    # Получаем количество страниц PDF
     pdf_path = book.book_file.path
     doc = fitz.open(pdf_path)
     total_pages = doc.page_count
 
-    # Текущая страница
     page_number = int(request.GET.get("page", 1))
     page_number = max(1, min(page_number, total_pages))
 
-    # Обработка формы для заметок
     if request.method == "POST" and "add_note" in request.POST:
         if request.user.is_authenticated:
             note_form = NotesForm(request.POST)
@@ -61,7 +59,6 @@ def description_book(request, id):
             messages.error(request, "Вы должны войти в систему, чтобы добавить заметку.")
             return redirect("login")
 
-    # Обработка формы для отзывов
     if request.method == "POST" and "add_review" in request.POST:
         review_form = ReviewsForm(request.POST)
         if review_form.is_valid():
@@ -78,8 +75,6 @@ def description_book(request, id):
                 messages.success(request, "Отзыв успешно добавлен!")
                 return redirect("bookLibrary:description_book", id=book.book_id)
 
-
-    # Получаем заметки, отзывы и закладки
     notes = Notes.objects.filter(book=book, user=request.user)
     reviews = Reviews.objects.filter(book=book)
     bookmarks = Bookmarks.objects.filter(book=book, user=request.user)
@@ -113,14 +108,12 @@ def delete_review(request, review_id):
 
 def delete_note(request, note_id):
     note = get_object_or_404(Notes, note_id=note_id)
-    # Проверка, чтобы удалить только свои заметки
     if note.user == request.user:
         note.delete()
     return redirect("bookLibrary:description_book", id=note.book.book_id)
 
 def delete_review(request, review_id):
     review = get_object_or_404(Reviews, review_id=review_id)
-    # Проверка, чтобы удалить только свои отзывы
     if review.user == request.user:
         review.delete()
     return redirect("bookLibrary:description_book", id=review.book.book_id)
@@ -134,7 +127,6 @@ def add_bookmark(request, book_id):
     data = json.loads(request.body)
     page_number = data.get('page_number')
     
-    # Проверяем, не существует ли уже закладка на этой странице
     existing_bookmark = Bookmarks.objects.filter(
         book=book, 
         user=request.user, 
@@ -147,7 +139,6 @@ def add_bookmark(request, book_id):
             'message': 'Закладка на этой странице уже существует'
         })
     
-    # Создаем новую закладку
     bookmark = Bookmarks.objects.create(
         book=book,
         user=request.user,
@@ -224,17 +215,32 @@ def bd_admin_page(request):
     return render(request, 'bookLibrary/bd_admin/bd_admin_page.html')
 
 def statistic(request):
+    # Общая статистика
     total_users = User.objects.count()
     registered_students = Students.objects.filter(user__isnull=False).count()
-
     total_bookmarks = Bookmarks.objects.count()
     total_notes = Notes.objects.count()
     total_reviews = Reviews.objects.count()
 
-    # Статистика регистрации пользователей по дням за последние 7 дней
+    # Статистика регистрации
     last_7_days = now() - timedelta(days=7)
-    recent_users = User.objects.filter(date_joined__gte=last_7_days)
-    user_registration_stats = recent_users.extra({'day': "date(date_joined)"}).values('day').annotate(count=Count('id')).order_by('day')
+    user_registration_stats = User.objects.filter(
+        date_joined__gte=last_7_days
+    ).extra({'day': "date(date_joined)"}).values('day').annotate(
+        count=Count('id')
+    ).order_by('day')
+
+    # Статистика авторизаций
+    login_stats = User.objects.filter(
+        last_login__gte=last_7_days
+    ).extra({'day': "date(last_login)"}).values('day').annotate(
+        count=Count('id')
+    ).order_by('day')
+
+    # Уникальные пользователи за последние 7 дней
+    active_users_7days = User.objects.filter(
+        last_login__gte=last_7_days
+    ).distinct().count()
 
     context = {
         'total_users': total_users,
@@ -243,8 +249,10 @@ def statistic(request):
         'total_notes': total_notes,
         'total_reviews': total_reviews,
         'user_registration_stats': user_registration_stats,
+        'login_stats': login_stats,
+        'active_users_7days': active_users_7days,
+        'total_active_users': User.objects.exclude(last_login__isnull=True).count(),
     }
-
     return render(request, 'bookLibrary/administrator/statistic.html', context)
 
 
@@ -253,7 +261,7 @@ def log_view(request):
 
     try:
         with open(log_path, 'r', encoding='utf-8', errors='ignore') as f:
-            log_content = f.readlines()  # Читаем построчно
+            log_content = f.readlines()
     except FileNotFoundError:
         log_content = ["Лог-файл не найден."]
     
@@ -380,11 +388,47 @@ class StudentsCreateView(CreateView):
     context_object_name = 'StudentsCreateView'
     success_url = reverse_lazy('bookLibrary:StudentsListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Студент успешно добавлен!')
+            return response
+        except ValidationError as e:
+            messages.error(self.request, f'Ошибка валидации: {", ".join(e.messages)}')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении студента: {str(e)}')
+            return self.render_to_response(self.get_context_data(form=form))
+
+    def form_invalid(self, form):
+        error_messages = {
+            'email': {
+                'unique': 'Студент с таким email уже существует.',
+                'invalid': 'Введите корректный email адрес.'
+            },
+            'student_id': {
+                'unique': 'Студент с таким номером уже существует.'
+            }
+        }
+        
+        for field, errors in form.errors.items():
+            for error in errors:
+                custom_message = error_messages.get(field, {}).get(error, error)
+                messages.error(self.request, f'{field}: {custom_message}')
+        return super().form_invalid(form)
+
 class StudentsDetailView(DetailView):
     model = Students
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/bd_admin/students/DetailView.html'
     context_object_name = 'StudentsListView'
+
+    def get(self, request, *args, **kwargs):
+        try:
+            return super().get(request, *args, **kwargs)
+        except Exception as e:
+            messages.error(request, f'Ошибка при загрузке данных студента: {str(e)}')
+            return redirect('bookLibrary:StudentsListView')
 
 class StudentsUpdateView(UpdateView):
     model = Students
@@ -394,18 +438,48 @@ class StudentsUpdateView(UpdateView):
     template_name = 'bookLibrary/bd_admin/students/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:StudentsListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Данные студента успешно обновлены!')
+            return response
+        except ValidationError as e:
+            messages.error(self.request, f'Ошибка валидации: {", ".join(e.messages)}')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении данных: {str(e)}')
+            return self.render_to_response(self.get_context_data(form=form))
+
+    def form_invalid(self, form):
+        for field, errors in form.errors.items():
+            for error in errors:
+                messages.error(self.request, f'Ошибка в поле {field}: {error}')
+        return super().form_invalid(form)
+
 class StudentsDeleteView(DeleteView):
     model = Students
     context_object_name = 'StudentsDeleteView'
     template_name = 'bookLibrary/bd_admin/students/DeleteView.html'
     pk_url_kwarg = 'pk'
     success_url = reverse_lazy('bookLibrary:StudentsListView')
+    success_message = "Студент успешно удалён"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['pk'] = self.kwargs['pk']
         context['student'] = get_object_or_404(Students, pk=self.kwargs['pk'])
         return context
+
+    def delete(self, request, *args, **kwargs):
+        try:
+            student = self.get_object()
+            student_name = f"{student.last_name} {student.first_name}"
+            response = super().delete(request, *args, **kwargs)
+            messages.success(request, f'Студент {student_name} успешно удалён!')
+            return response
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении студента: {str(e)}')
+            return redirect(self.success_url)
     
 
 class RolesListView(ListView):
@@ -459,17 +533,14 @@ class RolesDeleteView(DeleteView):
     
 
 def my_shelf(request):
-    # Получаем книги с заметками, закладками или отзывами для текущего пользователя
     books_with_notes = Books.objects.filter(notes__user=request.user).distinct()
     books_with_bookmarks = Books.objects.filter(bookmarks__user=request.user).distinct()
     books_with_reviews = Books.objects.filter(reviews__user=request.user).distinct()
     
-    # Объединяем все книги
     books = books_with_notes | books_with_bookmarks | books_with_reviews
 
-    # Убираем дублирующиеся книги
     books = books.distinct()
-    paginator = Paginator(books, 8)  # По 8 книг на страницу
+    paginator = Paginator(books, 8)
     page_number = request.GET.get('page')
     books = paginator.get_page(page_number)
 
@@ -480,7 +551,6 @@ def my_shelf(request):
 def remove_from_shelf(request, book_id):
     book = get_object_or_404(Books, pk=book_id)
     
-    # Delete all user-related data for this book
     Notes.objects.filter(book=book, user=request.user).delete()
     Bookmarks.objects.filter(book=book, user=request.user).delete()
     Reviews.objects.filter(book=book, user=request.user).delete()
@@ -534,26 +604,22 @@ def import_students(request):
     if request.method == "POST" and request.FILES.get("file"):
         file = request.FILES["file"]
         try:
-            df = pd.read_excel(file, engine='openpyxl')  # Добавлен параметр engine='openpyxl'
+            df = pd.read_excel(file, engine='openpyxl')
 
             for index, row in df.iterrows():
-                # Получаем или создаем учебное заведение
                 institution, _ = EducationalInstitution.objects.get_or_create(
                     institution_name=row["Учебное заведение"]
                 )
 
-                # Получаем или создаем специальность
                 specialty, _ = Specialties.objects.get_or_create(
                     specialty_name=row["Специальность"],
                     institution=institution
                 )
 
-                # Получаем статус "не активен"
                 status = Status.objects.filter(status_name="Не активен").first()
                 if not status:
                     return HttpResponse("Ошибка: Статус 'не активен' не найден", status=400)
 
-                # Создаем студента
                 Students.objects.create(
                     first_name=row["Имя"],
                     last_name=row["Фамилия"],
@@ -572,35 +638,26 @@ def import_students(request):
 
 @login_required
 def backup_database(request):
-    # Создаем путь для сохранения резервной копии
     backup_dir = os.path.join(settings.BASE_DIR, 'backups')
     os.makedirs(backup_dir, exist_ok=True)
 
-    # Формируем имя файла с датой и временем
     timestamp = now().strftime("%Y-%m-%d_%H-%M-%S")
     backup_file = os.path.join(backup_dir, f"backup_{timestamp}.sql")
 
-    # Экранируем путь к файлу резервной копии, если в нем есть пробелы
-    backup_file = f'"{backup_file}"'  # Оборачиваем в двойные кавычки
+    backup_file = f'"{backup_file}"'
 
-    # Параметры подключения к базе данных
     db_settings = settings.DATABASES['default']
 
-    # Команда для PowerShell
     dump_command = f'$env:PGPASSWORD="{db_settings["PASSWORD"]}"; pg_dump -U {db_settings["USER"]} -h {db_settings["HOST"]} -p {db_settings["PORT"]} -d {db_settings["NAME"]} > {backup_file}'
 
     try:
-        # Выполнение команды через PowerShell
         result = subprocess.run(['powershell', '-Command', dump_command], capture_output=True, text=True)
 
-        # Проверяем, был ли успешным результат
         if result.returncode == 0:
             return HttpResponse(f"Резервная копия создана: {backup_file}")
         else:
-            # Если команда завершилась с ошибкой, выводим ошибки
             return HttpResponse(f"Ошибка при создании резервной копии: {result.stderr}", status=500)
     except Exception as e:
-        # Ловим все остальные ошибки
         return HttpResponse(f"Неизвестная ошибка: {str(e)}", status=500)
 
 

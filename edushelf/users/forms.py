@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .models import Profile
+from django.utils.translation import gettext_lazy as _
 
 # Получаем кастомную модель пользователя
 User = get_user_model()
@@ -11,10 +12,19 @@ class UserRegisterForm(UserCreationForm):
     username = forms.CharField(label='Логин', max_length=150)
     password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Подтверждение пароля', widget=forms.PasswordInput)
-
     class Meta:
-        model = User  
+        model = User
         fields = ['username', 'email', 'password1', 'password2']
+        labels = {
+            'username': 'Имя пользователя',
+            'email': 'Email',
+            'password1': 'Пароль',
+            'password2': 'Подтверждение пароля'
+        }
+        help_texts = {
+            'username': 'Только буквы, цифры и @/./+/-/_',
+            'password1': 'Минимум 8 символов'
+        }
 
 
 class UserUpdateForm(forms.ModelForm):

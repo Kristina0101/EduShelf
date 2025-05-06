@@ -26,6 +26,15 @@
                 <label for="id_password2">Подтвердите пароль:</label>
                 {{ form.password2 }}
             </div>
+            {% if messages %}
+                {% for message in messages %}
+                <div class="mes_error">
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                </div>
+                {% endfor %}
+            {% endif %}
             <button type="submit" class="register-button">Зарегистрироваться</button>
         </form>
     </div>

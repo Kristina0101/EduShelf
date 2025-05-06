@@ -18,6 +18,15 @@
                 <label for="id_password">Пароль:</label>
                 <input type="password" name="password" id="id_password" required>
             </div>
+            {% if messages %}
+                {% for message in messages %}
+                <div class="mes_error">
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                </div>
+                {% endfor %}
+            {% endif %}
             <button type="submit" class="login-button">Войти</button>
         </form>
     </div>

@@ -5,6 +5,15 @@
 {% block header %}
     {% include 'Includes/header_bd_admin.html' %}
 {% endblock %}
+{% if messages %}
+    {% for message in messages %}
+        <div class="mes_error">
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        </div>
+    {% endfor %}
+{% endif %}
 {% block content %}
 <a class="come_back_button" href="{% url 'bookLibrary:StudentsListView' %}"><p>Назад</p></a>
 <div class="form-wrapper">
