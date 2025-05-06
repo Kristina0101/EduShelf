@@ -1,6 +1,7 @@
 import json
 from django.forms import ValidationError
 from django.shortcuts import render, get_object_or_404, redirect
+
 from .models import *
 from django.urls import *
 from django.core.paginator import Paginator
@@ -21,7 +22,8 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 from datetime import timedelta
 from django.db.models import Count
-
+from django.conf import settings
+BASE_DIR = settings.BASE_DIR
 # Create your views here.
 def main_page(request):
     books_list = Books.objects.all()
@@ -257,15 +259,30 @@ def statistic(request):
 
 
 def log_view(request):
-    log_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'logs', 'app.log')
-
-    try:
-        with open(log_path, 'r', encoding='utf-8', errors='ignore') as f:
-            log_content = f.readlines()
-    except FileNotFoundError:
-        log_content = ["Лог-файл не найден."]
+    log_path = os.path.join(settings.BASE_DIR, 'logs', 'app.log')
     
-    return render(request, 'bookLibrary/bd_admin/logs.html', {'log_content': log_content})
+    try:
+        # Пробуем несколько кодировок по очереди
+        encodings = ['utf-8', 'cp1251', 'utf-16', 'iso-8859-1']
+        
+        for encoding in encodings:
+            try:
+                with open(log_path, 'r', encoding=encoding) as f:
+                    log_content = f.read().splitlines()[-100:]  # Последние 100 строк
+                break
+            except UnicodeDecodeError:
+                continue
+        else:
+            log_content = ["Не удалось прочитать лог-файл (проблема с кодировкой)"]
+            
+    except Exception as e:
+        log_content = [f"Ошибка при чтении лог-файла: {str(e)}"]
+    
+    context = {
+        'log_content': log_content,
+        'log_file': log_path
+    }
+    return render(request, 'bookLibrary/bd_admin/logs.html', context)
 
 class StudentsListView(ListView):
     model = Students

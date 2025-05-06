@@ -7,9 +7,13 @@
     <div class="log-container">
         <h2>Файл логов</h2>
         <div class="log-box">
-            {% for line in log_content %}
-                <p>{{ line }}</p>
-            {% endfor %}
+            {% if log_content %}
+                {% for line in log_content %}
+                    <p>{{ line|force_escape }}</p>
+                {% endfor %}
+            {% else %}
+                <p>Лог-файл пуст</p>
+            {% endif %}
         </div>
         <a href="{% url 'bookLibrary:log_view' %}" class="refresh-button">Обновить</a>
     </div>
@@ -21,6 +25,11 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .log-path {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
         }
         .log-box {
             background: #222;

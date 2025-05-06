@@ -15,10 +15,19 @@ import os
 import base64
 from cryptography.fernet import Fernet
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+LOG_DIR = os.path.join(BASE_DIR, 'logs')
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
 
+# Создаем файл лога если его нет
+LOG_FILE = os.path.join(LOG_DIR, 'app.log')
+if not os.path.exists(LOG_FILE):
+    open(LOG_FILE, 'a').close()
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -125,8 +134,9 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': 'logs/app.log',
+            'filename': os.path.join(BASE_DIR, 'logs', 'app.log'),
             'formatter': 'verbose',
+            'encoding': 'utf-8',  # Явно указываем кодировку
         },
     },
     'loggers': {
