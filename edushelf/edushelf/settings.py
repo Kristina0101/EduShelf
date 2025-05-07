@@ -16,27 +16,21 @@ import base64
 from cryptography.fernet import Fernet
 
 
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 LOG_DIR = os.path.join(BASE_DIR, 'logs')
 if not os.path.exists(LOG_DIR):
     os.makedirs(LOG_DIR)
 
-# Создаем файл лога если его нет
 LOG_FILE = os.path.join(LOG_DIR, 'app.log')
 if not os.path.exists(LOG_FILE):
     open(LOG_FILE, 'a').close()
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-pn+x^1zer&c#i!oma84+jc+*h@4@p@n6=yi!u63dtw!#3h4vni'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
-X_FRAME_OPTIONS = 'SAMEORIGIN'  # Разрешает встраивание только с того же домена
+X_FRAME_OPTIONS = 'SAMEORIGIN' 
 SECURE_CONTENT_TYPE_NOSNIFF = False
 
 ALLOWED_HOSTS = ['127.0.0.1']
@@ -137,7 +131,7 @@ LOGGING = {
             'class': 'logging.FileHandler',
             'filename': os.path.join(BASE_DIR, 'logs', 'app.log'),
             'formatter': 'verbose',
-            'encoding': 'utf-8',  # Явно указываем кодировку
+            'encoding': 'utf-8',
         },
     },
     'loggers': {
@@ -169,7 +163,7 @@ LOGIN_REDIRECT_URL = 'bookLibrary:main_page'
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',  # Путь к директории static
+    BASE_DIR / 'static',
 ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT= os.path.join(BASE_DIR,'media/')

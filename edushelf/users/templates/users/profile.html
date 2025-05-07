@@ -64,7 +64,6 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Toggle main menu
         const mainMenuToggle = document.getElementById('main-menu-toggle');
         const mainMenu = document.getElementById('main-menu');
         
@@ -72,7 +71,6 @@
             mainMenu.classList.toggle('active');
         });
 
-        // Handle submenu toggles
         const submenuToggles = document.querySelectorAll('.submenu-toggle');
         
         submenuToggles.forEach(toggle => {
@@ -83,7 +81,6 @@
             });
         });
 
-        // Handle back buttons
         const backButtons = document.querySelectorAll('.back-button');
         
         backButtons.forEach(button => {
@@ -98,7 +95,6 @@
             });
         });
 
-        // Close menu when clicking outside
         document.addEventListener('click', function(event) {
             if (!event.target.closest('.menu') && !event.target.closest('.menu-toggle')) {
                 const openMenus = document.querySelectorAll('.menu.active, .submenu.active');

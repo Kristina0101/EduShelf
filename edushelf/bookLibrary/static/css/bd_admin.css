@@ -43,7 +43,6 @@ header {
 }
 
 
-/* Навигация - общие стили */
 nav {
     display: flex;
     justify-content: space-between;
@@ -107,7 +106,7 @@ nav ul li a:hover, .nav-button:hover {
     transition: font-size 0.3s ease;
 }
 
-/* Адаптация под разные экраны */
+
 @media (max-width: 1600px) {
     nav ul {
         gap: 12px;
@@ -196,7 +195,6 @@ nav ul li a:hover, .nav-button:hover {
     }
 }
 
-/* Стили для кнопки выхода */
 .nav-button {
     background: none;
     border: none;
@@ -211,8 +209,6 @@ nav ul li a:hover, .nav-button:hover {
     text-decoration: none;
 }
 
-
-/* Футер */
 .foot1 {
     padding: 30px 20px;
     border-top: 1px solid #000;
@@ -224,7 +220,6 @@ nav ul li a:hover, .nav-button:hover {
     align-items: center;
 }
 
-/* Логотип с иконкой */
 .logo_footer {
     display: flex;
     align-items: center;
@@ -367,7 +362,6 @@ nav ul li a:hover, .nav-button:hover {
     margin-bottom: 10px;
 }
 
-/* Кнопки обновления и удаления */
 .up-del-buttons {
     display: flex;
     justify-content: center;
@@ -388,7 +382,6 @@ nav ul li a:hover, .nav-button:hover {
     background-color: #724b2f;
 }
 
-/* Кнопка "Назад" */
 .btn-action {
     background-color: #8b5e3c;
     color: white;
@@ -407,6 +400,7 @@ nav ul li a:hover, .nav-button:hover {
 .btn-action:hover {
     background-color: #724b2f;
 }
+
 /* Стили для меню уведомлений */
 .notifications-menu {
     position: relative;

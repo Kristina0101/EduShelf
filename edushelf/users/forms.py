@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .models import Profile
 from django.utils.translation import gettext_lazy as _
 
-# Получаем кастомную модель пользователя
+
 User = get_user_model()
 
 class UserRegisterForm(UserCreationForm):

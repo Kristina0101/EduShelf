@@ -79,18 +79,15 @@
       const toggleBtn = document.getElementById('notifications-toggle');
       const menu = document.getElementById('notifications-menu');
       
-      // Открытие/закрытие меню
       toggleBtn.addEventListener('click', function(e) {
           e.stopPropagation();
           menu.classList.toggle('active');
       });
       
-      // Закрытие меню при клике вне его
       document.addEventListener('click', function() {
           menu.classList.remove('active');
       });
       
-      // Предотвращение закрытия при клике внутри меню
       menu.addEventListener('click', function(e) {
           e.stopPropagation();
       });

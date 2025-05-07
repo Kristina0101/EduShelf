@@ -191,7 +191,6 @@ class CustomLoginView(LoginView):
             messages.error(self.request, f"Ошибка при проверке договора: {str(e)}")
             return render(self.request, self.template_name, {'form': form})
 
-        # Создаем уведомление о входе для всех ролей
         role_name = user.role.role_name.lower()
         welcome_message = f"Вы успешно вошли в систему как {role_name}."
         
@@ -201,9 +200,7 @@ class CustomLoginView(LoginView):
             message=welcome_message
         )
 
-        # Для администратора создаем дополнительные уведомления
         if user.role.role_name == "administrator":
-            # Уведомление о последних действиях в системе
             Notification.objects.create(
                 user=user,
                 title="Системные уведомления",

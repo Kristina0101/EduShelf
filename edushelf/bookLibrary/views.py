@@ -1168,8 +1168,7 @@ class StatusDeleteView(DeleteView):
         return context
 @require_POST
 def send_site_update_notification(request):
-    # Логирование входящих данных
-    print(f"Request method: {request.method}")  # Проверим, какой метод запроса используется
+    print(f"Request method: {request.method}")
     print(f"POST data: {request.POST}")
 
     title = request.POST.get('title')
@@ -1192,7 +1191,7 @@ def send_site_update_notification(request):
 
     messages.success(request, 'Уведомление успешно разослано.')
     return redirect('bookLibrary:UsersListView')
-# Только для администраторов
-@login_required  # Доступно только для вошедших пользователей
+
+@login_required
 def send_update_form(request):
     return render(request, 'bookLibrary/bd_admin/notification_page.html')
