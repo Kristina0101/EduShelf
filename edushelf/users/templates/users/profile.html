@@ -61,4 +61,52 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle main menu
+        const mainMenuToggle = document.getElementById('main-menu-toggle');
+        const mainMenu = document.getElementById('main-menu');
+        
+        mainMenuToggle.addEventListener('click', function() {
+            mainMenu.classList.toggle('active');
+        });
+
+        // Handle submenu toggles
+        const submenuToggles = document.querySelectorAll('.submenu-toggle');
+        
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const targetMenu = document.getElementById(targetId);
+                targetMenu.classList.add('active');
+            });
+        });
+
+        // Handle back buttons
+        const backButtons = document.querySelectorAll('.back-button');
+        
+        backButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-back');
+                const currentMenu = this.closest('.submenu');
+                currentMenu.classList.remove('active');
+                
+                if (targetId !== 'main-menu') {
+                    document.getElementById(targetId).classList.remove('active');
+                }
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.menu') && !event.target.closest('.menu-toggle')) {
+                const openMenus = document.querySelectorAll('.menu.active, .submenu.active');
+                openMenus.forEach(menu => {
+                    menu.classList.remove('active');
+                });
+            }
+        });
+    });
+</script>
 {% endblock %}

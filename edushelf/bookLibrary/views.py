@@ -22,6 +22,7 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 from datetime import timedelta
 from django.db.models import Count
+from django.contrib.admin.views.decorators import staff_member_required
 from django.conf import settings
 BASE_DIR = settings.BASE_DIR
 # Create your views here.
@@ -260,7 +261,6 @@ def statistic(request):
 
 def log_view(request):
     log_path = os.path.join(settings.BASE_DIR, 'logs', 'app.log')
-    
     try:
         # Пробуем несколько кодировок по очереди
         encodings = ['utf-8', 'cp1251', 'utf-16', 'iso-8859-1']
@@ -577,7 +577,8 @@ def remove_from_shelf(request, book_id):
 
 
 def administrator_page(request):
-    return render(request, 'bookLibrary/administrator/administrator_page.html')
+    notifications = Notification.objects.filter(user=request.user).order_by('-created_at')
+    return render(request, 'bookLibrary/administrator/administrator_page.html', {'notifications': notifications})
 
 
 class StudListView(ListView):
@@ -1165,3 +1166,33 @@ class StatusDeleteView(DeleteView):
         context['pk'] = self.kwargs['pk']
         context['status'] = get_object_or_404(Status, pk=self.kwargs['pk'])
         return context
+@require_POST
+def send_site_update_notification(request):
+    # Логирование входящих данных
+    print(f"Request method: {request.method}")  # Проверим, какой метод запроса используется
+    print(f"POST data: {request.POST}")
+
+    title = request.POST.get('title')
+    message = request.POST.get('message')
+    target_roles = request.POST.getlist('roles')
+
+    if not title or not message or not target_roles:
+        messages.error(request, 'Необходимо указать заголовок, сообщение и роли.')
+        return redirect('some_admin_page')
+
+    roles = UserRoles.objects.filter(role_name__in=target_roles)
+    users = User.objects.filter(role__in=roles)
+
+    for user in users:
+        Notification.objects.create(
+            user=user,
+            title=title,
+            message=message
+        )
+
+    messages.success(request, 'Уведомление успешно разослано.')
+    return redirect('bookLibrary:UsersListView')
+# Только для администраторов
+@login_required  # Доступно только для вошедших пользователей
+def send_update_form(request):
+    return render(request, 'bookLibrary/bd_admin/notification_page.html')

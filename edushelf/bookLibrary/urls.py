@@ -18,7 +18,8 @@ urlpatterns = [
     path('review/delete/<int:review_id>/', views.delete_review, name='delete_review'),
     path('book/<int:book_id>/add_bookmark/', views.add_bookmark, name='add_bookmark'),
     path('delete_bookmark/<int:bookmark_id>/', views.delete_bookmark, name='delete_bookmark'),
-
+    path('send-update-form/', views.send_update_form, name='send_update_form'),
+    path('send-update/', views.send_site_update_notification, name='send_site_update_notification'),
     path('logs/', log_view, name='log_view'),
 
     path('bd_admin/students/', views.StudentsListView.as_view(), name='StudentsListView'),

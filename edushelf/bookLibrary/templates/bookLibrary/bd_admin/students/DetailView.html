@@ -20,6 +20,7 @@
                     <h2 class="status-name">{{ StudentsListView.status }}</h2>
                     <h2 class="status-name">{{ StudentsListView.course }}</h2>
                     <h2 class="status-name">{{ StudentsListView.specialty.specialty_name }}</h2>
+                    <h2 class="status-name">{{ StudentsListView.specialty.institution.institution_name }}</h2>
                     <h2 class="status-name">{{ StudentsListView.user.username }}</h2>
                     <div class="up-del-buttons">
                         <a href = "{% url 'bookLibrary:StudentsUpdateView' StudentsListView.pk %}"><p>Обновить</p></a>

@@ -23,6 +23,26 @@ header {
     color: #666;
 }
 
+.logo-admin {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+}
+.logo-admin .logo-text-admin h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.logo-admin .logo-text-admin p {
+    margin: 0;
+    font-size: 24px;
+    color: #666;
+}
+
+
 /* Навигация - общие стили */
 nav {
     display: flex;
@@ -386,4 +406,115 @@ nav ul li a:hover, .nav-button:hover {
 
 .btn-action:hover {
     background-color: #724b2f;
+}
+/* Стили для меню уведомлений */
+.notifications-menu {
+    position: relative;
+}
+
+.menu-toggle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff url('https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png') 50% 50%/25px 25px no-repeat;
+    background-size: 24px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-toggle:hover {
+    background-color: #f5f5f5;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ff4757;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.menu-content {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 350px;
+    max-height: 500px;
+    overflow-y: auto;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 1000;
+    display: none;
+}
+
+.menu-content.active {
+    display: block;
+}
+
+.menu-content h3 {
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-content li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.menu-content li.unread {
+    background-color: #f8f9fa;
+}
+
+.menu-content li.empty {
+    text-align: center;
+    color: #666;
+}
+
+.menu-content li:last-child {
+    border-bottom: none;
+}
+
+.menu-content li strong {
+    display: block;
+    font-weight: bold;
+}
+
+.menu-content li p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.menu-content li small {
+    color: #666;
+    font-size: 12px;
+}
+
+.menu-content li button {
+    margin-top: 5px;
+    padding: 3px 8px;
+    background: #8B5E3C;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
 }

@@ -1,0 +1,14 @@
+<form method="post" action="{% url 'bookLibrary:send_site_update_notification' %}">
+    {% csrf_token %}
+    <label>Заголовок:</label>
+    <input type="text" name="title" required><br>
+
+    <label>Сообщение:</label>
+    <textarea name="message" required></textarea><br>
+
+    <label>Получатели:</label><br>
+    <input type="checkbox" name="roles" value="reader"> Читатели<br>
+    <input type="checkbox" name="roles" value="administrator"> Администраторы<br>
+
+    <button type="submit">Разослать</button>
+</form>

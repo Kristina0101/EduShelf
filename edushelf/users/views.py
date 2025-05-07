@@ -8,6 +8,10 @@ from urllib.parse import quote
 from bookLibrary.models import *
 from django.urls import reverse
 from django.contrib.auth import get_user_model
+from django.views.decorators.http import require_POST
+from django.shortcuts import get_object_or_404
+from django.conf import settings
+
 
 User = get_user_model()
 
@@ -57,9 +61,24 @@ def register(request):
                 user.role = reader_role
                 user.save()
                 
+                # Уведомление для нового пользователя
+                Notification.objects.create(
+                    user=user,
+                    title="Добро пожаловать!",
+                    message="Вы успешно зарегистрировались в системе как читатель."
+                )
+                
                 student.user = user
                 student.status = registered_status
                 student.save()
+
+                admins = User.objects.filter(role__role_name='administrator')
+                for admin in admins:
+                    Notification.objects.create(
+                        user=admin,
+                        title="Новая регистрация пользователя",
+                        message=f"Зарегистрирован новый пользователь: {user.username} ({user.email})"
+                    )
                 
                 messages.success(request, f'Аккаунт {user.username} успешно создан! Теперь вы можете войти.')
                 return redirect('login')
@@ -103,13 +122,20 @@ def register(request):
 
 @login_required
 def profile(request):
+    if request.user.role.role_name == 'administrator':
+        template = 'bookLibrary/administrator/students/ListView.html'
+    else:
+        template = 'users/profile.html'
+
+    notifications = Notification.objects.filter(user=request.user).order_by('-created_at')
+
     if request.method == 'POST':
         u_form = UserUpdateForm(request.POST, instance=request.user)
         p_form = ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile)
         if u_form.is_valid() and p_form.is_valid():
             u_form.save()
             p_form.save()
-            messages.success(request, f'Ваш профиль успешно обновлен.')
+            messages.success(request, 'Ваш профиль успешно обновлен.')
             return redirect('profile')
     else:
         u_form = UserUpdateForm(instance=request.user)
@@ -124,10 +150,19 @@ def profile(request):
         'u_form': u_form,
         'p_form': p_form,
         'student': student,
+        'notifications': notifications,
     }
 
-    return render(request, 'users/profile.html', context)
+    return render(request, template, context)
 
+
+@require_POST
+@login_required
+def mark_notification_read(request, notification_id):
+    notification = get_object_or_404(Notification, id=notification_id, user=request.user)
+    notification.is_read = True
+    notification.save()
+    return redirect('profile')
 
 class CustomLoginView(LoginView):
     form_class = CustomAuthenticationForm
@@ -155,6 +190,25 @@ class CustomLoginView(LoginView):
         except Exception as e:
             messages.error(self.request, f"Ошибка при проверке договора: {str(e)}")
             return render(self.request, self.template_name, {'form': form})
+
+        # Создаем уведомление о входе для всех ролей
+        role_name = user.role.role_name.lower()
+        welcome_message = f"Вы успешно вошли в систему как {role_name}."
+        
+        Notification.objects.create(
+            user=user,
+            title=f"Вход в систему ({role_name})",
+            message=welcome_message
+        )
+
+        # Для администратора создаем дополнительные уведомления
+        if user.role.role_name == "administrator":
+            # Уведомление о последних действиях в системе
+            Notification.objects.create(
+                user=user,
+                title="Системные уведомления",
+                message="Проверьте последние действия в системе."
+            )
 
         return super().form_valid(form)
 

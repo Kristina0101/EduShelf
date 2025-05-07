@@ -20,14 +20,15 @@ from django.conf.urls.static import static
 from django.urls import path, include, re_path
 from bookLibrary.views import *
 from users import views as user_views
-from users.views import CustomLoginView
+from users.views import CustomLoginView, mark_notification_read
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', user_views.register, name='register'),
+    path('notification/read/<int:notification_id>/', mark_notification_read, name='mark_notification_read'),
     path('login/', CustomLoginView.as_view(), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='bookLibrary/main_page.html'), name='logout'),
     path('accounts/profile/', user_views.profile, name='profile'),
-    path('', include('bookLibrary.urls'))
+    path('', include('bookLibrary.urls')),
 ]

@@ -1,8 +1,42 @@
 <header>
-    <div class="logo">
-        <h1>EduShelf</h1>
-        <p>Администратор</p>
+    <div class="header-top">
+        <div class="logo-admin">
+            <div class="logo-text-admin">
+                <h1>EduShelf</h1>
+                <p>Администратор</p></div>
+            <div class="logo-notifications-admin">
+                <div class="notifications-menu">
+                    <button class="menu-toggle" id="notifications-toggle">
+                    </button>
+                    <div class="menu-content" id="notifications-menu">
+                        <h3>Уведомления</h3>
+                        <ul>
+                            {% for notification in notifications %}
+                                {% if not notification.is_read %}
+                                    <li class="unread">
+                                {% else %}
+                                    <li>
+                                {% endif %}
+                                    <strong>{{ notification.title }}</strong>
+                                    <p>{{ notification.message }}</p>
+                                    <small>{{ notification.created_at }}</small>
+                                    {% if not notification.is_read %}
+                                        <form method="post" action="{% url 'mark_notification_read' notification.id %}">
+                                            {% csrf_token %}
+                                            <button type="submit">Прочитано</button>
+                                        </form>
+                                    {% endif %}
+                                </li>
+                            {% empty %}
+                                <li class="empty">Нет новых уведомлений</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <nav>
         <ul>
             <li><a href="{% url 'bookLibrary:StudListView' %}">Студенты</a></li>
@@ -26,3 +60,42 @@
         </ul>
     </nav>
 </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.getElementById('notifications-toggle');
+        const menu = document.getElementById('notifications-menu');
+        
+        // Открытие/закрытие меню
+        toggleBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            menu.classList.toggle('active');
+        });
+        
+        // Закрытие меню при клике вне его
+        document.addEventListener('click', function() {
+            menu.classList.remove('active');
+        });
+        
+        // Предотвращение закрытия при клике внутри меню
+        menu.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+        
+        function updateNotificationCount() {
+            fetch('/api/notifications/count/')
+                .then(response => response.json())
+                .then(data => {
+                    const badge = document.querySelector('.notification-badge');
+                    badge.textContent = data.count;
+                    if (data.count > 0) {
+                        badge.style.display = 'flex';
+                    } else {
+                        badge.style.display = 'none';
+                    }
+                });
+        }
+        setInterval(updateNotificationCount, 60000);
+        updateNotificationCount();
+    });
+</script>
