@@ -239,6 +239,7 @@ body {
     flex-direction: column;
 }
 
+/* Общие стили для PDF просмотрщика */
 .pdf-viewer {
     margin-top: 10px;
     text-align: center;
@@ -268,6 +269,62 @@ body {
 #page-input {
     width: 40px;
     text-align: center;
+}
+
+/* Новые стили для контейнера с PDF и стрелками */
+.pdf-viewer-container {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pdf-canvas {
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.page-nav-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    background: rgba(139, 94, 60, 0.7);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+    z-index: 1;
+}
+
+.page-nav-btn:hover {
+    background: rgba(139, 94, 60, 0.9);
+}
+
+.page-nav-btn:disabled {
+    background: rgba(139, 94, 60, 0.3);
+    cursor: not-allowed;
+}
+
+#prev-page-btn {
+    left: 21%;
+}
+
+#next-page-btn {
+    right: 21%;
+}
+
+@media (max-width: 768px) {
+    .page-nav-btn {
+        width: 40px;
+        font-size: 18px;
+    }
 }
 
 .baner_catalog {

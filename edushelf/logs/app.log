@@ -4174,3 +4174,685 @@ INFO 2025-05-07 04:19:52,412 basehttp "GET /administrator/students/ HTTP/1.1" 20
 WARNING 2025-05-07 04:19:52,452 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
 WARNING 2025-05-07 04:19:52,474 log Not Found: /api/notifications/count/
 WARNING 2025-05-07 04:19:52,474 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:18,251 autoreload Watching for file changes with StatReloader
+INFO 2025-05-09 01:36:23,880 basehttp "GET /administrator/students/ HTTP/1.1" 200 34683
+INFO 2025-05-09 01:36:23,910 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 304 0
+INFO 2025-05-09 01:36:23,923 basehttp "GET /static/css/bd_admin.css HTTP/1.1" 200 9048
+WARNING 2025-05-09 01:36:23,927 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:23,946 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:23,947 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:23,961 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 304 0
+INFO 2025-05-09 01:36:25,725 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 31606
+WARNING 2025-05-09 01:36:25,768 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:25,791 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:25,791 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:26,386 basehttp "GET /administrator/students/ HTTP/1.1" 200 34683
+WARNING 2025-05-09 01:36:26,423 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:26,448 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:26,449 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:31,369 basehttp "POST /notification/read/63/ HTTP/1.1" 302 0
+INFO 2025-05-09 01:36:31,434 basehttp "GET /accounts/profile/ HTTP/1.1" 200 27131
+WARNING 2025-05-09 01:36:31,469 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 01:36:31,474 basehttp "GET /static/css/style.css HTTP/1.1" 200 14522
+WARNING 2025-05-09 01:36:31,496 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:31,496 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:32,903 basehttp "GET /administrator/students/ HTTP/1.1" 200 34230
+WARNING 2025-05-09 01:36:32,941 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:32,961 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:32,961 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:34,328 basehttp "GET /administrator/subjectSpecialtyLink/ HTTP/1.1" 200 33130
+WARNING 2025-05-09 01:36:34,373 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:34,400 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:34,400 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:37,111 basehttp "GET /statistic/ HTTP/1.1" 200 29756
+WARNING 2025-05-09 01:36:37,150 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:37,299 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:37,299 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:40,837 basehttp "GET /administrator/books/ HTTP/1.1" 200 38241
+INFO 2025-05-09 01:36:40,880 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 304 0
+INFO 2025-05-09 01:36:40,885 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 304 0
+INFO 2025-05-09 01:36:40,908 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-09 01:36:40,909 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-09 01:36:40,910 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 304 0
+WARNING 2025-05-09 01:36:40,917 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 01:36:40,919 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 304 0
+INFO 2025-05-09 01:36:40,919 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 304 0
+WARNING 2025-05-09 01:36:40,997 log Not Found: /api/notifications/count/
+INFO 2025-05-09 01:36:40,998 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 304 0
+WARNING 2025-05-09 01:36:40,998 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:40,999 basehttp "GET /media/book/2025/03/13/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8._C%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B_%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B8_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B_%D0%B8_%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F.webp HTTP/1.1" 304 0
+INFO 2025-05-09 01:36:41,585 basehttp "GET /administrator/genres/ HTTP/1.1" 200 30719
+WARNING 2025-05-09 01:36:41,627 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:41,659 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:41,659 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:42,575 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 31153
+WARNING 2025-05-09 01:36:42,622 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:42,649 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:42,649 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:43,185 basehttp "GET /administrator/students/ HTTP/1.1" 200 34230
+WARNING 2025-05-09 01:36:43,222 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:43,247 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:43,247 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:44,052 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 31153
+WARNING 2025-05-09 01:36:44,091 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:44,110 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:44,111 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:44,815 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 32496
+WARNING 2025-05-09 01:36:44,860 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:44,885 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:44,885 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:46,389 basehttp "GET /administrator/students/ HTTP/1.1" 200 34230
+WARNING 2025-05-09 01:36:46,426 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:46,449 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:46,449 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:55,855 basehttp "GET /administrator/students/ HTTP/1.1" 200 34230
+WARNING 2025-05-09 01:36:55,887 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:55,911 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:55,912 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:56,739 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 31153
+WARNING 2025-05-09 01:36:56,776 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:56,797 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:56,798 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:57,288 basehttp "GET /administrator/students/ HTTP/1.1" 200 34230
+WARNING 2025-05-09 01:36:57,325 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:57,348 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:57,348 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:57,687 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 31153
+WARNING 2025-05-09 01:36:57,723 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:57,746 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:57,746 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:59,069 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 32496
+WARNING 2025-05-09 01:36:59,119 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:59,142 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:59,142 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:59,367 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 32496
+WARNING 2025-05-09 01:36:59,400 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:59,430 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:59,430 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:36:59,770 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 31153
+WARNING 2025-05-09 01:36:59,810 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:36:59,835 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:36:59,836 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:38:00,016 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:38:00,016 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:39:00,009 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:39:00,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:40:00,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:40:00,016 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:40:04,836 basehttp "POST /logout/ HTTP/1.1" 200 2737
+INFO 2025-05-09 01:40:04,868 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 304 0
+WARNING 2025-05-09 01:40:04,872 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 01:40:05,991 basehttp "GET /login/ HTTP/1.1" 200 3274
+WARNING 2025-05-09 01:40:06,026 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 01:40:23,212 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-09 01:40:23,283 basehttp "GET / HTTP/1.1" 200 12661
+WARNING 2025-05-09 01:40:23,320 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:40:23,338 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:40:23,339 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:40:27,846 basehttp "GET /my_shelf/ HTTP/1.1" 200 7784
+WARNING 2025-05-09 01:40:27,882 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:40:27,900 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:40:27,901 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:40:31,493 basehttp "GET /accounts/profile/ HTTP/1.1" 200 9972
+WARNING 2025-05-09 01:40:31,536 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 01:40:31,537 basehttp "GET /media/profile/2025/05/07/60ae9cadfd8fe009c913d6a3413fdcff_UJXXyhO.jpg HTTP/1.1" 200 121616
+WARNING 2025-05-09 01:40:31,558 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:40:31,559 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:40:33,293 basehttp "GET /catalog/ HTTP/1.1" 200 17034
+WARNING 2025-05-09 01:40:33,354 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 01:40:33,361 basehttp "GET /media/book/2025/04/06/%D1%88%D0%B0%D0%BF%D0%BA%D0%B0.jpg HTTP/1.1" 200 417618
+WARNING 2025-05-09 01:40:33,417 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:40:33,418 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:40:41,857 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 14248
+WARNING 2025-05-09 01:40:41,893 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 01:40:41,905 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 304 0
+WARNING 2025-05-09 01:40:41,933 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:40:41,934 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:41:42,008 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:41:42,008 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:42:42,016 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:42:42,016 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:43:42,005 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:43:42,006 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:44:42,065 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:44:42,066 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:45:42,007 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:45:42,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:46:12,981 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 16581
+WARNING 2025-05-09 01:46:13,019 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:46:13,046 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:46:13,046 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:47:09,552 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 16577
+WARNING 2025-05-09 01:47:09,590 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:47:09,612 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:47:09,612 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:47:23,074 basehttp "GET /catalog/description_book/1/?page=2 HTTP/1.1" 200 16569
+WARNING 2025-05-09 01:47:23,115 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:47:23,138 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:47:23,138 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:47:30,049 basehttp "GET /catalog/description_book/1/?page=2 HTTP/1.1" 200 16569
+INFO 2025-05-09 01:47:30,111 basehttp "GET /static/css/style.css HTTP/1.1" 200 14522
+WARNING 2025-05-09 01:47:30,116 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 01:47:30,116 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+INFO 2025-05-09 01:47:30,122 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+WARNING 2025-05-09 01:47:30,140 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:47:30,141 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:47:30,169 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 200 5039880
+INFO 2025-05-09 01:47:30,222 basehttp - Broken pipe from ('127.0.0.1', 56929)
+INFO 2025-05-09 01:47:30,326 basehttp "GET /catalog/description_book/1/?page=2 HTTP/1.1" 200 16569
+INFO 2025-05-09 01:47:30,368 basehttp "GET /static/css/style.css HTTP/1.1" 200 14522
+WARNING 2025-05-09 01:47:30,375 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 01:47:30,376 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+INFO 2025-05-09 01:47:30,376 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+WARNING 2025-05-09 01:47:30,400 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:47:30,401 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:47:30,654 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 200 16182
+INFO 2025-05-09 01:47:30,747 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 200 5039880
+INFO 2025-05-09 01:47:53,504 basehttp "POST /book/1/add_bookmark/ HTTP/1.1" 200 178
+INFO 2025-05-09 01:47:55,904 basehttp "GET /catalog/description_book/1/?page=2 HTTP/1.1" 200 17085
+WARNING 2025-05-09 01:47:55,950 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:47:55,977 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:47:55,978 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:47:58,888 basehttp "POST /delete_bookmark/16/ HTTP/1.1" 302 0
+INFO 2025-05-09 01:47:58,970 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 16729
+WARNING 2025-05-09 01:47:59,011 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:47:59,050 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:47:59,051 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:49:00,013 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:49:00,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:50:00,007 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:50:00,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:51:00,005 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:51:00,005 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:52:00,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:52:00,016 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:53:00,009 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:53:00,009 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:54:01,005 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:54:01,005 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:55:02,006 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:55:02,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:55:49,122 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 17030
+WARNING 2025-05-09 01:55:49,163 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:55:49,187 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:55:49,188 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:56:50,004 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:56:50,004 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:57:50,004 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:57:50,004 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 01:58:50,009 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:58:50,009 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:59:06,677 basehttp "GET /catalog/description_book/1/?page=16 HTTP/1.1" 200 16068
+WARNING 2025-05-09 01:59:06,715 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 01:59:06,896 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 01:59:06,897 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 01:59:07,343 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 200 5039880
+WARNING 2025-05-09 02:00:07,007 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:00:07,008 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:01:07,003 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:01:07,003 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:02:07,011 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:02:07,011 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:03:07,016 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:03:07,016 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:04:07,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:04:07,015 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:05:08,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:05:08,015 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 02:05:10,023 basehttp "GET /catalog/description_book/1/?page=32 HTTP/1.1" 200 16068
+WARNING 2025-05-09 02:05:10,059 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 02:05:10,084 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:05:10,085 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 02:05:14,051 basehttp "GET /catalog/description_book/1/?page=32 HTTP/1.1" 200 16068
+INFO 2025-05-09 02:05:14,092 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+INFO 2025-05-09 02:05:14,092 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+WARNING 2025-05-09 02:05:14,092 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 02:05:14,095 basehttp "GET /static/css/style.css HTTP/1.1" 200 15625
+WARNING 2025-05-09 02:05:14,156 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:05:14,156 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 02:05:14,243 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 200 5039880
+INFO 2025-05-09 02:05:14,318 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 200 16182
+WARNING 2025-05-09 02:06:15,012 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:06:15,013 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:07:15,003 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:07:15,003 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:08:15,014 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:08:15,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:09:15,000 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:09:15,000 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:10:15,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:10:15,011 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:11:16,008 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:11:16,009 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:12:17,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:12:17,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:13:18,006 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:13:18,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:14:19,006 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:14:19,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:15:20,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:15:20,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:16:21,007 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:16:21,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:17:22,000 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:17:22,000 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:18:23,000 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:18:23,000 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:19:24,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:19:24,015 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:20:25,016 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:20:25,017 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 02:21:10,990 basehttp "GET /catalog/description_book/1/?page=36 HTTP/1.1" 200 16068
+INFO 2025-05-09 02:21:11,025 basehttp "GET /static/css/style.css HTTP/1.1" 200 15625
+INFO 2025-05-09 02:21:11,031 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+INFO 2025-05-09 02:21:11,035 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+WARNING 2025-05-09 02:21:11,036 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 02:21:11,212 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:21:11,213 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 02:21:11,297 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 200 5039880
+INFO 2025-05-09 02:21:11,448 basehttp "GET /catalog/description_book/1/?page=36 HTTP/1.1" 200 16068
+INFO 2025-05-09 02:21:11,480 basehttp "GET /static/css/style.css HTTP/1.1" 200 15625
+INFO 2025-05-09 02:21:11,484 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+INFO 2025-05-09 02:21:11,484 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+WARNING 2025-05-09 02:21:11,491 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 02:21:11,662 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:21:11,662 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 02:21:11,675 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 200 16182
+INFO 2025-05-09 02:22:03,773 basehttp "GET /catalog/description_book/1/?page=36 HTTP/1.1" 200 16333
+WARNING 2025-05-09 02:22:03,803 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 02:22:03,826 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:22:03,827 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:23:04,011 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:23:04,011 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:24:04,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:24:04,015 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 02:24:09,919 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 02:24:09,954 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 02:24:09,960 basehttp "GET /static/css/style.css HTTP/1.1" 200 17908
+WARNING 2025-05-09 02:24:09,981 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:24:09,982 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:25:10,002 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:25:10,003 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:26:10,003 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:26:10,003 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:27:10,012 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:27:10,012 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:28:10,005 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:28:10,006 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:29:10,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:29:10,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:30:11,006 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:30:11,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:31:12,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:31:12,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:32:13,005 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:32:13,006 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:33:14,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:33:14,015 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:34:15,001 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:34:15,001 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:35:16,012 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:35:16,012 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:36:17,009 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:36:17,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:37:18,011 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:37:18,011 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:38:19,000 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:38:19,000 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:39:20,000 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:39:20,001 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:40:21,012 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:40:21,012 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:41:22,006 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:41:22,006 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:42:23,004 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:42:23,004 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:43:24,013 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:43:24,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:44:25,004 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:44:25,004 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:45:26,016 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:45:26,017 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:46:27,013 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:46:27,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:47:28,006 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:47:28,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:48:29,012 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:48:29,012 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:49:30,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:49:30,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:50:31,014 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:50:31,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:51:32,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:51:32,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:52:33,008 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:52:33,008 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:53:34,013 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:53:34,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:54:35,005 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:54:35,005 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:55:36,008 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:55:36,009 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:56:37,006 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:56:37,006 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:57:37,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:57:37,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:58:37,005 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:58:37,005 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 02:59:37,006 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 02:59:37,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:00:37,019 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:00:37,019 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:01:37,018 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:01:37,019 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:02:37,007 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:02:37,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:03:37,012 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:03:37,012 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:04:37,019 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:04:37,020 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:05:37,016 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:05:37,017 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:06:37,007 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:06:37,008 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:07:37,012 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:07:37,013 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:08:37,014 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:08:37,015 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:09:37,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:09:37,016 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:10:37,016 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:10:37,017 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:11:37,020 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:11:37,020 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:12:37,013 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:12:37,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:13:37,009 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:13:37,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:14:37,014 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:14:37,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:15:37,016 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:15:37,016 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:16:37,021 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:16:37,021 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:17:37,014 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:17:37,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:18:37,011 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:18:37,011 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:19:37,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:19:37,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:20:37,017 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:20:37,017 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:21:37,020 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:21:37,020 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:22:37,019 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:22:37,020 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:23:37,018 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:23:37,018 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:24:37,028 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:24:37,028 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:25:37,014 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:25:37,015 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:26:37,030 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:26:37,030 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:27:37,018 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:27:37,019 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:28:37,024 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:28:37,024 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:29:37,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:29:37,015 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:30:37,011 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:30:37,012 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:31:37,010 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:31:37,010 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:32:37,013 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:32:37,013 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:33:37,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:33:37,016 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:34:37,019 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:34:37,019 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:35:37,025 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:35:37,026 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:36:37,017 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:36:37,019 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:37:37,029 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:37:37,029 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:38:37,017 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:38:37,017 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:39:37,020 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:39:37,021 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:40:37,025 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:40:37,026 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:41:37,020 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:41:37,021 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:42:37,006 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:42:37,006 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:42:58,673 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:42:58,717 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:42:58,721 basehttp "GET /static/css/style.css HTTP/1.1" 200 15979
+WARNING 2025-05-09 03:42:58,749 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:42:58,750 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:43:09,264 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:43:09,301 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:43:09,331 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:43:09,332 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:43:10,368 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:43:10,405 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:43:10,427 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:43:10,427 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:43:14,712 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+INFO 2025-05-09 03:43:14,778 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+INFO 2025-05-09 03:43:14,784 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+WARNING 2025-05-09 03:43:14,792 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:43:14,794 basehttp "GET /static/css/style.css HTTP/1.1" 200 15625
+INFO 2025-05-09 03:43:15,156 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+INFO 2025-05-09 03:43:15,206 basehttp "GET /static/css/style.css HTTP/1.1" 200 15625
+WARNING 2025-05-09 03:43:15,217 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:43:15,218 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+INFO 2025-05-09 03:43:15,218 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+WARNING 2025-05-09 03:43:15,393 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:43:15,394 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:43:15,418 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 200 16182
+INFO 2025-05-09 03:43:58,319 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:43:58,355 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:43:58,364 basehttp "GET /static/css/style.css HTTP/1.1" 200 15624
+WARNING 2025-05-09 03:43:58,397 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:43:58,398 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:44:07,052 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:44:07,089 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:44:07,099 basehttp "GET /static/css/style.css HTTP/1.1" 200 15624
+WARNING 2025-05-09 03:44:07,134 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:44:07,135 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:44:08,402 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+INFO 2025-05-09 03:44:08,440 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-09 03:44:08,441 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:44:08,471 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:44:08,472 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:44:09,435 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+INFO 2025-05-09 03:44:09,470 basehttp "GET /static/css/style.css HTTP/1.1" 200 15624
+INFO 2025-05-09 03:44:09,479 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+INFO 2025-05-09 03:44:09,480 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+WARNING 2025-05-09 03:44:09,480 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:44:09,654 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:44:09,655 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:44:09,676 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 200 16182
+INFO 2025-05-09 03:44:41,749 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:44:41,780 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:44:41,790 basehttp "GET /static/css/style.css HTTP/1.1" 200 15549
+WARNING 2025-05-09 03:44:41,824 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:44:41,825 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:45:04,450 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:45:04,478 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:45:04,491 basehttp "GET /static/css/style.css HTTP/1.1" 200 15626
+WARNING 2025-05-09 03:45:04,520 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:45:04,520 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:45:17,354 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:45:17,412 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:45:17,424 basehttp "GET /static/css/style.css HTTP/1.1" 200 15626
+WARNING 2025-05-09 03:45:17,474 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:45:17,474 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:45:26,349 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:45:26,403 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:45:26,421 basehttp "GET /static/css/style.css HTTP/1.1" 200 15626
+WARNING 2025-05-09 03:45:26,476 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:45:26,477 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:45:46,929 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:45:46,983 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:45:47,000 basehttp "GET /static/css/style.css HTTP/1.1" 200 15628
+WARNING 2025-05-09 03:45:47,049 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:45:47,051 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:45:57,600 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:45:57,642 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:45:57,652 basehttp "GET /static/css/style.css HTTP/1.1" 200 15628
+WARNING 2025-05-09 03:45:57,682 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:45:57,683 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:46:09,965 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:46:09,996 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:46:10,003 basehttp "GET /static/css/style.css HTTP/1.1" 200 15628
+WARNING 2025-05-09 03:46:10,026 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:46:10,027 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:46:18,575 basehttp "GET /catalog/description_book/1/?page=38 HTTP/1.1" 200 16333
+WARNING 2025-05-09 03:46:18,608 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:46:18,614 basehttp "GET /static/css/style.css HTTP/1.1" 200 15628
+WARNING 2025-05-09 03:46:18,639 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:46:18,640 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:46:44,940 basehttp "POST /book/1/add_bookmark/ HTTP/1.1" 200 178
+INFO 2025-05-09 03:46:46,420 basehttp "GET /catalog/description_book/1/?page=51 HTTP/1.1" 200 16851
+INFO 2025-05-09 03:46:46,455 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-09 03:46:46,460 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:46:46,489 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:46:46,489 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:46:51,068 basehttp "GET /catalog/description_book/1/?page=51 HTTP/1.1" 200 16851
+INFO 2025-05-09 03:46:51,106 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-09 03:46:51,111 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:46:51,133 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:46:51,134 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:46:57,030 basehttp "GET /catalog/description_book/1/?page=45 HTTP/1.1" 200 16851
+INFO 2025-05-09 03:46:57,065 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-09 03:46:57,069 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:46:57,093 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:46:57,094 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:47:57,090 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:47:57,091 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:09,471 basehttp "POST /notification/read/64/ HTTP/1.1" 302 0
+INFO 2025-05-09 03:48:09,544 basehttp "GET /accounts/profile/ HTTP/1.1" 200 9539
+INFO 2025-05-09 03:48:09,578 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-09 03:48:09,578 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:48:09,595 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:09,595 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:14,461 basehttp "GET /my_shelf/ HTTP/1.1" 200 7351
+WARNING 2025-05-09 03:48:14,498 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:48:14,515 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:14,516 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:16,376 basehttp "GET /catalog/ HTTP/1.1" 200 16601
+WARNING 2025-05-09 03:48:16,425 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:48:16,445 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:16,445 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:17,420 basehttp "GET /my_shelf/ HTTP/1.1" 200 7351
+WARNING 2025-05-09 03:48:17,453 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:48:17,470 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:17,471 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:18,296 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 16432
+WARNING 2025-05-09 03:48:18,333 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:48:18,360 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:18,360 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:30,297 basehttp "GET /catalog/description_book/1/?page=6 HTTP/1.1" 200 16416
+INFO 2025-05-09 03:48:30,328 basehttp "GET /static/css/style.css HTTP/1.1" 200 15628
+INFO 2025-05-09 03:48:30,339 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+WARNING 2025-05-09 03:48:30,340 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:48:30,340 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+WARNING 2025-05-09 03:48:31,185 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:31,186 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:31,273 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 200 5039880
+INFO 2025-05-09 03:48:42,538 basehttp "GET / HTTP/1.1" 200 12228
+WARNING 2025-05-09 03:48:42,586 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:48:42,613 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:42,613 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:43,934 basehttp "GET /catalog/ HTTP/1.1" 200 16601
+INFO 2025-05-09 03:48:43,968 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-09 03:48:43,974 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:48:43,995 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:43,995 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:45,479 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 16432
+WARNING 2025-05-09 03:48:45,520 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:48:45,544 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:45,546 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:49,254 basehttp "GET /catalog/description_book/1/?page=1 HTTP/1.1" 200 16432
+INFO 2025-05-09 03:48:49,294 basehttp "GET /static/css/style.css HTTP/1.1" 200 15628
+WARNING 2025-05-09 03:48:49,303 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:48:49,304 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+INFO 2025-05-09 03:48:49,304 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+WARNING 2025-05-09 03:48:49,687 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:49,687 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:49,704 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 200 16182
+INFO 2025-05-09 03:48:54,547 basehttp "GET /catalog/description_book/1/?page=2 HTTP/1.1" 200 16416
+INFO 2025-05-09 03:48:54,575 basehttp "GET /static/css/style.css HTTP/1.1" 200 15628
+WARNING 2025-05-09 03:48:54,585 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:48:54,586 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+INFO 2025-05-09 03:48:54,586 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+INFO 2025-05-09 03:48:54,723 basehttp "GET /catalog/description_book/1/?page=2 HTTP/1.1" 200 16416
+INFO 2025-05-09 03:48:54,757 basehttp "GET /static/css/style.css HTTP/1.1" 200 15628
+INFO 2025-05-09 03:48:54,767 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+WARNING 2025-05-09 03:48:54,767 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:48:54,767 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+WARNING 2025-05-09 03:48:54,923 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:54,924 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:54,940 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 200 16182
+INFO 2025-05-09 03:48:55,154 basehttp "GET /catalog/description_book/1/?page=2 HTTP/1.1" 200 16416
+INFO 2025-05-09 03:48:55,196 basehttp "GET /static/css/style.css HTTP/1.1" 200 15628
+INFO 2025-05-09 03:48:55,202 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+INFO 2025-05-09 03:48:55,203 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+WARNING 2025-05-09 03:48:55,203 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:48:55,326 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:48:55,326 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:48:55,344 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 200 16182
+INFO 2025-05-09 03:49:33,293 basehttp "GET /catalog/description_book/1/?page=3 HTTP/1.1" 200 16241
+INFO 2025-05-09 03:49:33,319 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-09 03:49:33,325 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:49:33,354 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:49:33,355 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:50:33,352 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:50:33,352 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:51:33,346 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:51:33,347 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:52:33,357 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:52:33,358 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:53:33,351 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:53:33,351 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-09 03:54:33,346 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:54:33,347 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:55:14,912 basehttp "GET /my_shelf/ HTTP/1.1" 200 7351
+INFO 2025-05-09 03:55:14,959 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-09 03:55:14,964 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:55:14,980 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:55:14,981 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:55:16,684 basehttp "GET / HTTP/1.1" 200 12228
+WARNING 2025-05-09 03:55:16,719 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-05-09 03:55:16,738 log Not Found: /api/notifications/count/
+WARNING 2025-05-09 03:55:16,739 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-09 03:56:16,430 basehttp "POST /logout/ HTTP/1.1" 200 2737
+INFO 2025-05-09 03:56:16,460 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-09 03:56:16,466 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:56:17,274 basehttp "GET /login/ HTTP/1.1" 200 3274
+WARNING 2025-05-09 03:56:17,304 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:56:31,283 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-09 03:56:31,347 basehttp "GET /bd_admin/ HTTP/1.1" 200 1670
+WARNING 2025-05-09 03:56:31,382 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:56:33,404 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 4976
+WARNING 2025-05-09 03:56:33,442 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:56:36,100 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 14084
+WARNING 2025-05-09 03:56:36,132 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:57:13,002 basehttp "POST /bd_admin/users/create/ HTTP/1.1" 200 14329
+WARNING 2025-05-09 03:57:13,033 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:57:38,196 basehttp "POST /bd_admin/users/create/ HTTP/1.1" 302 0
+INFO 2025-05-09 03:57:38,259 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 5473
+WARNING 2025-05-09 03:57:38,291 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:57:45,505 basehttp "GET /bd_admin/users/19/delete/ HTTP/1.1" 200 2157
+WARNING 2025-05-09 03:57:45,538 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:57:46,904 basehttp "POST /bd_admin/users/19/delete/ HTTP/1.1" 302 0
+INFO 2025-05-09 03:57:46,966 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 4976
+WARNING 2025-05-09 03:57:47,003 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:57:54,928 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 4976
+WARNING 2025-05-09 03:57:54,959 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-05-09 03:58:07,868 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 4976
+WARNING 2025-05-09 03:58:07,897 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850

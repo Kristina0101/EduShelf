@@ -32,15 +32,16 @@
     </div>
     
     <div class="pagination1">
-        <button onclick="changePage(-1)" id="prev-btn" class="nav-btn" {% if page_number == 1 %}disabled{% endif %}>&larr;</button>
         <span>Страница: <input type="number" id="page-input" value="{{ page_number }}" min="1" max="{{ total_pages }}" onchange="goToPage()"> / {{ total_pages }}</span>
-        <button onclick="changePage(1)" id="next-btn" class="nav-btn" {% if page_number == total_pages %}disabled{% endif %}>&rarr;</button>
         <button onclick="addBookmark()" class="nav-btn">Добавить закладку</button>
     </div>
     
-    <div class="pdf-viewer" data-total-pages="{{ total_pages }}">
-        <embed id="pdf-viewer" src="{{ book.book_file.url }}#page={{ page_number }}&toolbar=0" type="application/pdf" width="800px" height="900px">
-    </div>
+<!-- В вашем HTML замените блок pdf-viewer-container на этот: -->
+<div class="pdf-viewer-container">
+    <button id="prev-page-btn" class="page-nav-btn" onclick="changePage(-1)" {% if page_number == 1 %}disabled{% endif %}>&larr;</button>
+    <canvas id="pdf-canvas"></canvas>
+    <button id="next-page-btn" class="page-nav-btn" onclick="changePage(1)" {% if page_number == total_pages %}disabled{% endif %}>&rarr;</button>
+</div>
 
     <div class="bookmarks-section">
         <h3>Закладки:</h3>
@@ -147,57 +148,100 @@
         </table>
     </div>
 
-<script>
-    function changePage(offset) {
-        let pageInput = document.getElementById('page-input');
-        let totalPages = parseInt(document.querySelector('.pdf-viewer').dataset.totalPages);
-        
-        let newPage = parseInt(pageInput.value) + offset;
-        if (newPage >= 1 && newPage <= totalPages) {
-            window.location.href = "?page=" + newPage;
-        }
-    }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script>
+        // Текущая страница
+        let currentPage = parseInt("{{ page_number }}");
+        const totalPages = parseInt("{{ total_pages }}");
+        let pdfDoc = null;
 
-    function goToPage() {
-        let pageInput = document.getElementById('page-input');
-        let totalPages = parseInt(document.querySelector('.pdf-viewer').dataset.totalPages);
-        
-        let newPage = parseInt(pageInput.value);
-        if (newPage >= 1 && newPage <= totalPages) {
-            window.location.href = "?page=" + newPage;
-        } else {
-            alert("Неверный номер страницы");
-        }
-    }
-
-    function addBookmark() {
-        let pageInput = document.getElementById('page-input');
-        let currentPage = parseInt(pageInput.value);
-        
-        fetch('{% url "bookLibrary:add_bookmark" book.book_id %}', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': '{{ csrf_token }}'
-            },
-            body: JSON.stringify({
-                page_number: currentPage
-            })
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                alert('Закладка добавлена!');
-                location.reload();
-            } else {
-                alert(data.message || 'Ошибка при добавлении закладки');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Произошла ошибка');
+        // Инициализация PDF.js
+        pdfjsLib.getDocument("{{ book.book_file.url }}").promise.then(function(pdf) {
+            pdfDoc = pdf;
+            renderPage(currentPage);
         });
-    }
-</script>
+
+        // Отрисовка страницы
+        function renderPage(pageNum) {
+            pdfDoc.getPage(pageNum).then(function(page) {
+                const canvas = document.getElementById('pdf-canvas');
+                const ctx = canvas.getContext('2d');
+                const viewport = page.getViewport({ scale: 1.5 });
+
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+
+                page.render({
+                    canvasContext: ctx,
+                    viewport: viewport
+                });
+
+                // Обновляем номер страницы в поле ввода
+                document.getElementById('page-input').value = pageNum;
+                currentPage = pageNum;
+
+                // Обновляем URL без перезагрузки
+                history.pushState(null, null, `?page=${pageNum}`);
+
+                // Обновляем состояние кнопок
+                document.getElementById('prev-btn').disabled = pageNum <= 1;
+                document.getElementById('next-btn').disabled = pageNum >= totalPages;
+            });
+        }
+
+        // Переход на страницу
+        function changePage(offset) {
+            const newPage = currentPage + offset;
+            if (newPage >= 1 && newPage <= totalPages) {
+                renderPage(newPage);
+            }
+        }
+
+        // Ввод номера страницы вручную
+        function goToPage() {
+            const pageInput = document.getElementById('page-input');
+            const newPage = parseInt(pageInput.value);
+
+            if (newPage >= 1 && newPage <= totalPages) {
+                renderPage(newPage);
+            } else {
+                alert("Неверный номер страницы!");
+                pageInput.value = currentPage; // Возвращаем корректное значение
+            }
+        }
+
+        // Обработка клавиш (стрелки, PageUp/Down)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+                changePage(1);
+                e.preventDefault();
+            } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                changePage(-1);
+                e.preventDefault();
+            }
+        });
+
+        // Добавление закладки (остаётся без изменений)
+        function addBookmark() {
+            fetch('{% url "bookLibrary:add_bookmark" book.book_id %}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: JSON.stringify({
+                    page_number: currentPage
+                })
+            }).then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Закладка добавлена!');
+                    location.reload();
+                } else {
+                    alert(data.message || 'Ошибка при добавлении закладки');
+                }
+            });
+        }
+    </script>
 
 {% endblock %}

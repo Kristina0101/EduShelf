@@ -88,7 +88,6 @@ def register(request):
                 return render(request, 'users/register.html', {'form': form})
                 
         else:
-            # Обработка ошибок валидации формы
             error_messages = {
                 'username': {
                     'required': 'Имя пользователя обязательно для заполнения.',
