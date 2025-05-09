@@ -15,14 +15,14 @@
     {% endfor %}
 {% endif %}
 {% block content %}
-<a class="come_back_button" href="{% url 'bookLibrary:StudentsListView' %}"><p>Назад</p></a>
+<a class="btn-action" href="{% url 'bookLibrary:StudentsListView' %}"><p>Назад</p></a>
 <div class="form-wrapper">
     <header class="centered-content">
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form.as_p }}
             <label><br>
-                <button type="submit">Добавить</button>
+                <button type="submit" class="btn-action">Добавить</button>
             </label>
         </form>
     </header>

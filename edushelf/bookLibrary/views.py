@@ -1,4 +1,5 @@
 import json
+from django.db import IntegrityError
 from django.forms import ValidationError
 from django.shortcuts import render, get_object_or_404, redirect
 
@@ -24,6 +25,12 @@ from datetime import timedelta
 from django.db.models import Count
 from django.contrib.admin.views.decorators import staff_member_required
 from django.conf import settings
+from django.http import HttpResponseRedirect
+from django.core.exceptions import ValidationError
+from django.http import Http404
+from django.db.models.deletion import ProtectedError
+
+
 BASE_DIR = settings.BASE_DIR
 # Create your views here.
 def main_page(request):
@@ -218,14 +225,12 @@ def bd_admin_page(request):
     return render(request, 'bookLibrary/bd_admin/bd_admin_page.html')
 
 def statistic(request):
-    # Общая статистика
     total_users = User.objects.count()
     registered_students = Students.objects.filter(user__isnull=False).count()
     total_bookmarks = Bookmarks.objects.count()
     total_notes = Notes.objects.count()
     total_reviews = Reviews.objects.count()
 
-    # Статистика регистрации
     last_7_days = now() - timedelta(days=7)
     user_registration_stats = User.objects.filter(
         date_joined__gte=last_7_days
@@ -233,14 +238,12 @@ def statistic(request):
         count=Count('id')
     ).order_by('day')
 
-    # Статистика авторизаций
     login_stats = User.objects.filter(
         last_login__gte=last_7_days
     ).extra({'day': "date(last_login)"}).values('day').annotate(
         count=Count('id')
     ).order_by('day')
 
-    # Уникальные пользователи за последние 7 дней
     active_users_7days = User.objects.filter(
         last_login__gte=last_7_days
     ).distinct().count()
@@ -262,13 +265,12 @@ def statistic(request):
 def log_view(request):
     log_path = os.path.join(settings.BASE_DIR, 'logs', 'app.log')
     try:
-        # Пробуем несколько кодировок по очереди
         encodings = ['utf-8', 'cp1251', 'utf-16', 'iso-8859-1']
         
         for encoding in encodings:
             try:
                 with open(log_path, 'r', encoding=encoding) as f:
-                    log_content = f.read().splitlines()[-100:]  # Последние 100 строк
+                    log_content = f.read().splitlines()[-100:]
                 break
             except UnicodeDecodeError:
                 continue
@@ -284,54 +286,6 @@ def log_view(request):
     }
     return render(request, 'bookLibrary/bd_admin/logs.html', context)
 
-class StudentsListView(ListView):
-    model = Students
-    template_name = 'bookLibrary/bd_admin/students/ListView.html'
-    context_object_name = 'StudentsListView'
-    paginate_by = 10
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        StudentsListView = paginator.get_page(page)
-        context['StudentsListView'] = StudentsListView
-        return context
-
-
-class StudentsCreateView(CreateView):
-    model = Students
-    form_class = StudentsForm
-    template_name = 'bookLibrary/bd_admin/students/CreateView.html'
-    context_object_name = 'StudentsCreateView'
-    success_url = reverse_lazy('bookLibrary:StudentsListView')
-
-class StudentsDetailView(DetailView):
-    model = Students
-    pk_url_kwarg = 'pk'
-    template_name = 'bookLibrary/bd_admin/students/DetailView.html'
-    context_object_name = 'StudentsListView'
-
-class StudentsUpdateView(UpdateView):
-    model = Students
-    form_class = StudentsForm
-    pk_url_kwarg = 'pk'
-    context_object_name = 'StudentsUpdateView'
-    template_name = 'bookLibrary/bd_admin/students/UpdateView.html'
-    success_url = reverse_lazy('bookLibrary:StudentsListView')
-
-class StudentsDeleteView(DeleteView):
-    model = Students
-    context_object_name = 'StudentsDeleteView'
-    template_name = 'bookLibrary/bd_admin/students/DeleteView.html'
-    pk_url_kwarg = 'pk'
-    success_url = reverse_lazy('bookLibrary:StudentsListView')
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['student'] = get_object_or_404(Students, pk=self.kwargs['pk'])
-        return context
     
 
 class UsersListView(ListView):
@@ -342,10 +296,13 @@ class UsersListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        UsersListView = paginator.get_page(page)
-        context['UsersListView'] = UsersListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            UsersListView = paginator.get_page(page)
+            context['UsersListView'] = UsersListView
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке списка пользователей: {str(e)}')
         return context
 
 
@@ -356,11 +313,33 @@ class UsersCreateView(CreateView):
     context_object_name = 'UsersCreateView'
     success_url = reverse_lazy('bookLibrary:UsersListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Пользователь успешно добавлен!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при создании пользователя: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
+
 class UsersDetailView(DetailView):
     model = User
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/bd_admin/users/DetailView.html'
     context_object_name = 'UsersListView'
+
+    def get(self, request, *args, **kwargs):
+        try:
+            return super().get(request, *args, **kwargs)
+        except Exception as e:
+            messages.error(request, f'Ошибка при просмотре пользователя: {str(e)}')
+            return redirect('bookLibrary:UsersListView')
+
 
 class UsersUpdateView(UpdateView):
     model = User
@@ -369,6 +348,20 @@ class UsersUpdateView(UpdateView):
     context_object_name = 'UsersUpdateView'
     template_name = 'bookLibrary/bd_admin/users/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:UsersListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Пользователь успешно обновлен!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении пользователя: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
 
 class UsersDeleteView(DeleteView):
     model = User
@@ -379,9 +372,26 @@ class UsersDeleteView(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['user'] = get_object_or_404(User, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['user'] = get_object_or_404(User, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных пользователя: {str(e)}')
         return context
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Пользователь "{self.object.username}" успешно удален!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить пользователя: существуют зависимые записи')
+            return redirect('bookLibrary:UsersListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении пользователя: {str(e)}')
+            return redirect('bookLibrary:UsersListView')
     
 class StudentsListView(ListView):
     model = Students
@@ -479,24 +489,29 @@ class StudentsDeleteView(DeleteView):
     template_name = 'bookLibrary/bd_admin/students/DeleteView.html'
     pk_url_kwarg = 'pk'
     success_url = reverse_lazy('bookLibrary:StudentsListView')
-    success_message = "Студент успешно удалён"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['student'] = get_object_or_404(Students, pk=self.kwargs['pk'])
-        return context
-
-    def delete(self, request, *args, **kwargs):
         try:
-            student = self.get_object()
-            student_name = f"{student.last_name} {student.first_name}"
-            response = super().delete(request, *args, **kwargs)
-            messages.success(request, f'Студент {student_name} успешно удалён!')
-            return response
+            context['pk'] = self.kwargs['pk']
+            context['student'] = get_object_or_404(Students, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных студента: {str(e)}')
+        return context
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Студент {self.object.first_name} {self.object.last_name} успешно удален!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить студента: существуют зависимые записи')
+            return redirect('bookLibrary:StudentsListView')
         except Exception as e:
             messages.error(request, f'Ошибка при удалении студента: {str(e)}')
-            return redirect(self.success_url)
+            return redirect('bookLibrary:StudentsListView')
     
 
 class RolesListView(ListView):
@@ -507,10 +522,13 @@ class RolesListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        RolesListView = paginator.get_page(page)
-        context['RolesListView'] = RolesListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            roles_page = paginator.get_page(page)
+            context['RolesListView'] = roles_page
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке списка ролей: {str(e)}')
         return context
 
 
@@ -518,8 +536,21 @@ class RolesCreateView(CreateView):
     model = UserRoles
     form_class = UserRolesForm
     template_name = 'bookLibrary/bd_admin/roles/CreateView.html'
-    context_object_name = 'RolesCreateView'
     success_url = reverse_lazy('bookLibrary:RolesListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Роль успешно добавлена!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении роли: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
 
 class RolesDetailView(DetailView):
     model = UserRoles
@@ -527,26 +558,64 @@ class RolesDetailView(DetailView):
     template_name = 'bookLibrary/bd_admin/roles/DetailView.html'
     context_object_name = 'RolesListView'
 
+    def get(self, request, *args, **kwargs):
+        try:
+            return super().get(request, *args, **kwargs)
+        except Exception as e:
+            messages.error(request, f'Ошибка при просмотре роли: {str(e)}')
+            return redirect('bookLibrary:RolesListView')
+
+
 class RolesUpdateView(UpdateView):
     model = UserRoles
     form_class = UserRolesForm
     pk_url_kwarg = 'pk'
-    context_object_name = 'RolesUpdateView'
     template_name = 'bookLibrary/bd_admin/roles/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:RolesListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Роль успешно обновлена!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении роли: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
+
 class RolesDeleteView(DeleteView):
     model = UserRoles
-    context_object_name = 'RolesDeleteView'
     template_name = 'bookLibrary/bd_admin/roles/DeleteView.html'
     pk_url_kwarg = 'pk'
+    context_object_name = 'RolesDeleteView'
     success_url = reverse_lazy('bookLibrary:RolesListView')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['role'] = get_object_or_404(UserRoles, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['role'] = get_object_or_404(UserRoles, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных роли: {str(e)}')
         return context
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Роль "{self.object.role_name}" успешно удалена!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить роль: существуют зависимые записи')
+            return redirect('bookLibrary:RolesListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении роли: {str(e)}')
+            return redirect('bookLibrary:RolesListView')
     
 
 def my_shelf(request):
@@ -589,10 +658,13 @@ class StudListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        StudListView = paginator.get_page(page)
-        context['StudListView'] = StudListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            students_page = paginator.get_page(page)
+            context['StudListView'] = students_page
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке списка студентов: {str(e)}')
         return context
 
 
@@ -603,11 +675,33 @@ class StudCreateView(CreateView):
     context_object_name = 'StudCreateView'
     success_url = reverse_lazy('bookLibrary:StudListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Студент успешно добавлен!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении студента: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
+
 class StudDetailView(DetailView):
     model = Students
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/students/DetailView.html'
     context_object_name = 'StudListView'
+
+    def get(self, request, *args, **kwargs):
+        try:
+            return super().get(request, *args, **kwargs)
+        except Exception as e:
+            messages.error(request, f'Ошибка при просмотре данных студента: {str(e)}')
+            return redirect('bookLibrary:StudListView')
+
 
 class StudUpdateView(UpdateView):
     model = Students
@@ -616,6 +710,21 @@ class StudUpdateView(UpdateView):
     context_object_name = 'StudUpdateView'
     template_name = 'bookLibrary/administrator/students/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:StudListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Данные студента успешно обновлены!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении данных студента: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
+
 
 @csrf_exempt
 def import_students(request):
@@ -648,7 +757,7 @@ def import_students(request):
                     specialty=specialty
                 )
 
-            messages.success(request, "Импорт завершен успешно")
+            messages.success(request, "Импорт завершен успешно!")
         except Exception as e:
             messages.error(request, f"Ошибка при импорте: {str(e)}")
 
@@ -688,10 +797,13 @@ class SubjectsListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        SubjectsListView = paginator.get_page(page)
-        context['SubjectsListView'] = SubjectsListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            subjects_page = paginator.get_page(page)
+            context['SubjectsListView'] = subjects_page
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке предметов: {str(e)}')
         return context
 
 
@@ -699,8 +811,21 @@ class SubjectsCreateView(CreateView):
     model = Subjects
     form_class = SubjectsForm
     template_name = 'bookLibrary/administrator/subjects/CreateView.html'
-    context_object_name = 'SubjectsCreateView'
     success_url = reverse_lazy('bookLibrary:SubjectsListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Предмет успешно добавлен!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении предмета: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
 
 class SubjectsDetailView(DetailView):
     model = Subjects
@@ -708,26 +833,64 @@ class SubjectsDetailView(DetailView):
     template_name = 'bookLibrary/administrator/subjects/DetailView.html'
     context_object_name = 'SubjectsListView'
 
+    def get(self, request, *args, **kwargs):
+        try:
+            return super().get(request, *args, **kwargs)
+        except Exception as e:
+            messages.error(request, f'Ошибка при просмотре предмета: {str(e)}')
+            return redirect('bookLibrary:SubjectsListView')
+
+
 class SubjectsUpdateView(UpdateView):
     model = Subjects
     form_class = SubjectsForm
     pk_url_kwarg = 'pk'
-    context_object_name = 'SubjectsUpdateView'
     template_name = 'bookLibrary/administrator/subjects/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:SubjectsListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Предмет успешно обновлён!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении предмета: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
+
 class SubjectsDeleteView(DeleteView):
     model = Subjects
-    context_object_name = 'SubjectsDeleteView'
     template_name = 'bookLibrary/administrator/subjects/DeleteView.html'
     pk_url_kwarg = 'pk'
+    context_object_name = 'SubjectsDeleteView'
     success_url = reverse_lazy('bookLibrary:SubjectsListView')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['subject'] = get_object_or_404(Subjects, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['subject'] = get_object_or_404(Subjects, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных предмета: {str(e)}')
         return context
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Предмет "{self.object.subject_name}" успешно удалён!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить предмет: существуют зависимые записи')
+            return redirect('bookLibrary:SubjectsListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении предмета: {str(e)}')
+            return redirect('bookLibrary:SubjectsListView')
     
 
 class SpecialtiesListView(ListView):
@@ -738,10 +901,13 @@ class SpecialtiesListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        SpecialtiesListView = paginator.get_page(page)
-        context['SpecialtiesListView'] = SpecialtiesListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            specialties_page = paginator.get_page(page)
+            context['SpecialtiesListView'] = specialties_page
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке списка специальностей: {str(e)}')
         return context
 
 
@@ -752,19 +918,55 @@ class SpecialtiesCreateView(CreateView):
     context_object_name = 'SpecialtiesCreateView'
     success_url = reverse_lazy('bookLibrary:SpecialtiesListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Специальность успешно добавлена!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении специальности: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
+
 class SpecialtiesDetailView(DetailView):
     model = Specialties
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/specialties/DetailView.html'
     context_object_name = 'SpecialtiesListView'
 
+    def get(self, request, *args, **kwargs):
+        try:
+            return super().get(request, *args, **kwargs)
+        except Exception as e:
+            messages.error(request, f'Ошибка при просмотре специальности: {str(e)}')
+            return redirect('bookLibrary:SpecialtiesListView')
+
+
 class SpecialtiesUpdateView(UpdateView):
     model = Specialties
     form_class = SpecialtiesForm
     pk_url_kwarg = 'pk'
-    context_object_name = 'SpecialtiesUpdateView'
     template_name = 'bookLibrary/administrator/specialties/UpdateView.html'
+    context_object_name = 'SpecialtiesUpdateView'
     success_url = reverse_lazy('bookLibrary:SpecialtiesListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Специальность успешно обновлена!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении специальности: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
 
 class SpecialtiesDeleteView(DeleteView):
     model = Specialties
@@ -775,9 +977,26 @@ class SpecialtiesDeleteView(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['specialty'] = get_object_or_404(Specialties, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['specialty'] = get_object_or_404(Specialties, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных специальности: {str(e)}')
         return context
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Специальность "{self.object.specialty_name}" успешно удалена!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить специальность: существуют зависимые записи')
+            return redirect('bookLibrary:SpecialtiesListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении специальности: {str(e)}')
+            return redirect('bookLibrary:SpecialtiesListView')
     
 
 class EducationalInstitutionListView(ListView):
@@ -788,10 +1007,13 @@ class EducationalInstitutionListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        EducationalInstitutionListView = paginator.get_page(page)
-        context['EducationalInstitutionListView'] = EducationalInstitutionListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            institution_page = paginator.get_page(page)
+            context['EducationalInstitutionListView'] = institution_page
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке списка учебных заведений: {str(e)}')
         return context
 
 
@@ -802,19 +1024,55 @@ class EducationalInstitutionCreateView(CreateView):
     context_object_name = 'EducationalInstitutionCreateView'
     success_url = reverse_lazy('bookLibrary:EducationalInstitutionListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Учебное заведение успешно добавлено!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении учебного заведения: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
+
 class EducationalInstitutionDetailView(DetailView):
     model = EducationalInstitution
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/educationalInstitution/DetailView.html'
     context_object_name = 'EducationalInstitutionListView'
 
+    def get(self, request, *args, **kwargs):
+        try:
+            return super().get(request, *args, **kwargs)
+        except Exception as e:
+            messages.error(request, f'Ошибка при просмотре учебного заведения: {str(e)}')
+            return redirect('bookLibrary:EducationalInstitutionListView')
+
+
 class EducationalInstitutionUpdateView(UpdateView):
     model = EducationalInstitution
     form_class = EducationalInstitutionForm
     pk_url_kwarg = 'pk'
-    context_object_name = 'EducationalInstitutionUpdateView'
     template_name = 'bookLibrary/administrator/educationalInstitution/UpdateView.html'
+    context_object_name = 'EducationalInstitutionUpdateView'
     success_url = reverse_lazy('bookLibrary:EducationalInstitutionListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Учебное заведение успешно обновлено!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении учебного заведения: {str(e)}')
+            return self.form_invalid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Пожалуйста, исправьте ошибки в форме')
+        return super().form_invalid(form)
+
 
 class EducationalInstitutionDeleteView(DeleteView):
     model = EducationalInstitution
@@ -825,10 +1083,26 @@ class EducationalInstitutionDeleteView(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['institution'] = get_object_or_404(EducationalInstitution, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['institution'] = get_object_or_404(EducationalInstitution, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных учебного заведения: {str(e)}')
         return context
-
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Учебное заведение "{self.object.institution_name}" успешно удалено!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить учебное заведение: существуют зависимые записи')
+            return redirect('bookLibrary:EducationalInstitutionListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении учебного заведения: {str(e)}')
+            return redirect('bookLibrary:EducationalInstitutionListView')
 
 class BooksListView(ListView):
     model = Books
@@ -852,11 +1126,32 @@ class BooksCreateView(CreateView):
     context_object_name = 'BooksCreateView'
     success_url = reverse_lazy('bookLibrary:BooksListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Книга успешно добавлена!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка: такая книга уже существует!')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении книги: {str(e)}')
+            return self.form_invalid(form)
+
+
 class BooksDetailView(DetailView):
     model = Books
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/books/DetailView.html'
     context_object_name = 'BooksListView'
+
+    def get_object(self, queryset=None):
+        try:
+            return super().get_object(queryset)
+        except:
+            messages.error(self.request, 'Книга не найдена!')
+            raise Http404("Книга не существует")
+
 
 class BooksUpdateView(UpdateView):
     model = Books
@@ -865,6 +1160,16 @@ class BooksUpdateView(UpdateView):
     context_object_name = 'BooksUpdateView'
     template_name = 'bookLibrary/administrator/books/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:BooksListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Книга успешно обновлена!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении книги: {str(e)}')
+            return self.form_invalid(form)
+
 
 class BooksDeleteView(DeleteView):
     model = Books
@@ -875,10 +1180,27 @@ class BooksDeleteView(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['book'] = get_object_or_404(Books, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['book'] = get_object_or_404(Books, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных книги: {str(e)}')
         return context
     
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Книга "{self.object.book_title}" успешно удалена!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить книгу: существуют зависимые записи')
+            return redirect('bookLibrary:BooksListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении книги: {str(e)}')
+            return redirect('bookLibrary:BooksListView')
+
 
 class GenresListView(ListView):
     model = Genres
@@ -902,11 +1224,32 @@ class GenresCreateView(CreateView):
     context_object_name = 'GenresCreateView'
     success_url = reverse_lazy('bookLibrary:GenresListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Жанр успешно добавлен!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка: такой жанр уже существует!')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении жанра: {str(e)}')
+            return self.form_invalid(form)
+
+
 class GenresDetailView(DetailView):
     model = Genres
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/genres/DetailView.html'
     context_object_name = 'GenresListView'
+
+    def get_object(self, queryset=None):
+        try:
+            return super().get_object(queryset)
+        except:
+            messages.error(self.request, 'Жанр не найден!')
+            raise Http404("Жанр не существует")
+
 
 class GenresUpdateView(UpdateView):
     model = Genres
@@ -915,6 +1258,16 @@ class GenresUpdateView(UpdateView):
     context_object_name = 'GenresUpdateView'
     template_name = 'bookLibrary/administrator/genres/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:GenresListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Жанр успешно обновлен!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении жанра: {str(e)}')
+            return self.form_invalid(form)
+
 
 class GenresDeleteView(DeleteView):
     model = Genres
@@ -925,10 +1278,27 @@ class GenresDeleteView(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['genre'] = get_object_or_404(Genres, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['genre'] = get_object_or_404(Genres, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных жанра: {str(e)}')
         return context
     
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Жанр "{self.object.genre_name}" успешно удален!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить жанр: существуют связанные книги')
+            return redirect('bookLibrary:GenresListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении жанра: {str(e)}')
+            return redirect('bookLibrary:GenresListView')
+
 
 class AuthorsListView(ListView):
     model = Authors
@@ -952,11 +1322,32 @@ class AuthorsCreateView(CreateView):
     context_object_name = 'AuthorsCreateView'
     success_url = reverse_lazy('bookLibrary:AuthorsListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Автор успешно добавлен!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка: такой автор уже существует!')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении автора: {str(e)}')
+            return self.form_invalid(form)
+
+
 class AuthorsDetailView(DetailView):
     model = Authors
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/authors/DetailView.html'
     context_object_name = 'AuthorsListView'
+
+    def get_object(self, queryset=None):
+        try:
+            return super().get_object(queryset)
+        except:
+            messages.error(self.request, 'Автор не найден!')
+            raise Http404("Автор не существует")
+
 
 class AuthorsUpdateView(UpdateView):
     model = Authors
@@ -965,6 +1356,16 @@ class AuthorsUpdateView(UpdateView):
     context_object_name = 'AuthorsUpdateView'
     template_name = 'bookLibrary/administrator/authors/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:AuthorsListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Автор успешно обновлен!')
+            return response
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении автора: {str(e)}')
+            return self.form_invalid(form)
+
 
 class AuthorsDeleteView(DeleteView):
     model = Authors
@@ -975,9 +1376,26 @@ class AuthorsDeleteView(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['author'] = get_object_or_404(Authors, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['author'] = get_object_or_404(Authors, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных автора: {str(e)}')
         return context
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Автор "{self.object.first_name}" успешно удален!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить автора: существуют связанные книги')
+            return redirect('bookLibrary:AuthorsListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении автора: {str(e)}')
+            return redirect('bookLibrary:AuthorsListView')
     
 
 class PublishersListView(ListView):
@@ -988,10 +1406,13 @@ class PublishersListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        PublishersListView = paginator.get_page(page)
-        context['PublishersListView'] = PublishersListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            PublishersListView = paginator.get_page(page)
+            context['PublishersListView'] = PublishersListView
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке списка издательств: {str(e)}')
         return context
 
 
@@ -1002,11 +1423,35 @@ class PublishersCreateView(CreateView):
     context_object_name = 'PublishersCreateView'
     success_url = reverse_lazy('bookLibrary:PublishersListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Издательство успешно добавлено!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка: такое издательство уже существует!')
+            return self.form_invalid(form)
+        except ValidationError as e:
+            messages.error(self.request, f'Ошибка валидации: {", ".join(e.messages)}')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при добавлении издательства: {str(e)}')
+            return self.form_invalid(form)
+
+
 class PublishersDetailView(DetailView):
     model = Publishers
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/publishers/DetailView.html'
     context_object_name = 'PublishersListView'
+
+    def get_object(self, queryset=None):
+        try:
+            return super().get_object(queryset)
+        except Exception:
+            messages.error(self.request, 'Издательство не найдено!')
+            raise Http404("Издательство не существует")
+
 
 class PublishersUpdateView(UpdateView):
     model = Publishers
@@ -1015,6 +1460,22 @@ class PublishersUpdateView(UpdateView):
     context_object_name = 'PublishersUpdateView'
     template_name = 'bookLibrary/administrator/publishers/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:PublishersListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Издательство успешно обновлено!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка: такое издательство уже существует!')
+            return self.form_invalid(form)
+        except ValidationError as e:
+            messages.error(self.request, f'Ошибка валидации: {", ".join(e.messages)}')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении издательства: {str(e)}')
+            return self.form_invalid(form)
+
 
 class PublishersDeleteView(DeleteView):
     model = Publishers
@@ -1025,9 +1486,26 @@ class PublishersDeleteView(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['publisher'] = get_object_or_404(Publishers, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['publisher'] = get_object_or_404(Publishers, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных издательства: {str(e)}')
         return context
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Издательство "{self.object.publisher_name}" успешно удалено!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить издательство: существуют связанные книги')
+            return redirect('bookLibrary:PublishersListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении издательства: {str(e)}')
+            return redirect('bookLibrary:PublishersListView')
     
 class ReviewsListView(ListView):
     model = Reviews
@@ -1037,17 +1515,29 @@ class ReviewsListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        ReviewsListView = paginator.get_page(page)
-        context['ReviewsListView'] = ReviewsListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            ReviewsListView = paginator.get_page(page)
+            context['ReviewsListView'] = ReviewsListView
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке списка отзывов: {str(e)}')
         return context
+
 
 class ReviewsDetailView(DetailView):
     model = Reviews
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/reviews/DetailView.html'
     context_object_name = 'ReviewsListView'
+
+    def get_object(self, queryset=None):
+        try:
+            return super().get_object(queryset)
+        except Exception:
+            messages.error(self.request, 'Отзыв не найден!')
+            raise Http404("Отзыв не существует")
+
 
 class ReviewsUpdateView(UpdateView):
     model = Reviews
@@ -1056,6 +1546,22 @@ class ReviewsUpdateView(UpdateView):
     context_object_name = 'ReviewsUpdateView'
     template_name = 'bookLibrary/administrator/reviews/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:ReviewsListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Отзыв успешно обновлен!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка при обновлении отзыва!')
+            return self.form_invalid(form)
+        except ValidationError as e:
+            messages.error(self.request, f'Ошибка валидации: {", ".join(e.messages)}')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении отзыва: {str(e)}')
+            return self.form_invalid(form)
+
 
 class ReviewsDeleteView(DeleteView):
     model = Reviews
@@ -1066,9 +1572,26 @@ class ReviewsDeleteView(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['review'] = get_object_or_404(Reviews, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['review'] = get_object_or_404(Reviews, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных отзыва: {str(e)}')
         return context
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'"{self.object}" успешно удален!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить отзыв: существуют зависимые записи')
+            return redirect('bookLibrary:ReviewsListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении отзыва: {str(e)}')
+            return redirect('bookLibrary:ReviewsListView')
     
 
 class SubjectSpecialtyLinkListView(ListView):
@@ -1079,10 +1602,13 @@ class SubjectSpecialtyLinkListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        SubjectSpecialtyLinkListView = paginator.get_page(page)
-        context['SubjectSpecialtyLinkListView'] = SubjectSpecialtyLinkListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            SubjectSpecialtyLinkListView = paginator.get_page(page)
+            context['SubjectSpecialtyLinkListView'] = SubjectSpecialtyLinkListView
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке списка связей предмет-специальность: {str(e)}')
         return context
     
 class SubjectSpecialtyLinkCreateView(CreateView):
@@ -1092,11 +1618,33 @@ class SubjectSpecialtyLinkCreateView(CreateView):
     context_object_name = 'SubjectSpecialtyLinkCreateView'
     success_url = reverse_lazy('bookLibrary:SubjectSpecialtyLinkListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Связь предмет-специальность успешно добавлена!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка: такая связь уже существует!')
+            return self.form_invalid(form)
+        except ValidationError as e:
+            messages.error(self.request, f'Ошибка валидации: {", ".join(e.messages)}')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при создании связи: {str(e)}')
+            return self.form_invalid(form)
+
 class SubjectSpecialtyLinkDetailView(DetailView):
     model = SubjectSpecialtyLink
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/subjectSpecialtyLink/DetailView.html'
     context_object_name = 'SubjectSpecialtyLinkListView'
+
+    def get_object(self, queryset=None):
+        try:
+            return super().get_object(queryset)
+        except Exception:
+            messages.error(self.request, 'Связь предмет-специальность не найдена!')
+            raise Http404("Связь не существует")
 
 class SubjectSpecialtyLinkUpdateView(UpdateView):
     model = SubjectSpecialtyLink
@@ -1105,6 +1653,21 @@ class SubjectSpecialtyLinkUpdateView(UpdateView):
     context_object_name = 'SubjectSpecialtyLinkUpdateView'
     template_name = 'bookLibrary/administrator/subjectSpecialtyLink/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:SubjectSpecialtyLinkListView')
+
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Связь предмет-специальность успешно обновлена!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка: такая связь уже существует!')
+            return self.form_invalid(form)
+        except ValidationError as e:
+            messages.error(self.request, f'Ошибка валидации: {", ".join(e.messages)}')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении связи: {str(e)}')
+            return self.form_invalid(form)
 
 class SubjectSpecialtyLinkDeleteView(DeleteView):
     model = SubjectSpecialtyLink
@@ -1115,10 +1678,28 @@ class SubjectSpecialtyLinkDeleteView(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['subjectSpecialty'] = get_object_or_404(SubjectSpecialtyLink, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['subjectSpecialty'] = get_object_or_404(SubjectSpecialtyLink, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных связи: {str(e)}')
         return context
     
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Связь предмет-специальность "{self.object}" успешно удалена!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить связь: существуют зависимые записи')
+            return redirect('bookLibrary:SubjectSpecialtyLinkListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении связи: {str(e)}')
+            return redirect('bookLibrary:SubjectSpecialtyLinkListView')
+
+# Классы для работы со статусами
 class StatusListView(ListView):
     model = Status
     template_name = 'bookLibrary/administrator/status/ListView.html'
@@ -1127,10 +1708,13 @@ class StatusListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        paginator = Paginator(self.get_queryset(), self.paginate_by)
-        page = self.request.GET.get('page')
-        StatusListView = paginator.get_page(page)
-        context['StatusListView'] = StatusListView
+        try:
+            paginator = Paginator(self.get_queryset(), self.paginate_by)
+            page = self.request.GET.get('page')
+            StatusListView = paginator.get_page(page)
+            context['StatusListView'] = StatusListView
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при загрузке списка статусов: {str(e)}')
         return context
     
 class StatusCreateView(CreateView):
@@ -1140,11 +1724,33 @@ class StatusCreateView(CreateView):
     context_object_name = 'StatusCreateView'
     success_url = reverse_lazy('bookLibrary:StatusListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Статус успешно добавлен!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка: такой статус уже существует!')
+            return self.form_invalid(form)
+        except ValidationError as e:
+            messages.error(self.request, f'Ошибка валидации: {", ".join(e.messages)}')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при создании статуса: {str(e)}')
+            return self.form_invalid(form)
+
 class StatusDetailView(DetailView):
     model = Status
     pk_url_kwarg = 'pk'
     template_name = 'bookLibrary/administrator/status/DetailView.html'
     context_object_name = 'StatusListView'
+
+    def get_object(self, queryset=None):
+        try:
+            return super().get_object(queryset)
+        except Exception:
+            messages.error(self.request, 'Статус не найден!')
+            raise Http404("Статус не существует")
 
 class StatusUpdateView(UpdateView):
     model = Status
@@ -1154,18 +1760,53 @@ class StatusUpdateView(UpdateView):
     template_name = 'bookLibrary/administrator/status/UpdateView.html'
     success_url = reverse_lazy('bookLibrary:StatusListView')
 
+    def form_valid(self, form):
+        try:
+            response = super().form_valid(form)
+            messages.success(self.request, 'Статус успешно обновлен!')
+            return response
+        except IntegrityError:
+            messages.error(self.request, 'Ошибка: такой статус уже существует!')
+            return self.form_invalid(form)
+        except ValidationError as e:
+            messages.error(self.request, f'Ошибка валидации: {", ".join(e.messages)}')
+            return self.form_invalid(form)
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при обновлении статуса: {str(e)}')
+            return self.form_invalid(form)
+
 class StatusDeleteView(DeleteView):
     model = Status
     context_object_name = 'StatusDeleteView'
     template_name = 'bookLibrary/administrator/status/DeleteView.html'
     pk_url_kwarg = 'pk'
     success_url = reverse_lazy('bookLibrary:StatusListView')
+    
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pk'] = self.kwargs['pk']
-        context['status'] = get_object_or_404(Status, pk=self.kwargs['pk'])
+        try:
+            context['pk'] = self.kwargs['pk']
+            context['status'] = get_object_or_404(Status, pk=self.kwargs['pk'])
+        except Exception as e:
+            messages.error(self.request, f'Ошибка при получении данных статуса: {str(e)}')
         return context
+    
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+            success_message = f'Статус "{self.object.status_name}" успешно удален!'
+            self.object.delete()
+            messages.success(request, success_message)
+            return redirect(self.get_success_url())
+        except ProtectedError:
+            messages.error(request, 'Невозможно удалить статус: существуют зависимые записи')
+            return redirect('bookLibrary:StatusListView')
+        except Exception as e:
+            messages.error(request, f'Ошибка при удалении статуса: {str(e)}')
+            return redirect('bookLibrary:StatusListView')
+        
+        
 @require_POST
 def send_site_update_notification(request):
     print(f"Request method: {request.method}")
