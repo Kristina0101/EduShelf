@@ -1,9 +1,11 @@
+<!-- Добавляем в шапку кнопку для мобильного меню -->
 <header>
   <div class="header-top">
     <div class="logo">
         <div class="logo-text">
             <h1>EduShelf</h1>
-            <p>Online library</p></div>
+            <p>Online library</p>
+        </div>
         {% if user.is_authenticated %}
         <div class="logo-notifications-admin">
             <div class="notifications-menu">
@@ -37,8 +39,9 @@
         </div>
         {% endif %}
     </div>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
   </div>
-  <nav>
+  <nav class="main-nav" id="main-nav">
     <ul>
       <li><a href="{% url 'bookLibrary:main_page' %}">Главная</a></li>
       <li><a href="{% url 'bookLibrary:catalog' %}">Каталог</a></li>
@@ -74,8 +77,18 @@
     {% endif %}
   </nav>
 </header>
+
 <script>
+  // Мобильное меню
   document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mainNav = document.getElementById('main-nav');
+      
+      mobileMenuToggle.addEventListener('click', function() {
+          mainNav.classList.toggle('active');
+      });
+      
+      // Уведомления (существующий код)
       const toggleBtn = document.getElementById('notifications-toggle');
       const menu = document.getElementById('notifications-menu');
       
@@ -97,11 +110,13 @@
               .then(response => response.json())
               .then(data => {
                   const badge = document.querySelector('.notification-badge');
-                  badge.textContent = data.count;
-                  if (data.count > 0) {
-                      badge.style.display = 'flex';
-                  } else {
-                      badge.style.display = 'none';
+                  if (badge) {
+                      badge.textContent = data.count;
+                      if (data.count > 0) {
+                          badge.style.display = 'flex';
+                      } else {
+                          badge.style.display = 'none';
+                      }
                   }
               });
       }

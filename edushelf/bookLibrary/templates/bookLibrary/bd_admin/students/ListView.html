@@ -59,4 +59,43 @@
     </div>
 
 </header>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Функция для переключения мобильного меню
+        function toggleMobileMenu() {
+            const nav = document.querySelector('nav ul');
+            if (nav) {
+                nav.classList.toggle('mobile-active');
+            }
+        }
+        
+        // Добавляем кнопку меню для мобильных устройств
+        function addMobileMenuButton() {
+            const nav = document.querySelector('nav');
+            if (nav && !document.querySelector('.mobile-menu-btn')) {
+                const menuButton = document.createElement('button');
+                menuButton.className = 'mobile-menu-btn';
+                menuButton.innerHTML = '☰';
+                menuButton.onclick = toggleMobileMenu;
+                nav.prepend(menuButton);
+            }
+        }
+        
+        // Проверяем размер экрана и добавляем/удаляем кнопку меню
+        function checkScreenSize() {
+            if (window.innerWidth <= 992) {
+                addMobileMenuButton();
+            } else {
+                const btn = document.querySelector('.mobile-menu-btn');
+                if (btn) btn.remove();
+                const nav = document.querySelector('nav ul');
+                if (nav) nav.classList.remove('mobile-active');
+            }
+        }
+        
+        // Проверяем размер экрана при загрузке и изменении размера
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+    });
+</script>
 {% endblock %}
