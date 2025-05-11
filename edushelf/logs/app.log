@@ -12126,3 +12126,405 @@ WARNING 2025-05-11 18:57:45,660 log Bad Request: /api/notifications/count/
 WARNING 2025-05-11 18:57:45,660 basehttp "GET /api/notifications/count/ HTTP/1.1" 400 83381
 WARNING 2025-05-11 18:57:55,642 log Not Found: /api/notifications/count/
 WARNING 2025-05-11 18:57:55,643 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28256
+INFO 2025-05-11 19:26:22,447 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-11 19:26:49,753 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:26:49,795 log Bad Request: /administrator/subjects/
+WARNING 2025-05-11 19:26:49,795 basehttp "GET /administrator/subjects/ HTTP/1.1" 400 84056
+ERROR 2025-05-11 19:26:49,937 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:26:49,962 log Bad Request: /favicon.ico
+WARNING 2025-05-11 19:26:49,962 basehttp "GET /favicon.ico HTTP/1.1" 400 83325
+ERROR 2025-05-11 19:26:51,874 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:26:51,892 log Bad Request: /administrator/subjects/
+WARNING 2025-05-11 19:26:51,892 basehttp "GET /administrator/subjects/ HTTP/1.1" 400 84056
+ERROR 2025-05-11 19:26:51,977 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:26:51,997 log Bad Request: /favicon.ico
+WARNING 2025-05-11 19:26:51,997 basehttp "GET /favicon.ico HTTP/1.1" 400 83325
+INFO 2025-05-11 19:27:12,579 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-11 19:27:15,208 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:15,244 log Bad Request: /administrator/subjects/
+WARNING 2025-05-11 19:27:15,245 basehttp "GET /administrator/subjects/ HTTP/1.1" 400 84033
+ERROR 2025-05-11 19:27:15,325 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:15,348 log Bad Request: /favicon.ico
+WARNING 2025-05-11 19:27:15,349 basehttp "GET /favicon.ico HTTP/1.1" 400 83302
+ERROR 2025-05-11 19:27:16,246 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:16,268 log Bad Request: /administrator/subjects/
+WARNING 2025-05-11 19:27:16,268 basehttp "GET /administrator/subjects/ HTTP/1.1" 400 84033
+ERROR 2025-05-11 19:27:16,355 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:16,382 log Bad Request: /favicon.ico
+WARNING 2025-05-11 19:27:16,382 basehttp "GET /favicon.ico HTTP/1.1" 400 83302
+ERROR 2025-05-11 19:27:16,807 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:16,822 log Bad Request: /administrator/subjects/
+WARNING 2025-05-11 19:27:16,823 basehttp "GET /administrator/subjects/ HTTP/1.1" 400 84033
+ERROR 2025-05-11 19:27:16,901 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:16,920 log Bad Request: /favicon.ico
+WARNING 2025-05-11 19:27:16,920 basehttp "GET /favicon.ico HTTP/1.1" 400 83302
+ERROR 2025-05-11 19:27:17,374 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:17,388 log Bad Request: /administrator/subjects/
+WARNING 2025-05-11 19:27:17,389 basehttp "GET /administrator/subjects/ HTTP/1.1" 400 84033
+ERROR 2025-05-11 19:27:17,472 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:17,492 log Bad Request: /favicon.ico
+WARNING 2025-05-11 19:27:17,492 basehttp "GET /favicon.ico HTTP/1.1" 400 83302
+ERROR 2025-05-11 19:27:17,848 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:17,864 log Bad Request: /administrator/subjects/
+WARNING 2025-05-11 19:27:17,864 basehttp "GET /administrator/subjects/ HTTP/1.1" 400 84033
+ERROR 2025-05-11 19:27:17,943 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:27:17,964 log Bad Request: /favicon.ico
+WARNING 2025-05-11 19:27:17,964 basehttp "GET /favicon.ico HTTP/1.1" 400 83302
+INFO 2025-05-11 19:27:19,760 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 304 0
+INFO 2025-05-11 19:27:55,898 basehttp "GET / HTTP/1.1" 200 19261
+INFO 2025-05-11 19:27:56,027 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:27:56,027 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:27:56,028 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:27:56,028 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 304 0
+INFO 2025-05-11 19:27:56,037 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 304 0
+WARNING 2025-05-11 19:27:56,074 log Not Found: /api/notifications/count/
+INFO 2025-05-11 19:27:56,074 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:27:56,074 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:27:56,074 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 304 0
+WARNING 2025-05-11 19:27:56,075 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28256
+INFO 2025-05-11 19:27:58,239 basehttp "GET / HTTP/1.1" 200 19261
+WARNING 2025-05-11 19:27:58,288 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:27:58,289 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28256
+INFO 2025-05-11 19:28:01,130 basehttp "GET /catalog/ HTTP/1.1" 200 29665
+INFO 2025-05-11 19:28:01,173 basehttp "GET /media/book/2025/03/13/%D0%93%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B.webp HTTP/1.1" 200 18858
+WARNING 2025-05-11 19:28:01,185 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:28:01,186 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28256
+INFO 2025-05-11 19:28:01,187 basehttp "GET /media/book/2025/03/13/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8._C%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B_%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B8_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B_%D0%B8_%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F.webp HTTP/1.1" 200 75752
+INFO 2025-05-11 19:28:01,914 basehttp "GET / HTTP/1.1" 200 19261
+WARNING 2025-05-11 19:28:01,964 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:28:01,965 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28256
+INFO 2025-05-11 19:28:03,086 basehttp "GET /catalog/ HTTP/1.1" 200 29665
+WARNING 2025-05-11 19:28:03,143 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:28:03,144 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28256
+INFO 2025-05-11 19:28:03,952 basehttp "GET / HTTP/1.1" 200 19261
+WARNING 2025-05-11 19:28:04,001 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:28:04,001 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28256
+INFO 2025-05-11 19:28:04,731 basehttp "GET /catalog/ HTTP/1.1" 200 29665
+WARNING 2025-05-11 19:28:04,797 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:28:04,799 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28256
+INFO 2025-05-11 19:28:05,211 basehttp "GET / HTTP/1.1" 200 19261
+WARNING 2025-05-11 19:28:05,260 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:28:05,260 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28256
+INFO 2025-05-11 19:28:11,729 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-11 19:28:12,543 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 19:28:17,252 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-11 19:28:46,754 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:28:46,794 log Bad Request: /
+WARNING 2025-05-11 19:28:46,794 basehttp "GET / HTTP/1.1" 400 83430
+ERROR 2025-05-11 19:28:47,045 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-11 19:28:47,067 log Bad Request: /favicon.ico
+WARNING 2025-05-11 19:28:47,067 basehttp "GET /favicon.ico HTTP/1.1" 400 83250
+INFO 2025-05-11 19:28:55,952 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-11 19:28:56,830 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 19:28:58,752 basehttp "GET / HTTP/1.1" 200 46553
+INFO 2025-05-11 19:28:58,786 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,790 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,791 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,792 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,792 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,792 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,825 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,825 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,825 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,826 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:28:58,826 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 304 0
+WARNING 2025-05-11 19:28:58,853 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:28:58,854 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:29:00,336 basehttp "GET / HTTP/1.1" 200 46553
+WARNING 2025-05-11 19:29:00,386 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:29:00,386 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:29:02,709 basehttp "GET /catalog/ HTTP/1.1" 200 56957
+INFO 2025-05-11 19:29:02,743 basehttp "GET /media/book/2025/03/13/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B._%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D0%B8_%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:29:02,743 basehttp "GET /media/book/2025/03/13/%D0%93%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-11 19:29:02,743 basehttp "GET /media/book/2025/03/13/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8._C%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B_%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B8_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B_%D0%B8_%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F.webp HTTP/1.1" 304 0
+WARNING 2025-05-11 19:29:02,787 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:29:02,788 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:29:03,851 basehttp "GET /accounts/profile/ HTTP/1.1" 200 43825
+WARNING 2025-05-11 19:29:03,903 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:29:03,904 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:29:13,091 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 19:29:14,871 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 19:29:21,573 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:29:21,644 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 19:29:21,670 basehttp "GET /static/js/script.js HTTP/1.1" 304 0
+INFO 2025-05-11 19:29:21,670 basehttp "GET /static/css/bd_admin.css HTTP/1.1" 304 0
+INFO 2025-05-11 19:29:23,329 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 19:29:24,537 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 19:29:38,260 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:29:38,312 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 19:29:39,777 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 19:29:41,009 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 19:29:51,767 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:29:51,837 basehttp "GET /administrator/ HTTP/1.1" 200 8210
+WARNING 2025-05-11 19:29:51,885 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:29:51,885 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:29:57,948 basehttp "GET /administrator/students/ HTTP/1.1" 200 16689
+WARNING 2025-05-11 19:29:58,007 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:29:58,008 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 19:30:58,650 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:30:58,650 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:31:14,749 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+WARNING 2025-05-11 19:31:17,552 log Not Found: /favicon.ico
+WARNING 2025-05-11 19:31:17,553 basehttp "GET /favicon.ico HTTP/1.1" 404 28214
+INFO 2025-05-11 19:32:19,959 basehttp "POST /send-update/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:32:20,047 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7641
+INFO 2025-05-11 19:32:34,957 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:33:35,960 basehttp "POST /send-update/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:33:36,035 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7641
+INFO 2025-05-11 19:33:40,705 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:33:41,620 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:35:09,514 basehttp "POST /send-update/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:35:09,584 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7641
+INFO 2025-05-11 19:35:17,698 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:35:18,909 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:36:07,515 basehttp "POST /send-update/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:36:07,584 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7641
+INFO 2025-05-11 19:36:11,729 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:36:12,777 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:37:09,513 basehttp "POST /send-update/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:37:09,585 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7641
+INFO 2025-05-11 19:37:12,348 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:37:12,867 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:38:50,491 basehttp "POST /send-update/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:38:50,557 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7641
+INFO 2025-05-11 19:38:58,877 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:38:59,820 basehttp "GET /send-update-form/ HTTP/1.1" 200 634
+INFO 2025-05-11 19:40:06,208 basehttp "POST /send-update/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:40:06,277 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7641
+INFO 2025-05-11 19:40:07,654 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 19:40:08,881 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 19:40:26,529 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:40:26,606 basehttp "GET / HTTP/1.1" 200 24971
+WARNING 2025-05-11 19:40:26,660 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:40:26,660 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:41:15,647 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 19:41:16,658 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 19:41:29,185 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:41:29,242 basehttp "GET /administrator/ HTTP/1.1" 200 15448
+WARNING 2025-05-11 19:41:29,291 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:41:29,291 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:42:01,465 basehttp "POST /notification/read/148/ HTTP/1.1" 302 0
+INFO 2025-05-11 19:42:01,524 basehttp "GET /accounts/profile/ HTTP/1.1" 200 15451
+WARNING 2025-05-11 19:42:01,577 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:42:01,578 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:42:05,036 basehttp "GET /administrator/ HTTP/1.1" 200 14994
+WARNING 2025-05-11 19:42:05,067 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 19:42:05,068 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 19:42:11,165 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 19:42:21,574 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:05:23,615 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:05:24,227 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:05:25,460 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:05:26,038 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-11 20:05:26,748 basehttp "GET /catalog/?sort=title_asc HTTP/1.1" 200 20514
+INFO 2025-05-11 20:05:28,211 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:05:28,217 basehttp "GET /login/?next=/catalog/description_book/1/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:09:39,919 basehttp "GET / HTTP/1.1" 200 10110
