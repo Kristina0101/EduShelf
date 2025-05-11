@@ -8,6 +8,18 @@
 {% endblock %}
 
 {% block content %}
+<!-- Мобильная сортировка -->
+<div class="mobile-sort">
+    <select class="mobile-sort-select" onchange="location = this.value;">
+        <option value="{% url 'bookLibrary:catalog' %}?sort=none" {% if sort_field == 'none' %}selected{% endif %}>По умолчанию</option>
+        <option value="{% url 'bookLibrary:catalog' %}?sort=title_asc" {% if sort_field == 'title_asc' %}selected{% endif %}>Название А-Я</option>
+        <option value="{% url 'bookLibrary:catalog' %}?sort=title_desc" {% if sort_field == 'title_desc' %}selected{% endif %}>Название Я-А</option>
+        <option value="{% url 'bookLibrary:catalog' %}?sort=author_asc" {% if sort_field == 'author_asc' %}selected{% endif %}>Автор А-Я</option>
+        <option value="{% url 'bookLibrary:catalog' %}?sort=author_desc" {% if sort_field == 'author_desc' %}selected{% endif %}>Автор Я-А</option>
+    </select>
+</div>
+
+<!-- Десктопная сортировка -->
 <div class="sort-options">
     <span>Сортировать:</span>
     <a href="{% url 'bookLibrary:catalog' %}?sort=none" {% if sort_field == 'none' %}class="selected"{% endif %}>По умолчанию</a> |
@@ -16,10 +28,39 @@
     <a href="{% url 'bookLibrary:catalog' %}?sort=author_asc" {% if sort_field == 'author_asc' %}class="selected"{% endif %}>Автор А-Я</a> |
     <a href="{% url 'bookLibrary:catalog' %}?sort=author_desc" {% if sort_field == 'author_desc' %}class="selected"{% endif %}>Автор Я-А</a>
 </div>
+
 <div class="profile-container">
+    <!-- Мобильные фильтры -->
+    <div class="mobile-filters">
+        <button class="mobile-filters-toggle">Фильтры ▼</button>
+        <div class="mobile-filters-content">
+            <form method="GET">
+                <div class="mobile-filter-group">
+                    <label>Жанр</label>
+                    <select class="mobile-filter-select" name="genre" onchange="this.form.submit()">
+                        <option value="">Все жанры</option>
+                        {% for gener in geners %}
+                            <option value="{{ gener.genre_id }}" {% if selected_genre == gener.genre_id|stringformat:"s" %}selected{% endif %}>{{ gener.genre_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                <div class="mobile-filter-group">
+                    <label>Предмет</label>
+                    <select class="mobile-filter-select" name="subject" onchange="this.form.submit()">
+                        <option value="">Все предметы</option>
+                        {% for subject in subjects %}
+                            <option value="{{ subject.subject_id }}" {% if selected_subject == subject.subject_id|stringformat:"s" %}selected{% endif %}>{{ subject.subject_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Десктопные фильтры -->
     <aside class="category-panel">
         <h2>Категории</h2>
-
         <form method="GET">
             <h3>Жанр</h3>
             <ul class="filter-list">
@@ -39,7 +80,6 @@
         </form>
     </aside>
     
-
     <div class="book-container">
         {% for book in books %}
         <a href="{% url 'bookLibrary:description_book' book.pk %}" class="book-link">
@@ -71,5 +111,14 @@
         <a href="?page={{ books.paginator.num_pages }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_subject %}&subject={{ selected_subject }}{% endif %}{% if sort_field %}&sort={{ sort_field }}{% endif %}" class="page-btn">»»</a>
     {% endif %}
 </div>
+
+<script>
+// Переключение мобильных фильтров
+document.querySelector('.mobile-filters-toggle').addEventListener('click', function() {
+    const content = document.querySelector('.mobile-filters-content');
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    this.textContent = content.style.display === 'block' ? 'Фильтры ▲' : 'Фильтры ▼';
+});
+</script>
 
 {% endblock %}

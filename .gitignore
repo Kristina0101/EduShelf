@@ -1,1 +1,18 @@
+venv/
+.env/
+.env.local
 
+
+*.pyc
+*.pyo
+*.pyd
+*.so
+__pycache__/
+
+
+*.log
+*.sqlite3
+*.db
+
+
+.ipynb_checkpoints/

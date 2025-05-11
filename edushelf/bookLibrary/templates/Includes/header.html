@@ -39,9 +39,9 @@
         </div>
         {% endif %}
     </div>
-    <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+    <button class="mobile-menu-btn" id="mobile-menu-toggle">☰</button>
   </div>
-  <nav class="main-nav" id="main-nav">
+  <nav id="main-nav">
     <ul>
       <li><a href="{% url 'bookLibrary:main_page' %}">Главная</a></li>
       <li><a href="{% url 'bookLibrary:catalog' %}">Каталог</a></li>
@@ -79,48 +79,55 @@
 </header>
 
 <script>
-  // Мобильное меню
-  document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-      const mainNav = document.getElementById('main-nav');
-      
-      mobileMenuToggle.addEventListener('click', function() {
-          mainNav.classList.toggle('active');
-      });
-      
-      // Уведомления (существующий код)
-      const toggleBtn = document.getElementById('notifications-toggle');
-      const menu = document.getElementById('notifications-menu');
-      
-      toggleBtn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          menu.classList.toggle('active');
-      });
-      
-      document.addEventListener('click', function() {
-          menu.classList.remove('active');
-      });
-      
-      menu.addEventListener('click', function(e) {
-          e.stopPropagation();
-      });
-      
-      function updateNotificationCount() {
-          fetch('/api/notifications/count/')
-              .then(response => response.json())
-              .then(data => {
-                  const badge = document.querySelector('.notification-badge');
-                  if (badge) {
-                      badge.textContent = data.count;
-                      if (data.count > 0) {
-                          badge.style.display = 'flex';
-                      } else {
-                          badge.style.display = 'none';
-                      }
-                  }
-              });
-      }
-      setInterval(updateNotificationCount, 60000);
-      updateNotificationCount();
-  });
+document.addEventListener('DOMContentLoaded', function() {
+    // Мобильное меню
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+    
+    if (mobileMenuToggle && mainNav) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            this.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
+        });
+    }
+    
+    // Уведомления
+    const toggleBtn = document.getElementById('notifications-toggle');
+    const menu = document.getElementById('notifications-menu');
+    
+    if (toggleBtn && menu) {
+        toggleBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            menu.classList.toggle('active');
+        });
+        
+        document.addEventListener('click', function() {
+            menu.classList.remove('active');
+        });
+        
+        menu.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+        
+        function updateNotificationCount() {
+            fetch('/api/notifications/count/')
+                .then(response => response.json())
+                .then(data => {
+                    const badge = document.querySelector('.notification-badge');
+                    if (badge) {
+                        badge.textContent = data.count;
+                        if (data.count > 0) {
+                            badge.style.display = 'flex';
+                        } else {
+                            badge.style.display = 'none';
+                        }
+                    }
+                })
+                .catch(error => console.error('Error fetching notifications:', error));
+        }
+        
+        setInterval(updateNotificationCount, 60000);
+        updateNotificationCount();
+    }
+});
 </script>

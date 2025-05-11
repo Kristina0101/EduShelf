@@ -197,6 +197,16 @@ nav ul li a:hover,
   background-color: var(--primary-hover);
 }
 
+.img_detail_item{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.img_detail_item img{
+  max-height: 300px;
+}
+
 /* ========== PAGINATION ========== */
 .pagination {
   display: flex;
@@ -466,6 +476,21 @@ nav ul li a:hover,
   nav ul.mobile-active {
     display: flex;
   }
+  nav ul li form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-button {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
 }
 
 @media (max-width: 768px) {
@@ -546,6 +571,125 @@ nav ul li a:hover,
   
   .logo_footer img {
     margin-left: 10px;
+  }
+  .form-wrapper {
+    padding: 15px;
+    margin: 15px;
+    width: auto;
+  }
+  
+  .form-wrapper form p {
+    margin-bottom: 12px;
+  }
+  
+  .form-wrapper form input[type="text"],
+  .form-wrapper form input[type="email"],
+  .form-wrapper form input[type="password"],
+  .form-wrapper form input[type="file"],
+  .form-wrapper form select,
+  .form-wrapper form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .form-wrapper form button[type="submit"] {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Стиль для кнопки "Назад" */
+  a.btn-action {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 8px 15px;
+  }
+
+  .content-wrapper {
+    padding: 15px;
+  }
+  
+  .form-wrapper {
+    padding: 15px;
+    margin: 15px 0;
+  }
+  
+  .status-details {
+    padding: 15px;
+  }
+  
+  /* Заголовок страницы */
+  .name_oparetion {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* Данные пользователя */
+  .status-name {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  /* Кнопки действий */
+  .up-del-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .up-del-buttons a {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  a.btn-action p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .status-name,
+  .status-details,
+  .status-info,
+  .up-del-buttons a,
+  a.btn-action p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .form-wrapper1 {
+    padding: 15px;
+    margin: 15px;
+    width: auto;
+  }
+  
+  .form-wrapper1 form p {
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  .form-wrapper1 form input[type="text"],
+  .form-wrapper1 form input[type="email"],
+  .form-wrapper1 form input[type="password"],
+  .form-wrapper1 form input[type="file"],
+  .form-wrapper1 form select,
+  .form-wrapper1 form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .form-wrapper1 form button[type="submit"] {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 10px;
   }
 }
 
@@ -648,7 +792,10 @@ nav ul li a:hover,
   }
   
   .btn-action {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 60%;
     margin: 5px 0;
   }
   
@@ -657,4 +804,111 @@ nav ul li a:hover,
   .table td:nth-child(4) {
     display: flex !important;
   }
+  .form-wrapper {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .form-wrapper form p {
+    margin-bottom: 10px;
+  }
+  
+  .form-wrapper form label {
+    font-size: 14px;
+  }
+  
+  .form-wrapper form input[type="text"],
+  .form-wrapper form input[type="email"],
+  .form-wrapper form input[type="password"],
+  .form-wrapper form input[type="file"],
+  .form-wrapper form select,
+  .form-wrapper form textarea {
+    padding: 6px;
+    font-size: 13px;
+  }
+  
+  .form-wrapper form button[type="submit"] {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  /* Кнопка "Назад" */
+  a.btn-action {
+    padding: 6px 10px;
+    font-size: 13px;
+    margin: 5px 10px;
+  }
+  
+  a.btn-action p {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .content-wrapper {
+    padding: 10px;
+  }
+  
+  .form-wrapper {
+    padding: 10px;
+  }
+  
+  .status-details {
+    padding: 10px;
+  }
+  
+  .name_oparetion {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .status-name {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .up-del-buttons a {
+    padding: 6px;
+    font-size: 13px;
+  }
+  
+  a.btn-action p {
+    font-size: 13px;
+  }
+  .status-name,
+  .status-details,
+  .status-info,
+  .up-del-buttons a,
+  a.btn-action p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .form-wrapper1 {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .form-wrapper1 form p {
+    margin-bottom: 10px;
+  }
+  
+  .form-wrapper1 form label {
+    font-size: 14px;
+  }
+  
+  .form-wrapper1 form input[type="text"],
+  .form-wrapper1 form input[type="email"],
+  .form-wrapper1 form input[type="password"],
+  .form-wrapper1 form input[type="file"],
+  .form-wrapper1 form select,
+  .form-wrapper1 form textarea {
+    padding: 6px;
+    font-size: 13px;
+  }
+  
+  .form-wrapper1 form button[type="submit"] {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
 }

@@ -8,6 +8,7 @@
 {% endblock %}
 
 {% block content %}
+<a class="btn-action" href="{% url 'bookLibrary:catalog' %}">Вернуться в каталог</a>
 {% if messages %}
     {% for message in messages %}
     <div class="mes_error">
@@ -175,11 +176,18 @@
                 document.getElementById('page-input').value = pageNum;
                 currentPage = pageNum;
 
+                // Обновляем состояние кнопок навигации
+                updateNavButtons();
+                
+                // Обновляем URL без перезагрузки страницы
                 history.pushState(null, null, `?page=${pageNum}`);
-
-                document.getElementById('prev-btn').disabled = pageNum <= 1;
-                document.getElementById('next-btn').disabled = pageNum >= totalPages;
             });
+        }
+
+        function updateNavButtons() {
+            // Исправлено: используем правильные ID кнопок
+            document.getElementById('prev-page-btn').disabled = currentPage <= 1;
+            document.getElementById('next-page-btn').disabled = currentPage >= totalPages;
         }
 
         function changePage(offset) {
@@ -231,6 +239,11 @@
                 }
             });
         }
+
+        // Инициализация кнопок при загрузке
+        document.addEventListener('DOMContentLoaded', function() {
+            updateNavButtons();
+        });
     </script>
 
 {% endblock %}
