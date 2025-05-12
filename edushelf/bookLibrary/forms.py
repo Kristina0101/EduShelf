@@ -1,5 +1,6 @@
 from django import forms
 from .models import *
+from django.contrib.auth.hashers import make_password
 
 
 class EducationalInstitutionForm(forms.ModelForm):
@@ -84,6 +85,16 @@ class UserForm(forms.ModelForm):
             'groups': 'Группы пользователей для назначения общих прав доступа. Пользователь получит все права, назначенные его группам.',
             'user_permissions': 'Индивидуальные права пользователя (рекомендуется использовать группы вместо отдельных прав)'
         }
+    
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        password = self.cleaned_data.get('password')
+        if password:
+            user.set_password(password)
+        if commit:
+            user.save()
+            self.save_m2m()
+        return user
 
 
 class StudentsForm(forms.ModelForm):

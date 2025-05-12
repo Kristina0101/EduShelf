@@ -12528,3 +12528,1652 @@ INFO 2025-05-11 20:05:26,748 basehttp "GET /catalog/?sort=title_asc HTTP/1.1" 20
 INFO 2025-05-11 20:05:28,211 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 302 0
 INFO 2025-05-11 20:05:28,217 basehttp "GET /login/?next=/catalog/description_book/1/ HTTP/1.1" 200 4142
 INFO 2025-05-11 20:09:39,919 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:18:09,653 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:18:12,638 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:18:13,735 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:18:14,412 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:18:14,921 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:18:15,518 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:20:41,839 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:20:55,685 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:21:42,802 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:21:43,789 basehttp "GET /register/ HTTP/1.1" 200 4669
+INFO 2025-05-11 20:21:44,372 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:21:53,415 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:22:37,539 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:22:39,693 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:22:39,700 basehttp "GET /login/?next=/catalog/description_book/1/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:22:52,547 basehttp "POST /login/?next=/catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:22:52,620 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 20:22:54,071 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7372
+INFO 2025-05-11 20:22:57,094 basehttp "GET /bd_admin/users/detail/25/ HTTP/1.1" 200 3567
+INFO 2025-05-11 20:23:00,607 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7372
+INFO 2025-05-11 20:23:01,942 basehttp "GET /bd_admin/users/25/update/ HTTP/1.1" 200 15300
+INFO 2025-05-11 20:23:04,015 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7372
+INFO 2025-05-11 20:23:07,387 basehttp "GET /bd_admin/users/4/delete/ HTTP/1.1" 200 3040
+INFO 2025-05-11 20:23:08,788 basehttp "POST /bd_admin/users/4/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:23:08,867 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7164
+INFO 2025-05-11 20:23:10,045 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 14983
+INFO 2025-05-11 20:23:13,599 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 6882
+INFO 2025-05-11 20:23:44,882 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 20:23:55,640 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 20:23:59,535 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:24:11,257 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:24:19,504 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:24:19,509 basehttp "GET /login/?next=/catalog/description_book/1/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:24:20,935 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:24:30,312 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:24:33,185 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:24:33,192 basehttp "GET /login/?next=/catalog/description_book/1/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:24:54,571 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:25:05,491 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:25:07,858 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:25:07,864 basehttp "GET /login/?next=/catalog/description_book/1/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:25:11,419 basehttp "GET /register/ HTTP/1.1" 200 4669
+INFO 2025-05-11 20:25:14,424 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:25:24,901 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:25:24,967 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 20:25:29,520 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 6882
+INFO 2025-05-11 20:25:33,837 basehttp "GET /bd_admin/users/detail/25/ HTTP/1.1" 200 3567
+INFO 2025-05-11 20:25:36,226 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 6882
+INFO 2025-05-11 20:25:38,407 basehttp "GET /bd_admin/users/25/update/ HTTP/1.1" 200 15300
+INFO 2025-05-11 20:25:44,673 basehttp "POST /bd_admin/users/25/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:25:44,803 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7158
+INFO 2025-05-11 20:25:55,010 basehttp "GET /bd_admin/users/5/delete/ HTTP/1.1" 200 3040
+INFO 2025-05-11 20:25:56,619 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 6889
+INFO 2025-05-11 20:25:57,982 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 14983
+INFO 2025-05-11 20:26:01,246 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 6889
+INFO 2025-05-11 20:26:15,569 basehttp "GET / HTTP/1.1" 200 31168
+WARNING 2025-05-11 20:26:15,673 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 20:26:15,673 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 20:26:22,709 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-05-11 20:26:22,824 basehttp "GET /admin/ HTTP/1.1" 200 20904
+INFO 2025-05-11 20:26:22,869 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2960
+INFO 2025-05-11 20:26:22,875 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 470
+INFO 2025-05-11 20:26:22,876 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2938
+INFO 2025-05-11 20:26:22,876 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 23337
+INFO 2025-05-11 20:26:22,877 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17540
+INFO 2025-05-11 20:26:22,884 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3142
+INFO 2025-05-11 20:26:22,884 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1704
+INFO 2025-05-11 20:26:22,901 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 383
+INFO 2025-05-11 20:26:22,901 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 334
+INFO 2025-05-11 20:26:22,901 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 395
+WARNING 2025-05-11 20:26:22,968 log Not Found: /favicon.ico
+WARNING 2025-05-11 20:26:22,968 basehttp "GET /favicon.ico HTTP/1.1" 404 28214
+INFO 2025-05-11 20:26:26,232 basehttp "GET /admin/bookLibrary/user/ HTTP/1.1" 200 22119
+INFO 2025-05-11 20:26:26,279 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 355
+INFO 2025-05-11 20:26:26,279 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6392
+INFO 2025-05-11 20:26:26,287 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 7221
+INFO 2025-05-11 20:26:26,292 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1574
+INFO 2025-05-11 20:26:26,304 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8280
+INFO 2025-05-11 20:26:26,304 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 8056
+INFO 2025-05-11 20:26:26,305 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 10029
+INFO 2025-05-11 20:26:26,323 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 461
+INFO 2025-05-11 20:26:26,354 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 296030
+INFO 2025-05-11 20:26:26,363 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-11 20:26:26,394 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 1008
+INFO 2025-05-11 20:26:26,420 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 331297
+INFO 2025-05-11 20:26:26,444 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1116
+INFO 2025-05-11 20:26:26,444 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 334
+INFO 2025-05-11 20:26:26,444 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 584
+INFO 2025-05-11 20:26:32,490 basehttp "GET /admin/bookLibrary/user/add/ HTTP/1.1" 200 20299
+INFO 2025-05-11 20:26:32,521 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 601
+INFO 2025-05-11 20:26:32,529 basehttp "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 682
+INFO 2025-05-11 20:26:32,530 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 9023
+INFO 2025-05-11 20:26:32,540 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 622
+INFO 2025-05-11 20:26:32,551 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 12604
+INFO 2025-05-11 20:26:32,573 basehttp "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1509
+INFO 2025-05-11 20:26:32,574 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-11 20:26:46,690 basehttp "POST /admin/bookLibrary/user/add/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:26:46,815 basehttp "GET /admin/bookLibrary/user/28/change/ HTTP/1.1" 200 37599
+INFO 2025-05-11 20:26:46,875 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19727
+INFO 2025-05-11 20:26:46,875 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 16016
+INFO 2025-05-11 20:26:46,876 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4646
+INFO 2025-05-11 20:26:46,876 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9380
+INFO 2025-05-11 20:26:46,915 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-11 20:26:46,935 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 439
+INFO 2025-05-11 20:26:46,986 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 686
+INFO 2025-05-11 20:26:46,987 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3325
+INFO 2025-05-11 20:26:46,998 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1095
+INFO 2025-05-11 20:27:06,896 basehttp "POST /admin/bookLibrary/user/28/change/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:27:06,972 basehttp "GET /admin/bookLibrary/user/ HTTP/1.1" 200 22769
+INFO 2025-05-11 20:27:07,057 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-11 20:30:57,314 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\bookLibrary\forms.py changed, reloading.
+INFO 2025-05-11 20:30:58,185 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:31:14,279 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\bookLibrary\forms.py changed, reloading.
+INFO 2025-05-11 20:31:15,097 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:33:46,134 basehttp "GET / HTTP/1.1" 200 31168
+WARNING 2025-05-11 20:33:46,252 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 20:33:46,252 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 20:33:48,398 basehttp "GET /accounts/profile/ HTTP/1.1" 200 28311
+WARNING 2025-05-11 20:33:48,455 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 20:33:48,455 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 20:33:48,459 basehttp "GET /media/profile/2025/03/16/default.jpg HTTP/1.1" 200 383193
+INFO 2025-05-11 20:33:50,094 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 20:33:50,834 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:33:59,682 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:33:59,738 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 20:34:00,905 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7385
+INFO 2025-05-11 20:34:02,385 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 20:34:20,792 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7385
+INFO 2025-05-11 20:34:24,078 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 20:34:25,261 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7385
+INFO 2025-05-11 20:34:27,500 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 20:35:10,129 basehttp "POST /bd_admin/users/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:35:10,199 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8149
+INFO 2025-05-11 20:35:15,882 basehttp "GET /bd_admin/users/detail/29/ HTTP/1.1" 200 3562
+INFO 2025-05-11 20:35:29,829 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 20:35:30,664 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:35:41,714 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:35:41,788 basehttp "GET / HTTP/1.1" 200 11739
+WARNING 2025-05-11 20:35:41,850 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 20:35:41,850 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 20:35:43,480 basehttp "GET /accounts/profile/ HTTP/1.1" 200 8862
+INFO 2025-05-11 20:35:43,512 basehttp "GET /media/default.jpg HTTP/1.1" 304 0
+WARNING 2025-05-11 20:35:43,538 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 20:35:43,539 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 20:35:44,560 basehttp "GET /my_shelf/ HTTP/1.1" 200 5312
+WARNING 2025-05-11 20:35:44,626 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 20:35:44,626 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 20:35:45,722 basehttp "GET /accounts/profile/ HTTP/1.1" 200 8862
+WARNING 2025-05-11 20:35:45,781 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 20:35:45,782 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 20:35:47,758 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 20:35:48,481 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:35:50,378 basehttp "GET /register/ HTTP/1.1" 200 4669
+INFO 2025-05-11 20:35:50,875 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:35:57,294 basehttp "POST /login/ HTTP/1.1" 200 4425
+INFO 2025-05-11 20:36:02,827 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:36:02,884 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 20:36:04,127 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7880
+INFO 2025-05-11 20:36:05,679 basehttp "GET /bd_admin/users/25/update/ HTTP/1.1" 200 15300
+INFO 2025-05-11 20:36:13,770 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7880
+INFO 2025-05-11 20:36:14,415 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7880
+INFO 2025-05-11 20:36:17,057 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 20:36:18,881 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 20:36:21,455 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:36:25,733 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:36:26,291 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:36:26,878 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:36:29,242 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:36:35,831 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:36:35,882 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 20:36:37,775 basehttp "POST /logout/ HTTP/1.1" 200 3605
+INFO 2025-05-11 20:38:23,827 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\urls.py changed, reloading.
+INFO 2025-05-11 20:38:24,607 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:38:27,024 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\urls.py changed, reloading.
+INFO 2025-05-11 20:38:27,783 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:38:35,430 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\urls.py changed, reloading.
+INFO 2025-05-11 20:38:36,135 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:38:39,566 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:38:45,067 basehttp "POST /login/ HTTP/1.1" 302 0
+ERROR 2025-05-11 20:38:45,282 log Internal Server Error: /bd_admin/
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\edushelf\bookLibrary\views.py", line 225, in bd_admin_page
+    return render(request, 'bookLibrary/bd_admin/bd_admin_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\Edushelf\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+ERROR 2025-05-11 20:38:45,288 basehttp "GET /bd_admin/ HTTP/1.1" 500 205942
+INFO 2025-05-11 20:39:17,041 basehttp "GET /bd_admin/ HTTP/1.1" 200 2559
+INFO 2025-05-11 20:39:19,218 basehttp "POST /main_page/ HTTP/1.1" 200 4542
+INFO 2025-05-11 20:39:21,018 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:39:22,021 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:39:24,444 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:39:30,748 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:39:30,802 basehttp "GET /bd_admin/ HTTP/1.1" 200 2559
+INFO 2025-05-11 20:39:31,734 basehttp "POST /main_page/ HTTP/1.1" 200 4542
+INFO 2025-05-11 20:39:38,164 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:39:39,387 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:39:40,881 basehttp "POST /login/ HTTP/1.1" 200 4425
+INFO 2025-05-11 20:39:46,372 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:39:46,426 basehttp "GET /bd_admin/ HTTP/1.1" 200 2559
+INFO 2025-05-11 20:39:47,735 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7883
+INFO 2025-05-11 20:39:48,522 basehttp "GET /logs/ HTTP/1.1" 200 20456
+INFO 2025-05-11 20:39:48,987 basehttp "POST /main_page/ HTTP/1.1" 200 4542
+INFO 2025-05-11 20:40:23,097 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\urls.py changed, reloading.
+INFO 2025-05-11 20:40:23,928 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:40:26,319 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\urls.py changed, reloading.
+INFO 2025-05-11 20:40:27,247 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:42:55,841 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\urls.py changed, reloading.
+INFO 2025-05-11 20:42:56,601 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:43:04,045 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\urls.py changed, reloading.
+INFO 2025-05-11 20:43:04,873 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:43:09,186 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\urls.py changed, reloading.
+INFO 2025-05-11 20:43:09,851 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:44:38,158 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\urls.py changed, reloading.
+INFO 2025-05-11 20:44:38,944 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 20:44:42,932 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:44:43,909 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:44:50,958 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:44:51,020 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 20:44:52,071 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:44:52,133 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:45:17,129 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:45:50,744 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:46:00,097 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-11 20:46:01,034 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 20197
+INFO 2025-05-11 20:46:03,037 basehttp "GET /catalog/description_book/3/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:46:03,042 basehttp "GET /login/?next=/catalog/description_book/3/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:46:09,458 basehttp "GET /register/ HTTP/1.1" 200 4669
+INFO 2025-05-11 20:46:12,430 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:46:21,800 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:46:21,869 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 20:46:23,383 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7880
+INFO 2025-05-11 20:46:27,911 basehttp "GET /bd_admin/users/detail/25/ HTTP/1.1" 200 3574
+INFO 2025-05-11 20:46:30,822 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7880
+INFO 2025-05-11 20:46:33,568 basehttp "GET /bd_admin/users/25/update/ HTTP/1.1" 200 15300
+INFO 2025-05-11 20:46:40,473 basehttp "POST /bd_admin/users/25/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:46:40,552 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8146
+INFO 2025-05-11 20:46:47,494 basehttp "GET /bd_admin/users/29/delete/ HTTP/1.1" 200 3045
+INFO 2025-05-11 20:46:48,830 basehttp "POST /bd_admin/users/29/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:46:48,909 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7668
+INFO 2025-05-11 20:46:56,671 basehttp "GET /backup/? HTTP/1.1" 200 219
+INFO 2025-05-11 20:47:00,126 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 20:47:30,761 basehttp "POST /bd_admin/users/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:47:30,845 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8147
+INFO 2025-05-11 20:47:35,871 basehttp "GET /bd_admin/users/detail/30/ HTTP/1.1" 200 3563
+INFO 2025-05-11 20:47:43,518 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 20:47:44,508 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13151
+INFO 2025-05-11 20:47:47,346 basehttp "GET /bd_admin/students/?page=2 HTTP/1.1" 200 8446
+INFO 2025-05-11 20:47:49,036 basehttp "GET /bd_admin/students/detail/51/ HTTP/1.1" 200 3924
+INFO 2025-05-11 20:47:51,403 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13151
+INFO 2025-05-11 20:47:52,774 basehttp "GET /bd_admin/students/38/update/ HTTP/1.1" 200 6938
+INFO 2025-05-11 20:48:00,469 basehttp "POST /bd_admin/students/38/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:48:00,723 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13438
+INFO 2025-05-11 20:48:06,670 basehttp "GET /bd_admin/students/41/delete/ HTTP/1.1" 200 3043
+INFO 2025-05-11 20:48:07,697 basehttp "POST /bd_admin/students/41/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:48:07,793 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13466
+INFO 2025-05-11 20:48:10,034 basehttp "GET /bd_admin/students/create/ HTTP/1.1" 200 6815
+INFO 2025-05-11 20:48:52,932 basehttp "POST /bd_admin/students/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:48:53,028 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13440
+INFO 2025-05-11 20:48:55,758 basehttp "GET /bd_admin/students/?page=2 HTTP/1.1" 200 8399
+INFO 2025-05-11 20:48:58,744 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13181
+INFO 2025-05-11 20:48:59,420 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 20:49:00,779 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13181
+INFO 2025-05-11 20:49:02,553 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4340
+INFO 2025-05-11 20:49:05,305 basehttp "GET /bd_admin/roles/detail/1/ HTTP/1.1" 200 3286
+INFO 2025-05-11 20:49:06,814 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4340
+INFO 2025-05-11 20:49:07,819 basehttp "GET /bd_admin/roles/1/update/ HTTP/1.1" 200 3264
+INFO 2025-05-11 20:49:10,491 basehttp "POST /bd_admin/roles/1/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:49:10,566 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4596
+INFO 2025-05-11 20:49:13,355 basehttp "GET /bd_admin/roles/1/update/ HTTP/1.1" 200 3265
+INFO 2025-05-11 20:49:15,959 basehttp "POST /bd_admin/roles/1/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:49:16,035 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4595
+INFO 2025-05-11 20:49:33,903 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 20:49:43,195 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13181
+INFO 2025-05-11 20:50:10,527 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 20:50:11,893 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:50:11,953 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:50:13,239 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:50:24,219 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:50:49,137 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:51:19,020 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:51:24,733 basehttp "GET /catalog/?genre=1 HTTP/1.1" 200 14088
+INFO 2025-05-11 20:51:26,870 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-11 20:51:28,380 basehttp "GET /catalog/?subject=1 HTTP/1.1" 200 14162
+INFO 2025-05-11 20:51:30,151 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-11 20:51:31,145 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-11 20:51:32,910 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 20197
+INFO 2025-05-11 20:51:36,389 basehttp "GET /catalog/?sort=author_asc HTTP/1.1" 200 20691
+INFO 2025-05-11 20:51:40,058 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-11 20:51:41,309 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:51:42,631 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:51:43,316 basehttp "GET /catalog/description_book/2/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:51:43,321 basehttp "GET /login/?next=/catalog/description_book/2/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:52:11,193 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:52:20,542 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:52:25,611 basehttp "GET /catalog/?genre=1 HTTP/1.1" 200 14088
+INFO 2025-05-11 20:52:27,217 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-11 20:52:29,317 basehttp "GET /catalog/?subject=1 HTTP/1.1" 200 14162
+INFO 2025-05-11 20:52:31,672 basehttp "GET /catalog/?genre=1&subject=1 HTTP/1.1" 200 13559
+INFO 2025-05-11 20:52:32,860 basehttp "GET /catalog/?subject=1& HTTP/1.1" 200 14162
+INFO 2025-05-11 20:52:34,068 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-11 20:52:37,290 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-11 20:52:38,598 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 20197
+INFO 2025-05-11 20:52:48,353 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:53:00,857 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:53:05,194 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-11 20:53:06,236 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 20197
+INFO 2025-05-11 20:53:08,162 basehttp "GET /catalog/?sort=author_asc HTTP/1.1" 200 20691
+INFO 2025-05-11 20:53:09,351 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-11 20:53:10,341 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-11 20:53:14,818 basehttp "GET /catalog/?subject=2 HTTP/1.1" 200 16703
+INFO 2025-05-11 20:53:17,441 basehttp "GET /catalog/?genre=2&subject=2 HTTP/1.1" 200 16840
+INFO 2025-05-11 20:53:19,102 basehttp "GET /catalog/?genre=1&subject=2 HTTP/1.1" 200 13559
+INFO 2025-05-11 20:53:21,349 basehttp "GET /catalog/?subject=2& HTTP/1.1" 200 16703
+INFO 2025-05-11 20:53:22,716 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-11 20:53:24,565 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:53:24,571 basehttp "GET /login/?next=/catalog/description_book/1/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:53:37,716 basehttp "POST /login/?next=/catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:53:37,784 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 20:53:41,394 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 20:53:47,535 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 20:54:19,241 basehttp "POST /bd_admin/users/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:54:19,328 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8645
+INFO 2025-05-11 20:54:23,065 basehttp "GET /bd_admin/users/detail/31/ HTTP/1.1" 200 3565
+INFO 2025-05-11 20:54:25,689 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8376
+INFO 2025-05-11 20:54:27,302 basehttp "GET /bd_admin/users/31/update/ HTTP/1.1" 200 15270
+INFO 2025-05-11 20:55:10,782 basehttp "POST /bd_admin/users/31/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:55:10,854 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8645
+INFO 2025-05-11 20:55:11,546 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8376
+INFO 2025-05-11 20:55:21,701 basehttp "GET /bd_admin/users/31/update/ HTTP/1.1" 200 15270
+INFO 2025-05-11 20:55:44,233 basehttp "POST /bd_admin/users/31/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:55:44,317 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8644
+INFO 2025-05-11 20:55:51,027 basehttp "GET /bd_admin/users/31/delete/ HTTP/1.1" 200 3042
+INFO 2025-05-11 20:55:52,436 basehttp "POST /bd_admin/users/31/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:55:52,517 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8161
+INFO 2025-05-11 20:55:57,801 basehttp "GET /backup/? HTTP/1.1" 200 219
+WARNING 2025-05-11 20:55:57,887 log Not Found: /favicon.ico
+WARNING 2025-05-11 20:55:57,888 basehttp "GET /favicon.ico HTTP/1.1" 404 28214
+INFO 2025-05-11 20:56:05,006 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13181
+INFO 2025-05-11 20:56:08,473 basehttp "GET /bd_admin/students/?page=2 HTTP/1.1" 200 8399
+INFO 2025-05-11 20:56:11,100 basehttp "GET /bd_admin/students/create/ HTTP/1.1" 200 6815
+INFO 2025-05-11 20:56:48,542 basehttp "POST /bd_admin/students/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:56:48,640 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13382
+INFO 2025-05-11 20:56:53,767 basehttp "GET /bd_admin/students/detail/58/ HTTP/1.1" 200 3836
+INFO 2025-05-11 20:56:57,845 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13123
+INFO 2025-05-11 20:56:59,602 basehttp "GET /bd_admin/students/58/update/ HTTP/1.1" 200 6939
+INFO 2025-05-11 20:57:09,755 basehttp "POST /bd_admin/students/58/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:57:09,848 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13421
+INFO 2025-05-11 20:57:16,262 basehttp "GET /bd_admin/students/58/delete/ HTTP/1.1" 200 3047
+INFO 2025-05-11 20:57:17,513 basehttp "POST /bd_admin/students/58/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:57:17,609 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13470
+INFO 2025-05-11 20:57:21,287 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4340
+INFO 2025-05-11 20:57:22,102 basehttp "GET /bd_admin/roles/create/ HTTP/1.1" 200 3251
+INFO 2025-05-11 20:57:33,622 basehttp "POST /bd_admin/roles/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:57:33,705 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 5006
+INFO 2025-05-11 20:57:37,307 basehttp "GET /bd_admin/roles/detail/10/ HTTP/1.1" 200 3289
+INFO 2025-05-11 20:57:39,159 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4751
+INFO 2025-05-11 20:57:40,748 basehttp "GET /bd_admin/roles/10/update/ HTTP/1.1" 200 3265
+INFO 2025-05-11 20:57:45,541 basehttp "POST /bd_admin/roles/10/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:57:45,616 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 5004
+INFO 2025-05-11 20:57:48,993 basehttp "GET /bd_admin/roles/10/delete/ HTTP/1.1" 200 3026
+INFO 2025-05-11 20:57:49,998 basehttp "POST /bd_admin/roles/10/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:57:50,072 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4609
+INFO 2025-05-11 20:57:52,926 basehttp "GET /logs/ HTTP/1.1" 200 19105
+INFO 2025-05-11 20:58:01,270 basehttp "GET /logs/ HTTP/1.1" 200 19096
+INFO 2025-05-11 20:58:07,475 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 20:58:07,552 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:59:35,577 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 20:59:50,748 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 20:59:55,517 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 20:59:58,012 basehttp "GET /register/ HTTP/1.1" 200 4669
+INFO 2025-05-11 21:00:11,368 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:00:20,881 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 21:00:26,182 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:00:36,775 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:00:36,842 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 21:00:41,029 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 21:00:45,990 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 21:01:17,302 basehttp "POST /bd_admin/users/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:01:17,388 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8643
+INFO 2025-05-11 21:01:25,028 basehttp "GET /bd_admin/users/detail/32/ HTTP/1.1" 200 3563
+INFO 2025-05-11 21:01:30,231 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8374
+INFO 2025-05-11 21:01:35,079 basehttp "GET /bd_admin/users/32/update/ HTTP/1.1" 200 15268
+INFO 2025-05-11 21:01:48,323 basehttp "POST /bd_admin/users/32/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:01:48,408 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8649
+INFO 2025-05-11 21:01:53,594 basehttp "GET /bd_admin/users/detail/32/ HTTP/1.1" 200 3569
+INFO 2025-05-11 21:01:57,976 basehttp "GET /bd_admin/users/32/delete/ HTTP/1.1" 200 3042
+INFO 2025-05-11 21:01:59,278 basehttp "POST /bd_admin/users/32/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:01:59,370 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8161
+INFO 2025-05-11 21:02:05,843 basehttp "GET /backup/? HTTP/1.1" 200 219
+INFO 2025-05-11 21:02:14,524 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13181
+INFO 2025-05-11 21:02:18,764 basehttp "GET /bd_admin/students/?page=2 HTTP/1.1" 200 8399
+INFO 2025-05-11 21:02:20,237 basehttp "GET /bd_admin/students/create/ HTTP/1.1" 200 6815
+INFO 2025-05-11 21:03:01,403 basehttp "POST /bd_admin/students/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:03:01,501 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13422
+INFO 2025-05-11 21:03:05,716 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4340
+INFO 2025-05-11 21:03:09,733 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13163
+INFO 2025-05-11 21:03:22,675 basehttp "GET /bd_admin/students/59/delete/ HTTP/1.1" 200 3047
+INFO 2025-05-11 21:03:23,701 basehttp "POST /bd_admin/students/59/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:03:23,778 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13470
+INFO 2025-05-11 21:03:25,132 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 21:03:42,566 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:03:42,628 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:04:28,896 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 21:04:32,597 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:04:42,085 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:04:42,153 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 21:04:46,278 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 21:04:51,309 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 21:05:01,683 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:05:01,747 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:05:11,938 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 21:05:16,118 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:05:26,003 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:05:26,070 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 21:05:30,720 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 21:05:37,797 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 21:05:50,612 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:05:50,784 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:06:02,872 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 21:06:07,939 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:06:16,537 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:06:16,601 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 21:06:20,639 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 21:06:26,150 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 21:06:37,361 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:06:37,419 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:06:50,195 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 21:06:55,631 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:07:04,808 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:07:04,878 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 21:07:09,571 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 21:07:16,159 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 21:07:48,442 basehttp "POST /bd_admin/users/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:07:48,524 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8645
+INFO 2025-05-11 21:07:57,102 basehttp "GET /bd_admin/users/detail/33/ HTTP/1.1" 200 3565
+INFO 2025-05-11 21:08:03,792 basehttp "GET /bd_admin/users/33/update/ HTTP/1.1" 200 15270
+INFO 2025-05-11 21:08:20,033 basehttp "POST /bd_admin/users/33/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:08:20,216 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8648
+INFO 2025-05-11 21:08:28,243 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13181
+INFO 2025-05-11 21:08:29,802 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8379
+INFO 2025-05-11 21:08:35,180 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8379
+INFO 2025-05-11 21:08:39,889 basehttp "GET /bd_admin/users/33/delete/ HTTP/1.1" 200 3042
+INFO 2025-05-11 21:08:41,241 basehttp "POST /bd_admin/users/33/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:08:41,305 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8161
+INFO 2025-05-11 21:08:51,820 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:08:51,882 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:09:12,167 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-11 21:09:16,413 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:09:24,932 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:09:24,998 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 21:09:31,196 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13181
+INFO 2025-05-11 21:09:37,355 basehttp "GET /bd_admin/students/create/ HTTP/1.1" 200 6815
+INFO 2025-05-11 21:10:00,266 basehttp "POST /bd_admin/students/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:10:00,463 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13463
+INFO 2025-05-11 21:10:10,292 basehttp "GET /bd_admin/students/detail/60/ HTTP/1.1" 200 3946
+INFO 2025-05-11 21:10:14,229 basehttp "GET /bd_admin/students/60/update/ HTTP/1.1" 200 6937
+INFO 2025-05-11 21:10:20,868 basehttp "POST /bd_admin/students/60/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:10:20,963 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13504
+INFO 2025-05-11 21:10:26,896 basehttp "GET /bd_admin/students/60/delete/ HTTP/1.1" 200 3047
+INFO 2025-05-11 21:10:28,092 basehttp "POST /bd_admin/students/60/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:10:28,193 basehttp "GET /bd_admin/students/ HTTP/1.1" 200 13470
+INFO 2025-05-11 21:10:31,088 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 7878
+INFO 2025-05-11 21:10:36,257 basehttp "GET /bd_admin/users/create/ HTTP/1.1" 200 17761
+INFO 2025-05-11 21:11:00,375 basehttp "POST /bd_admin/users/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:11:00,458 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8645
+INFO 2025-05-11 21:11:08,557 basehttp "GET /bd_admin/users/detail/34/ HTTP/1.1" 200 3565
+INFO 2025-05-11 21:11:14,281 basehttp "GET /bd_admin/users/34/update/ HTTP/1.1" 200 15270
+INFO 2025-05-11 21:11:25,199 basehttp "POST /bd_admin/users/34/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:11:25,285 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8646
+INFO 2025-05-11 21:11:30,913 basehttp "GET /bd_admin/users/34/delete/ HTTP/1.1" 200 3042
+INFO 2025-05-11 21:11:32,146 basehttp "POST /bd_admin/users/34/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:11:32,249 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8161
+INFO 2025-05-11 21:11:36,705 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4340
+INFO 2025-05-11 21:11:38,144 basehttp "GET /bd_admin/roles/create/ HTTP/1.1" 200 3251
+INFO 2025-05-11 21:11:43,895 basehttp "POST /bd_admin/roles/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:11:43,967 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 5006
+INFO 2025-05-11 21:11:47,329 basehttp "GET /bd_admin/roles/detail/11/ HTTP/1.1" 200 3289
+INFO 2025-05-11 21:11:48,916 basehttp "GET /bd_admin/roles/11/update/ HTTP/1.1" 200 3265
+INFO 2025-05-11 21:11:51,894 basehttp "POST /bd_admin/roles/11/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:11:51,971 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 5004
+INFO 2025-05-11 21:11:55,243 basehttp "GET /bd_admin/roles/11/delete/ HTTP/1.1" 200 3026
+INFO 2025-05-11 21:11:56,597 basehttp "POST /bd_admin/roles/11/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:11:56,667 basehttp "GET /bd_admin/roles/ HTTP/1.1" 200 4609
+INFO 2025-05-11 21:12:01,276 basehttp "GET /logs/ HTTP/1.1" 200 18856
+INFO 2025-05-11 21:12:09,918 basehttp "GET /logs/ HTTP/1.1" 200 18847
+INFO 2025-05-11 21:12:16,081 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:12:16,159 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:12:24,259 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:12:30,832 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:12:30,885 basehttp "GET /bd_admin/ HTTP/1.1" 200 2556
+INFO 2025-05-11 21:12:31,704 basehttp "GET /logs/ HTTP/1.1" 200 18764
+INFO 2025-05-11 21:12:40,528 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:12:40,610 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:12:42,671 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:21:39,755 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:21:54,525 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:21:54,612 basehttp "GET /administrator/ HTTP/1.1" 200 50606
+WARNING 2025-05-11 21:21:54,666 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:21:54,666 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:21:56,073 basehttp "GET /administrator/students/ HTTP/1.1" 200 59115
+WARNING 2025-05-11 21:21:56,126 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:21:56,127 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:22:45,453 basehttp "GET /administrator/students/detail/43/ HTTP/1.1" 200 51896
+WARNING 2025-05-11 21:22:45,521 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:22:45,521 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:23:12,748 basehttp "GET /administrator/students/ HTTP/1.1" 200 59115
+WARNING 2025-05-11 21:23:12,811 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:23:12,812 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:23:15,382 basehttp "GET /administrator/students/ HTTP/1.1" 200 59115
+WARNING 2025-05-11 21:23:15,432 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:23:15,433 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:23:50,120 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:23:50,175 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:24:24,710 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:24:36,271 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:24:36,370 basehttp "GET /administrator/ HTTP/1.1" 200 52508
+WARNING 2025-05-11 21:24:36,459 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:24:36,459 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:24:48,770 basehttp "POST /notification/read/91/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:24:48,854 basehttp "GET /accounts/profile/ HTTP/1.1" 200 52512
+WARNING 2025-05-11 21:24:48,923 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:24:48,923 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:24:55,505 basehttp "GET /administrator/ HTTP/1.1" 200 52055
+WARNING 2025-05-11 21:24:55,551 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:24:55,551 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:24:57,373 basehttp "GET /administrator/students/ HTTP/1.1" 200 60564
+WARNING 2025-05-11 21:24:57,444 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:24:57,445 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:25:30,332 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:25:30,416 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-11 21:25:38,982 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-11 21:25:48,267 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:25:48,457 basehttp "GET /administrator/ HTTP/1.1" 200 53957
+WARNING 2025-05-11 21:25:48,517 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:25:48,518 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:26:07,308 basehttp "GET /administrator/students/ HTTP/1.1" 200 62466
+WARNING 2025-05-11 21:26:07,380 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:26:07,381 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:26:18,218 basehttp "GET /administrator/students/detail/43/ HTTP/1.1" 200 55247
+WARNING 2025-05-11 21:26:18,295 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:26:18,296 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:26:21,438 basehttp "GET /administrator/students/ HTTP/1.1" 200 62466
+WARNING 2025-05-11 21:26:21,508 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:26:21,509 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:26:23,045 basehttp "GET /administrator/students/43/update/ HTTP/1.1" 200 58359
+WARNING 2025-05-11 21:26:23,128 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:26:23,129 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:26:28,845 basehttp "POST /administrator/students/43/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:26:28,949 basehttp "GET /administrator/students/ HTTP/1.1" 200 62742
+WARNING 2025-05-11 21:26:29,027 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:26:29,027 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:26:33,618 basehttp "GET /administrator/students/create/ HTTP/1.1" 200 58221
+WARNING 2025-05-11 21:26:33,710 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:26:33,711 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:27:17,257 basehttp "POST /administrator/students/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:27:17,364 basehttp "GET /administrator/students/ HTTP/1.1" 200 62745
+WARNING 2025-05-11 21:27:17,439 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:27:17,439 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:27:20,789 basehttp "GET /administrator/students/?page=2 HTTP/1.1" 200 58983
+WARNING 2025-05-11 21:27:20,869 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:27:20,870 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:27:24,708 basehttp "GET /administrator/students/?page=1 HTTP/1.1" 200 62486
+WARNING 2025-05-11 21:27:24,773 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:27:24,774 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:27:34,257 basehttp "GET /static/files/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%20%D1%81%D0%BE%20%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8.xlsx HTTP/1.1" 200 9438
+WARNING 2025-05-11 21:28:24,755 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:28:24,756 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:28:57,333 basehttp "POST /import_students/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:28:57,439 basehttp "GET /administrator/students/ HTTP/1.1" 200 62737
+WARNING 2025-05-11 21:28:57,520 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:28:57,522 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:01,263 basehttp "GET /administrator/students/?page=3 HTTP/1.1" 200 60371
+WARNING 2025-05-11 21:29:01,326 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:01,327 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:04,646 basehttp "GET /administrator/students/?page=2 HTTP/1.1" 200 62571
+WARNING 2025-05-11 21:29:04,712 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:04,712 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:10,290 basehttp "GET /administrator/students/?page=1 HTTP/1.1" 200 62480
+WARNING 2025-05-11 21:29:10,363 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:10,365 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:19,228 basehttp "GET /administrator/students/detail/61/ HTTP/1.1" 200 55275
+WARNING 2025-05-11 21:29:19,332 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:19,332 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:21,723 basehttp "GET /administrator/students/ HTTP/1.1" 200 62480
+WARNING 2025-05-11 21:29:21,807 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:21,808 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:23,631 basehttp "GET /administrator/students/detail/62/ HTTP/1.1" 200 55247
+WARNING 2025-05-11 21:29:23,724 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:23,724 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:26,495 basehttp "GET /administrator/students/ HTTP/1.1" 200 62480
+WARNING 2025-05-11 21:29:26,568 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:26,569 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:28,831 basehttp "GET /administrator/students/63/update/ HTTP/1.1" 200 58336
+WARNING 2025-05-11 21:29:28,905 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:28,906 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:30,955 basehttp "GET /administrator/students/ HTTP/1.1" 200 62480
+WARNING 2025-05-11 21:29:31,024 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:31,025 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:32,402 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 59361
+WARNING 2025-05-11 21:29:32,475 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:32,476 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:39,229 basehttp "GET /administrator/subjects/?page=2 HTTP/1.1" 200 56669
+WARNING 2025-05-11 21:29:39,304 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:39,305 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:41,089 basehttp "GET /administrator/subjects/create/ HTTP/1.1" 200 54685
+WARNING 2025-05-11 21:29:41,163 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:41,164 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:48,150 basehttp "POST /administrator/subjects/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:29:48,232 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 59620
+WARNING 2025-05-11 21:29:48,298 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:48,298 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:52,693 basehttp "GET /administrator/subjects/?page=2 HTTP/1.1" 200 57113
+WARNING 2025-05-11 21:29:52,763 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:52,763 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:55,022 basehttp "GET /administrator/subjects/detail/21/ HTTP/1.1" 200 54725
+WARNING 2025-05-11 21:29:55,095 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:55,096 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:56,824 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 59361
+WARNING 2025-05-11 21:29:56,900 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:56,900 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:29:59,041 basehttp "GET /administrator/subjects/?page=2 HTTP/1.1" 200 57113
+WARNING 2025-05-11 21:29:59,100 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:29:59,100 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:30:00,725 basehttp "GET /administrator/subjects/21/update/ HTTP/1.1" 200 54714
+WARNING 2025-05-11 21:30:00,803 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:30:00,804 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:30:07,108 basehttp "POST /administrator/subjects/21/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:30:07,200 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 59620
+WARNING 2025-05-11 21:30:07,283 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:30:07,285 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:30:09,446 basehttp "GET /administrator/subjects/?page=2 HTTP/1.1" 200 57107
+WARNING 2025-05-11 21:30:09,517 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:30:09,517 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:30:14,240 basehttp "GET /administrator/subjects/21/delete/ HTTP/1.1" 200 54456
+WARNING 2025-05-11 21:30:14,303 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:30:14,303 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:30:15,645 basehttp "POST /administrator/subjects/21/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:30:15,726 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 59639
+WARNING 2025-05-11 21:30:15,791 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:30:15,792 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:30:18,907 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 60704
+WARNING 2025-05-11 21:30:18,979 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:30:18,979 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:31:19,637 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:31:19,637 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:32:17,580 basehttp "GET /administrator/specialties/create/ HTTP/1.1" 200 55538
+WARNING 2025-05-11 21:32:17,648 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:32:17,648 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:32:30,080 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 60704
+WARNING 2025-05-11 21:32:30,155 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:32:30,155 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:32:59,973 basehttp "GET /administrator/specialties/create/ HTTP/1.1" 200 55538
+WARNING 2025-05-11 21:33:00,046 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:33:00,047 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:33:25,345 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 60704
+WARNING 2025-05-11 21:33:25,405 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:33:25,405 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:33:32,451 basehttp "GET /administrator/specialties/create/ HTTP/1.1" 200 55538
+WARNING 2025-05-11 21:33:32,525 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:33:32,526 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:33:37,544 basehttp "POST /administrator/specialties/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:33:37,635 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 60977
+WARNING 2025-05-11 21:33:37,690 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:33:37,691 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:33:43,667 basehttp "GET /administrator/specialties/?page=2 HTTP/1.1" 200 56354
+WARNING 2025-05-11 21:33:43,741 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:33:43,742 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:05,229 basehttp "GET /administrator/specialties/detail/19/ HTTP/1.1" 200 54868
+WARNING 2025-05-11 21:34:05,317 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:05,317 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:08,225 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 60704
+WARNING 2025-05-11 21:34:08,299 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:08,300 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:10,623 basehttp "GET /administrator/specialties/?page=2 HTTP/1.1" 200 56354
+WARNING 2025-05-11 21:34:10,690 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:10,690 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:12,103 basehttp "GET /administrator/specialties/19/update/ HTTP/1.1" 200 55608
+WARNING 2025-05-11 21:34:12,177 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:12,178 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:22,821 basehttp "POST /administrator/specialties/19/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:34:22,924 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 60977
+WARNING 2025-05-11 21:34:22,983 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:22,984 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:26,913 basehttp "GET /administrator/specialties/?page=2 HTTP/1.1" 200 56408
+WARNING 2025-05-11 21:34:26,982 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:26,983 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:34,540 basehttp "GET /administrator/specialties/19/delete/ HTTP/1.1" 200 54561
+WARNING 2025-05-11 21:34:34,609 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:34,610 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:35,848 basehttp "POST /administrator/specialties/19/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:34:35,944 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 61085
+WARNING 2025-05-11 21:34:36,015 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:36,016 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:38,997 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 60170
+WARNING 2025-05-11 21:34:39,065 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:39,066 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:44,233 basehttp "GET /administrator/institutions/?page=2 HTTP/1.1" 200 55390
+WARNING 2025-05-11 21:34:44,323 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:44,324 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:34:45,685 basehttp "GET /administrator/institutions/?page=1 HTTP/1.1" 200 60170
+WARNING 2025-05-11 21:34:45,752 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:34:45,752 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:35:46,644 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:35:46,644 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:36:32,515 basehttp "GET /administrator/institutions/create/ HTTP/1.1" 200 55117
+WARNING 2025-05-11 21:36:32,591 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:36:32,591 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:36:42,390 basehttp "POST /administrator/institutions/create/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:36:42,484 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 60450
+WARNING 2025-05-11 21:36:42,552 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:36:42,553 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:36:47,328 basehttp "GET /administrator/institutions/?page=2 HTTP/1.1" 200 55910
+WARNING 2025-05-11 21:36:47,414 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:36:47,415 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:36:51,913 basehttp "GET /administrator/institutions/detail/17/ HTTP/1.1" 200 54860
+WARNING 2025-05-11 21:36:51,986 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:36:51,986 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:36:53,712 basehttp "GET /administrator/institutions/17/update/ HTTP/1.1" 200 55186
+WARNING 2025-05-11 21:36:53,783 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:36:53,784 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:37:07,416 basehttp "POST /administrator/institutions/17/update/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:37:07,501 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 60450
+WARNING 2025-05-11 21:37:07,569 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:37:07,569 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:37:12,690 basehttp "GET /administrator/institutions/?page=2 HTTP/1.1" 200 55910
+WARNING 2025-05-11 21:37:12,771 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:37:12,772 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:37:14,465 basehttp "GET /administrator/institutions/17/delete/ HTTP/1.1" 200 54481
+WARNING 2025-05-11 21:37:14,530 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:37:14,531 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:37:15,669 basehttp "POST /administrator/institutions/17/delete/ HTTP/1.1" 302 0
+INFO 2025-05-11 21:37:15,758 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 60467
+WARNING 2025-05-11 21:37:15,836 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:37:15,836 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:37:18,751 basehttp "GET /administrator/institutions/?page=2 HTTP/1.1" 200 55390
+WARNING 2025-05-11 21:37:18,832 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:37:18,833 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:37:20,961 basehttp "GET /administrator/books/ HTTP/1.1" 200 66449
+WARNING 2025-05-11 21:37:21,056 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:37:21,056 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:37:26,177 basehttp "GET /administrator/books/?page=2 HTTP/1.1" 200 56095
+WARNING 2025-05-11 21:37:26,263 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:37:26,264 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:37:27,789 basehttp "GET /administrator/books/?page=1 HTTP/1.1" 200 66449
+WARNING 2025-05-11 21:37:27,858 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:37:27,859 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-11 21:37:30,703 basehttp "GET /administrator/books/create/ HTTP/1.1" 200 59058
+WARNING 2025-05-11 21:37:30,770 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:37:30,771 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:38:30,765 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:38:30,765 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:39:30,763 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:39:30,764 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:40:30,761 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:40:30,762 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:41:30,760 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:41:30,760 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:42:30,758 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:42:30,759 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:43:30,767 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:43:30,768 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:44:30,762 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:44:30,763 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:45:30,764 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:45:30,764 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:46:30,768 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:46:30,768 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:47:30,768 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:47:30,769 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:48:30,758 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:48:30,758 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:49:30,767 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:49:30,767 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:50:30,768 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:50:30,769 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:51:30,768 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:51:30,768 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:52:30,761 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:52:30,761 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:53:30,759 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:53:30,759 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:54:30,765 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:54:30,765 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:55:30,768 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:55:30,769 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:56:30,766 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:56:30,766 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:57:30,758 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:57:30,758 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:58:30,766 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:58:30,766 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 21:59:30,767 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 21:59:30,767 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:00:30,765 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:00:30,766 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:01:30,768 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:01:30,768 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:02:30,772 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:02:30,772 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:03:30,763 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:03:30,763 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:04:30,770 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:04:30,770 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:05:30,756 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:05:30,757 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:06:30,755 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:06:30,755 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:07:30,757 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:07:30,757 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:08:30,761 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:08:30,762 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:09:30,760 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:09:30,760 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:10:30,756 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:10:30,756 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:11:30,767 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:11:30,768 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:12:30,773 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:12:30,773 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:13:30,769 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:13:30,769 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:14:30,757 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:14:30,758 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:15:30,762 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:15:30,762 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:16:30,769 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:16:30,769 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:17:30,765 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:17:30,765 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:18:30,769 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:18:30,770 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:19:30,765 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:19:30,765 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:20:30,762 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:20:30,763 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:21:30,770 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:21:30,770 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:22:30,763 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:22:30,763 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:23:30,763 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:23:30,763 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:24:30,761 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:24:30,761 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:25:30,760 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:25:30,760 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:26:30,766 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:26:30,766 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:27:30,769 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:27:30,769 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:28:30,770 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:28:30,770 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:29:30,766 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:29:30,766 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:30:30,766 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:30:30,766 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:31:30,762 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:31:30,762 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:32:30,767 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:32:30,768 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:33:30,770 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:33:30,770 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:34:30,757 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:34:30,757 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:35:30,756 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:35:30,756 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:36:30,758 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:36:30,758 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:37:30,760 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:37:30,760 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:38:30,768 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:38:30,768 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:39:30,769 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:39:30,770 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:40:30,769 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:40:30,769 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:41:30,766 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:41:30,767 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:42:30,757 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:42:30,757 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:43:30,757 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:43:30,758 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:44:30,755 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:44:30,755 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:45:30,767 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:45:30,767 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:46:30,763 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:46:30,763 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:47:30,758 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:47:30,758 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:48:30,769 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:48:30,769 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:49:30,766 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:49:30,766 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:50:30,767 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:50:30,767 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:51:31,644 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:51:31,645 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:52:32,635 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:52:32,635 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:53:33,649 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:53:33,649 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:54:34,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:54:34,646 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:55:35,640 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:55:35,641 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:56:36,634 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:56:36,634 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:57:37,643 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:57:37,643 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:58:38,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:58:38,646 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 22:59:39,640 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 22:59:39,640 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:00:40,648 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:00:40,648 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:01:41,648 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:01:41,648 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:02:42,642 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:02:42,642 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:03:43,641 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:03:43,641 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:04:44,637 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:04:44,637 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:05:45,647 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:05:45,647 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:06:46,649 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:06:46,650 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:07:47,641 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:07:47,642 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:08:48,635 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:08:48,636 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:09:49,639 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:09:49,639 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:10:50,636 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:10:50,636 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:11:51,642 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:11:51,643 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:12:52,636 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:12:52,636 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:13:53,644 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:13:53,644 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:14:53,645 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:14:53,645 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:15:53,656 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:15:53,656 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:16:53,650 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:16:53,650 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:17:53,655 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:17:53,656 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:18:53,648 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:18:53,648 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:19:53,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:19:53,646 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:20:53,657 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:20:53,657 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:21:53,649 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:21:53,650 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:22:53,659 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:22:53,660 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:23:53,643 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:23:53,643 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:24:53,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:24:53,646 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:25:53,644 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:25:53,644 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:26:53,655 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:26:53,656 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:27:53,652 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:27:53,652 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:28:53,650 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:28:53,651 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:29:53,652 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:29:53,652 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:30:53,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:30:53,646 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:31:53,653 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:31:53,653 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:32:53,654 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:32:53,655 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:33:53,652 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:33:53,652 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:34:53,654 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:34:53,654 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:35:53,651 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:35:53,651 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:36:53,660 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:36:53,661 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:37:53,648 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:37:53,649 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:38:53,652 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:38:53,652 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:39:53,644 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:39:53,645 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:40:53,643 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:40:53,643 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:41:53,655 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:41:53,655 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:42:53,652 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:42:53,652 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:43:53,651 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:43:53,652 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:44:53,647 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:44:53,647 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:45:53,653 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:45:53,653 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:46:53,645 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:46:53,646 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:47:53,643 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:47:53,643 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:48:53,653 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:48:53,653 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:49:53,653 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:49:53,653 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:50:53,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:50:53,646 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:51:53,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:51:53,647 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:52:53,641 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:52:53,642 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:53:53,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:53:53,647 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:54:53,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:54:53,646 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:55:53,653 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:55:53,654 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:56:53,639 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:56:53,639 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:57:53,650 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:57:53,650 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:58:53,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:58:53,647 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-11 23:59:53,647 log Not Found: /api/notifications/count/
+WARNING 2025-05-11 23:59:53,647 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:00:53,645 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:00:53,645 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:01:53,648 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:01:53,648 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:02:53,662 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:02:53,662 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:03:53,641 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:03:53,641 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:04:53,647 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:04:53,648 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:05:30,757 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:05:30,757 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:06:31,642 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:06:31,643 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:07:32,643 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:07:32,644 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:08:31,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:08:31,646 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:08:36,056 basehttp "GET /administrator/authors/ HTTP/1.1" 200 59892
+INFO 2025-05-12 00:08:36,092 basehttp "GET /static/css/bd_admin.css HTTP/1.1" 304 0
+INFO 2025-05-12 00:08:36,093 basehttp "GET /static/js/script.js HTTP/1.1" 304 0
+WARNING 2025-05-12 00:08:36,116 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:08:36,116 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:08:37,276 basehttp "GET /administrator/authors/create/ HTTP/1.1" 200 55035
+WARNING 2025-05-12 00:08:37,335 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:08:37,336 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:08:48,395 basehttp "POST /administrator/authors/create/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:08:48,467 basehttp "GET /administrator/authors/ HTTP/1.1" 200 60147
+WARNING 2025-05-12 00:08:48,524 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:08:48,525 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:08:51,461 basehttp "GET /administrator/publishers/ HTTP/1.1" 200 59148
+WARNING 2025-05-12 00:08:51,515 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:08:51,516 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:08:53,504 basehttp "GET /administrator/genres/ HTTP/1.1" 200 58927
+WARNING 2025-05-12 00:08:53,559 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:08:53,560 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:08:57,046 basehttp "GET /administrator/books/ HTTP/1.1" 200 66449
+WARNING 2025-05-12 00:08:57,111 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:08:57,112 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:09:57,635 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:09:57,636 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:10:57,635 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:10:57,635 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:11:57,648 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:11:57,648 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:12:57,639 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:12:57,639 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:13:57,645 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:13:57,645 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:14:58,641 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:14:58,642 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:15:59,645 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:15:59,645 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:17:00,639 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:17:00,639 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:17:05,622 basehttp "GET /administrator/books/detail/1/ HTTP/1.1" 200 55983
+WARNING 2025-05-12 00:17:05,678 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:17:05,678 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:17:47,889 basehttp "GET /administrator/books/ HTTP/1.1" 200 66449
+WARNING 2025-05-12 00:17:47,943 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:17:47,944 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:18:12,403 basehttp "GET /administrator/books/create/ HTTP/1.1" 200 59113
+WARNING 2025-05-12 00:18:12,460 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:18:12,460 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:19:12,443 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:19:12,443 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:19:22,474 basehttp "GET /administrator/genres/ HTTP/1.1" 200 58927
+WARNING 2025-05-12 00:19:22,530 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:19:22,530 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:20:22,646 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:20:22,647 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:20:34,549 basehttp "GET /administrator/authors/ HTTP/1.1" 200 59892
+WARNING 2025-05-12 00:20:34,608 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:20:34,608 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:21:34,647 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:21:34,648 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:22:34,636 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:22:34,636 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:23:34,635 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:23:34,636 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:24:29,111 basehttp "GET /administrator/status/ HTTP/1.1" 200 59030
+WARNING 2025-05-12 00:24:29,171 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:24:29,171 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:24:53,573 basehttp "GET /administrator/subjectSpecialtyLink/ HTTP/1.1" 200 61338
+WARNING 2025-05-12 00:24:53,648 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:24:53,648 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:24:58,541 basehttp "GET /administrator/subjectSpecialtyLink/create/ HTTP/1.1" 200 57716
+WARNING 2025-05-12 00:24:58,595 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:24:58,596 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:25:00,092 basehttp "GET /administrator/subjectSpecialtyLink/ HTTP/1.1" 200 61338
+WARNING 2025-05-12 00:25:00,147 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:25:00,147 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:25:04,248 basehttp "GET /administrator/books/ HTTP/1.1" 200 66449
+WARNING 2025-05-12 00:25:04,311 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:25:04,312 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:26:04,637 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:26:04,637 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:26:14,167 basehttp "GET /administrator/books/create/ HTTP/1.1" 200 59113
+WARNING 2025-05-12 00:26:14,248 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:26:14,249 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-12 00:27:14,228 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:27:14,229 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:27:27,043 basehttp "POST /administrator/books/create/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:27:27,175 basehttp "GET /administrator/books/ HTTP/1.1" 200 66706
+WARNING 2025-05-12 00:27:27,266 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:27:27,266 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:27:31,863 basehttp "GET /administrator/books/?page=2 HTTP/1.1" 200 57164
+INFO 2025-05-12 00:27:31,914 basehttp "GET /media/book/2025/05/12/01907865-6810-744c-9668-eef7e656e2dd.webp HTTP/1.1" 200 43662
+WARNING 2025-05-12 00:27:31,933 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:27:31,934 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:27:35,455 basehttp "GET /administrator/books/detail/16/ HTTP/1.1" 200 55751
+INFO 2025-05-12 00:27:35,498 basehttp "GET /media/book/2025/05/12/01907865-6810-744c-9668-eef7e656e2dd.webp HTTP/1.1" 304 0
+WARNING 2025-05-12 00:27:35,533 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:27:35,533 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:27:40,133 basehttp "GET /administrator/books/16/update/ HTTP/1.1" 200 59735
+WARNING 2025-05-12 00:27:40,194 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:27:40,195 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:27:49,291 basehttp "POST /administrator/books/16/update/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:27:49,427 basehttp "GET /administrator/books/ HTTP/1.1" 200 66706
+WARNING 2025-05-12 00:27:49,508 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:27:49,508 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:27:53,068 basehttp "GET /administrator/books/?page=2 HTTP/1.1" 200 57110
+INFO 2025-05-12 00:27:53,104 basehttp "GET /media/book/2025/05/12/01907865-6810-744c-9668-eef7e656e2dd.webp HTTP/1.1" 304 0
+WARNING 2025-05-12 00:27:53,132 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:27:53,132 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:27:57,513 basehttp "GET /administrator/books/16/delete/ HTTP/1.1" 200 54576
+WARNING 2025-05-12 00:27:57,577 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:27:57,577 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:27:58,874 basehttp "POST /administrator/books/16/delete/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:27:59,122 basehttp "GET /administrator/books/ HTTP/1.1" 200 66857
+WARNING 2025-05-12 00:27:59,191 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:27:59,192 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:28:02,746 basehttp "GET /administrator/genres/ HTTP/1.1" 200 58927
+WARNING 2025-05-12 00:28:02,816 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:28:02,817 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:28:12,607 basehttp "GET /administrator/books/ HTTP/1.1" 200 66449
+WARNING 2025-05-12 00:28:12,665 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:28:12,666 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:28:21,057 basehttp "GET /administrator/genres/ HTTP/1.1" 200 58927
+WARNING 2025-05-12 00:28:21,115 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:28:21,116 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:28:53,597 basehttp "GET /administrator/genres/create/ HTTP/1.1" 200 54665
+WARNING 2025-05-12 00:28:53,679 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:28:53,680 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:06,010 basehttp "POST /administrator/genres/create/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:29:06,096 basehttp "GET /administrator/genres/ HTTP/1.1" 200 59299
+WARNING 2025-05-12 00:29:06,160 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:06,161 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:09,415 basehttp "GET /administrator/genres/?page=2 HTTP/1.1" 200 55102
+WARNING 2025-05-12 00:29:09,481 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:09,481 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:12,260 basehttp "GET /administrator/genres/detail/15/ HTTP/1.1" 200 54742
+WARNING 2025-05-12 00:29:12,320 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:12,321 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:14,048 basehttp "GET /administrator/genres/15/update/ HTTP/1.1" 200 54713
+WARNING 2025-05-12 00:29:14,119 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:14,120 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:22,192 basehttp "POST /administrator/genres/15/update/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:29:22,280 basehttp "GET /administrator/genres/ HTTP/1.1" 200 59299
+WARNING 2025-05-12 00:29:22,349 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:22,350 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:26,045 basehttp "GET /administrator/genres/?page=2 HTTP/1.1" 200 55079
+WARNING 2025-05-12 00:29:26,109 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:26,110 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:28,614 basehttp "GET /administrator/genres/15/delete/ HTTP/1.1" 200 54454
+WARNING 2025-05-12 00:29:28,692 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:28,692 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:29,739 basehttp "POST /administrator/genres/15/delete/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:29:29,825 basehttp "GET /administrator/genres/ HTTP/1.1" 200 59207
+WARNING 2025-05-12 00:29:29,891 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:29,891 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:33,165 basehttp "GET /administrator/authors/ HTTP/1.1" 200 59892
+WARNING 2025-05-12 00:29:33,228 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:33,229 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:39,676 basehttp "GET /administrator/authors/?page=2 HTTP/1.1" 200 56341
+WARNING 2025-05-12 00:29:39,752 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:39,753 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:41,095 basehttp "GET /administrator/authors/create/ HTTP/1.1" 200 55035
+WARNING 2025-05-12 00:29:41,155 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:41,156 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:29:56,642 basehttp "POST /administrator/authors/create/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:29:56,727 basehttp "GET /administrator/authors/ HTTP/1.1" 200 60147
+WARNING 2025-05-12 00:29:56,799 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:29:56,800 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:00,309 basehttp "GET /administrator/authors/?page=2 HTTP/1.1" 200 56878
+WARNING 2025-05-12 00:30:00,367 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:00,368 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:04,044 basehttp "GET /administrator/authors/detail/18/ HTTP/1.1" 200 54796
+WARNING 2025-05-12 00:30:04,107 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:04,107 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:06,260 basehttp "GET /administrator/authors/18/update/ HTTP/1.1" 200 55116
+WARNING 2025-05-12 00:30:06,322 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:06,322 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:13,795 basehttp "POST /administrator/authors/18/update/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:30:13,880 basehttp "GET /administrator/authors/ HTTP/1.1" 200 60147
+WARNING 2025-05-12 00:30:13,943 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:13,943 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:18,993 basehttp "GET /administrator/authors/?page=2 HTTP/1.1" 200 56880
+WARNING 2025-05-12 00:30:19,066 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:19,067 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:21,266 basehttp "GET /administrator/authors/18/delete/ HTTP/1.1" 200 54475
+WARNING 2025-05-12 00:30:21,341 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:21,342 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:22,380 basehttp "POST /administrator/authors/18/delete/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:30:22,465 basehttp "GET /administrator/authors/ HTTP/1.1" 200 60172
+WARNING 2025-05-12 00:30:22,527 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:22,528 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:25,647 basehttp "GET /administrator/publishers/ HTTP/1.1" 200 59148
+WARNING 2025-05-12 00:30:25,707 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:25,708 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:30,351 basehttp "GET /administrator/publishers/create/ HTTP/1.1" 200 54709
+WARNING 2025-05-12 00:30:30,413 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:30,414 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:35,435 basehttp "POST /administrator/publishers/create/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:30:35,516 basehttp "GET /administrator/publishers/ HTTP/1.1" 200 59419
+WARNING 2025-05-12 00:30:35,585 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:35,586 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:39,715 basehttp "GET /administrator/publishers/?page=2 HTTP/1.1" 200 55558
+WARNING 2025-05-12 00:30:39,788 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:39,788 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:42,468 basehttp "GET /administrator/publishers/detail/15/ HTTP/1.1" 200 54681
+WARNING 2025-05-12 00:30:42,551 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:42,551 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:45,597 basehttp "GET /administrator/publishers/15/update/ HTTP/1.1" 200 54740
+WARNING 2025-05-12 00:30:45,658 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:45,660 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:50,601 basehttp "POST /administrator/publishers/15/update/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:30:50,689 basehttp "GET /administrator/publishers/ HTTP/1.1" 200 59419
+WARNING 2025-05-12 00:30:50,756 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:50,757 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:54,556 basehttp "GET /administrator/publishers/?page=2 HTTP/1.1" 200 55556
+WARNING 2025-05-12 00:30:54,626 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:54,627 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:58,339 basehttp "GET /administrator/publishers/15/delete/ HTTP/1.1" 200 54464
+WARNING 2025-05-12 00:30:58,403 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:58,404 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:30:59,440 basehttp "POST /administrator/publishers/15/delete/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:30:59,551 basehttp "GET /administrator/publishers/ HTTP/1.1" 200 59434
+WARNING 2025-05-12 00:30:59,638 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:30:59,639 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:01,906 basehttp "GET /administrator/reviews/ HTTP/1.1" 200 62540
+WARNING 2025-05-12 00:31:01,976 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:01,977 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:05,653 basehttp "GET /administrator/reviews/?page=2 HTTP/1.1" 200 56394
+WARNING 2025-05-12 00:31:05,719 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:05,719 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:08,322 basehttp "GET /administrator/reviews/detail/34/ HTTP/1.1" 200 55126
+WARNING 2025-05-12 00:31:08,397 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:08,398 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:11,550 basehttp "GET /administrator/reviews/34/update/ HTTP/1.1" 200 54936
+WARNING 2025-05-12 00:31:11,613 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:11,613 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:16,231 basehttp "POST /administrator/reviews/34/update/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:31:16,343 basehttp "GET /administrator/reviews/ HTTP/1.1" 200 62795
+WARNING 2025-05-12 00:31:16,409 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:16,410 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:21,684 basehttp "GET /administrator/reviews/?page=2 HTTP/1.1" 200 56394
+WARNING 2025-05-12 00:31:21,755 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:21,756 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:25,489 basehttp "GET /administrator/reviews/34/delete/ HTTP/1.1" 200 54533
+WARNING 2025-05-12 00:31:25,560 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:25,560 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:26,529 basehttp "POST /administrator/reviews/34/delete/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:31:26,640 basehttp "GET /administrator/reviews/ HTTP/1.1" 200 62980
+WARNING 2025-05-12 00:31:26,703 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:26,704 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:29,452 basehttp "GET /administrator/status/ HTTP/1.1" 200 59030
+WARNING 2025-05-12 00:31:29,534 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:29,536 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:36,079 basehttp "GET /administrator/status/create/ HTTP/1.1" 200 54676
+WARNING 2025-05-12 00:31:36,152 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:36,153 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:42,547 basehttp "POST /administrator/status/create/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:31:42,634 basehttp "GET /administrator/status/ HTTP/1.1" 200 59406
+WARNING 2025-05-12 00:31:42,704 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:42,705 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:45,446 basehttp "GET /administrator/status/?page=2 HTTP/1.1" 200 55089
+WARNING 2025-05-12 00:31:45,510 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:45,510 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:47,302 basehttp "GET /administrator/status/detail/21/ HTTP/1.1" 200 54754
+WARNING 2025-05-12 00:31:47,358 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:47,359 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:49,057 basehttp "GET /administrator/status/21/update/ HTTP/1.1" 200 54707
+WARNING 2025-05-12 00:31:49,139 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:49,140 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:31:57,705 basehttp "POST /administrator/status/21/update/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:31:57,804 basehttp "GET /administrator/status/ HTTP/1.1" 200 59406
+WARNING 2025-05-12 00:31:57,886 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:31:57,888 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:00,876 basehttp "GET /administrator/status/?page=2 HTTP/1.1" 200 55092
+WARNING 2025-05-12 00:32:00,937 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:00,938 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:03,370 basehttp "GET /administrator/status/21/delete/ HTTP/1.1" 200 54461
+WARNING 2025-05-12 00:32:03,438 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:03,439 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:04,608 basehttp "POST /administrator/status/21/delete/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:32:04,694 basehttp "GET /administrator/status/ HTTP/1.1" 200 59317
+WARNING 2025-05-12 00:32:04,764 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:04,764 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:06,170 basehttp "GET /administrator/subjectSpecialtyLink/ HTTP/1.1" 200 61338
+WARNING 2025-05-12 00:32:06,241 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:06,241 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:13,428 basehttp "GET /administrator/subjectSpecialtyLink/?page=2 HTTP/1.1" 200 55412
+WARNING 2025-05-12 00:32:13,496 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:13,496 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:15,089 basehttp "GET /administrator/subjectSpecialtyLink/detail/15/ HTTP/1.1" 200 55001
+WARNING 2025-05-12 00:32:15,157 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:15,158 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:17,599 basehttp "GET /administrator/subjectSpecialtyLink/ HTTP/1.1" 200 61338
+WARNING 2025-05-12 00:32:17,678 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:17,679 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:18,643 basehttp "GET /administrator/subjectSpecialtyLink/create/ HTTP/1.1" 200 57716
+WARNING 2025-05-12 00:32:18,718 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:18,720 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:29,496 basehttp "POST /administrator/subjectSpecialtyLink/create/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:32:29,607 basehttp "GET /administrator/subjectSpecialtyLink/ HTTP/1.1" 200 61637
+WARNING 2025-05-12 00:32:29,684 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:29,685 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:32,043 basehttp "GET /administrator/subjectSpecialtyLink/?page=2 HTTP/1.1" 200 56049
+WARNING 2025-05-12 00:32:32,110 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:32,111 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:34,680 basehttp "GET /administrator/subjectSpecialtyLink/18/update/ HTTP/1.1" 200 57757
+WARNING 2025-05-12 00:32:34,746 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:34,747 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:40,182 basehttp "POST /administrator/subjectSpecialtyLink/18/update/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:32:40,292 basehttp "GET /administrator/subjectSpecialtyLink/ HTTP/1.1" 200 61637
+WARNING 2025-05-12 00:32:40,357 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:40,358 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:43,427 basehttp "GET /administrator/subjectSpecialtyLink/?page=2 HTTP/1.1" 200 56058
+WARNING 2025-05-12 00:32:43,500 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:43,501 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:44,964 basehttp "GET /administrator/subjectSpecialtyLink/18/delete/ HTTP/1.1" 200 54619
+WARNING 2025-05-12 00:32:45,035 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:45,036 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:46,068 basehttp "POST /administrator/subjectSpecialtyLink/18/delete/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:32:46,180 basehttp "GET /administrator/subjectSpecialtyLink/ HTTP/1.1" 200 61785
+WARNING 2025-05-12 00:32:46,252 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:46,253 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:32:49,076 basehttp "GET /statistic/ HTTP/1.1" 200 59634
+WARNING 2025-05-12 00:32:49,198 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:32:49,199 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:33:12,703 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:33:12,787 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 00:33:12,830 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-12 00:33:45,845 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 00:34:26,165 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 00:34:34,149 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 00:35:08,090 basehttp "GET /?page=2 HTTP/1.1" 200 6595
+INFO 2025-05-12 00:35:11,135 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 00:35:19,107 basehttp "GET /catalog/?subject=2 HTTP/1.1" 200 16703
+INFO 2025-05-12 00:35:22,143 basehttp "GET /catalog/?genre=2&subject=2 HTTP/1.1" 200 16840
+INFO 2025-05-12 00:35:24,746 basehttp "GET /catalog/?genre=2&subject=2 HTTP/1.1" 200 16840
+INFO 2025-05-12 00:35:26,412 basehttp "GET /catalog/?subject=2& HTTP/1.1" 200 16703
+INFO 2025-05-12 00:35:29,372 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-12 00:35:30,330 basehttp "GET /catalog/?genre=1 HTTP/1.1" 200 14088
+INFO 2025-05-12 00:35:35,590 basehttp "GET /catalog/?subject=8&genre=1 HTTP/1.1" 200 14215
+INFO 2025-05-12 00:35:39,498 basehttp "GET /catalog/?genre=1& HTTP/1.1" 200 14088
+INFO 2025-05-12 00:35:40,504 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-12 00:35:41,599 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-12 00:35:42,764 basehttp "GET /catalog/?sort=title_asc HTTP/1.1" 200 20514
+INFO 2025-05-12 00:35:44,697 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 20197
+INFO 2025-05-12 00:35:46,203 basehttp "GET /catalog/?sort=author_asc HTTP/1.1" 200 20691
+INFO 2025-05-12 00:35:48,422 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-12 00:35:50,565 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-12 00:35:54,958 basehttp "GET /catalog/?search=%D0%B0%D0%BB%D0%B3 HTTP/1.1" 200 14983
+INFO 2025-05-12 00:35:59,613 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 00:36:01,005 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-12 00:36:31,149 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:36:31,250 basehttp "GET / HTTP/1.1" 200 25851
+WARNING 2025-05-12 00:36:31,309 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:36:31,309 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:36:33,795 basehttp "GET /my_shelf/ HTTP/1.1" 200 24826
+WARNING 2025-05-12 00:36:33,854 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:36:33,854 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:36:34,655 basehttp "GET /accounts/profile/ HTTP/1.1" 200 23132
+INFO 2025-05-12 00:36:34,702 basehttp "GET /media/profile/2025/05/11/1000016516.jpg HTTP/1.1" 200 226578
+WARNING 2025-05-12 00:36:34,721 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:36:34,722 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:36:36,129 basehttp "GET / HTTP/1.1" 200 25851
+WARNING 2025-05-12 00:36:36,191 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:36:36,192 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:36:36,731 basehttp "GET /catalog/ HTTP/1.1" 200 36255
+WARNING 2025-05-12 00:36:36,798 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:36:36,799 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 00:37:16,146 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:37:16,209 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 00:37:16,879 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 00:57:08,224 basehttp "GET /?page=2 HTTP/1.1" 200 6595
+INFO 2025-05-12 00:57:11,434 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 00:57:14,292 basehttp "GET /catalog/?genre=1 HTTP/1.1" 200 14088
+INFO 2025-05-12 00:57:17,911 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-12 00:57:20,665 basehttp "GET /catalog/?subject=2 HTTP/1.1" 200 16703
+INFO 2025-05-12 00:57:22,432 basehttp "GET /catalog/?genre=2&subject=2 HTTP/1.1" 200 16840
+INFO 2025-05-12 00:57:26,396 basehttp "GET /catalog/?subject=2& HTTP/1.1" 200 16703
+INFO 2025-05-12 00:57:28,410 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-12 00:57:40,296 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 00:57:51,925 basehttp "GET /?page=2 HTTP/1.1" 200 6595
+INFO 2025-05-12 00:57:54,881 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 00:57:58,899 basehttp "GET /catalog/?genre=2 HTTP/1.1" 200 20850
+INFO 2025-05-12 00:58:01,475 basehttp "GET /catalog/?subject=2&genre=2 HTTP/1.1" 200 16840
+INFO 2025-05-12 00:58:03,751 basehttp "GET /catalog/?subject=2& HTTP/1.1" 200 16703
+INFO 2025-05-12 00:58:05,040 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-12 00:58:07,206 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-12 00:58:09,891 basehttp "GET /catalog/?sort=title_asc HTTP/1.1" 200 20514
+INFO 2025-05-12 00:58:11,151 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 20197
+INFO 2025-05-12 00:58:12,425 basehttp "GET /catalog/?sort=author_asc HTTP/1.1" 200 20691
+INFO 2025-05-12 00:58:13,552 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-12 00:58:18,074 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-12 00:58:19,974 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 00:58:22,883 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:58:22,891 basehttp "GET /login/?next=/catalog/description_book/1/ HTTP/1.1" 200 4142
+INFO 2025-05-12 00:58:42,327 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 00:59:09,505 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 00:59:12,837 basehttp "GET /catalog/?page=2&sort=title_asc HTTP/1.1" 200 15909
+INFO 2025-05-12 00:59:17,231 basehttp "GET /catalog/?genre=2 HTTP/1.1" 200 20850
+INFO 2025-05-12 00:59:19,380 basehttp "GET /catalog/?subject=2&genre=2 HTTP/1.1" 200 16840
+INFO 2025-05-12 00:59:21,936 basehttp "GET /catalog/?subject=2& HTTP/1.1" 200 16703
+INFO 2025-05-12 00:59:23,426 basehttp "GET /catalog/? HTTP/1.1" 200 20514
+INFO 2025-05-12 00:59:24,845 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-12 00:59:25,721 basehttp "GET /catalog/?sort=title_asc HTTP/1.1" 200 20514
+INFO 2025-05-12 00:59:27,285 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 20197
+INFO 2025-05-12 00:59:29,579 basehttp "GET /catalog/?sort=author_asc HTTP/1.1" 200 20691
+INFO 2025-05-12 00:59:31,843 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-12 00:59:36,091 basehttp "GET /catalog/description_book/9/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:59:36,097 basehttp "GET /login/?next=/catalog/description_book/9/ HTTP/1.1" 200 4142
+INFO 2025-05-12 00:59:50,465 basehttp "POST /login/?next=/catalog/description_book/9/ HTTP/1.1" 302 0
+INFO 2025-05-12 00:59:50,565 basehttp "GET / HTTP/1.1" 200 26731
+WARNING 2025-05-12 00:59:50,635 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 00:59:50,635 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:00:02,987 basehttp "GET /catalog/ HTTP/1.1" 200 37135
+WARNING 2025-05-12 01:00:03,059 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:00:03,059 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:00:06,173 basehttp "GET /catalog/description_book/2/ HTTP/1.1" 200 30992
+WARNING 2025-05-12 01:00:06,257 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:00:06,257 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:00:06,364 basehttp "GET /media/file_books/2025/03/13/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D0%B8_%D0%BF%D1%80%D0%B8%D0%BC__Z-Library.pdf HTTP/1.1" 304 0
+INFO 2025-05-12 01:00:16,469 basehttp "POST /book/2/add_bookmark/ HTTP/1.1" 200 178
+INFO 2025-05-12 01:00:18,662 basehttp "GET /catalog/description_book/2/?page=7 HTTP/1.1" 200 31500
+WARNING 2025-05-12 01:00:18,728 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:00:18,729 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:00:22,225 basehttp "GET /catalog/description_book/2/?page=254 HTTP/1.1" 200 31504
+WARNING 2025-05-12 01:00:22,296 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:00:22,296 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:00:27,136 basehttp "POST /delete_bookmark/43/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:00:27,367 basehttp "GET /catalog/description_book/2/ HTTP/1.1" 200 31144
+WARNING 2025-05-12 01:00:27,431 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:00:27,432 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:00:42,392 basehttp "POST /catalog/description_book/2/?page=1 HTTP/1.1" 302 0
+INFO 2025-05-12 01:00:42,616 basehttp "GET /catalog/description_book/2/ HTTP/1.1" 200 31702
+WARNING 2025-05-12 01:00:42,684 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:00:42,685 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:00:47,896 basehttp "POST /note/delete/46/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:00:48,014 basehttp "GET /catalog/description_book/2/ HTTP/1.1" 200 30992
+WARNING 2025-05-12 01:00:48,082 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:00:48,083 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:01:05,784 basehttp "POST /catalog/description_book/2/?page=1 HTTP/1.1" 302 0
+INFO 2025-05-12 01:01:05,908 basehttp "GET /catalog/description_book/2/ HTTP/1.1" 200 31806
+WARNING 2025-05-12 01:01:05,975 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:01:05,976 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:01:12,104 basehttp "POST /review/delete/25/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:01:12,224 basehttp "GET /catalog/description_book/2/ HTTP/1.1" 200 30919
+WARNING 2025-05-12 01:01:12,302 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:01:12,302 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:01:18,972 basehttp "GET /catalog/ HTTP/1.1" 200 37135
+WARNING 2025-05-12 01:01:19,061 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:01:19,062 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:01:19,972 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 30999
+WARNING 2025-05-12 01:01:20,055 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:01:20,055 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:01:20,205 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 304 0
+INFO 2025-05-12 01:01:29,775 basehttp "GET /my_shelf/ HTTP/1.1" 200 25706
+WARNING 2025-05-12 01:01:29,843 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:01:29,843 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:01:38,287 basehttp "POST /remove-from-shelf/2/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:01:38,390 basehttp "GET /my_shelf/ HTTP/1.1" 200 24627
+WARNING 2025-05-12 01:01:38,466 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:01:38,467 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:01:41,272 basehttp "GET /accounts/profile/ HTTP/1.1" 200 24012
+WARNING 2025-05-12 01:01:41,345 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:01:41,345 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:02:06,650 basehttp "POST /accounts/profile/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:02:06,732 basehttp "GET /accounts/profile/ HTTP/1.1" 200 24464
+INFO 2025-05-12 01:02:06,782 basehttp "GET /media/profile/2025/05/12/%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F_%D1%81%D1%85%D0%B5%D0%BC%D0%B0_3-%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0__3.drawio_2.png HTTP/1.1" 200 110887
+WARNING 2025-05-12 01:02:06,799 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:02:06,800 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:02:11,433 basehttp "POST /accounts/profile/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:02:11,518 basehttp "GET /accounts/profile/ HTTP/1.1" 200 24465
+INFO 2025-05-12 01:02:11,550 basehttp "GET /media/profile/2025/05/12/%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F_%D1%81%D1%85%D0%B5%D0%BC%D0%B0_3-%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0__3.drawio_2.png HTTP/1.1" 304 0
+WARNING 2025-05-12 01:02:11,578 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:02:11,578 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:02:16,867 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:02:16,946 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 01:02:19,255 basehttp "GET /register/ HTTP/1.1" 200 4669
+INFO 2025-05-12 01:03:50,948 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:03:50,956 basehttp "GET /login/ HTTP/1.1" 200 4452
+INFO 2025-05-12 01:04:05,224 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:04:05,317 basehttp "GET / HTTP/1.1" 200 12654
+WARNING 2025-05-12 01:04:05,374 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:04:05,374 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:04:06,429 basehttp "GET /accounts/profile/ HTTP/1.1" 200 9913
+WARNING 2025-05-12 01:04:06,494 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:04:06,495 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:04:18,477 basehttp "GET /my_shelf/ HTTP/1.1" 200 6227
+WARNING 2025-05-12 01:04:18,538 log Not Found: /api/notifications/count/
+WARNING 2025-05-12 01:04:18,539 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-12 01:04:23,502 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:04:23,576 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 01:06:40,430 basehttp "GET / HTTP/1.1" 200 10110
+INFO 2025-05-12 01:06:56,302 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 01:06:59,380 basehttp "GET /login/ HTTP/1.1" 200 4142
+INFO 2025-05-12 01:51:28,528 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 01:51:30,518 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-12 01:51:42,614 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-12 01:51:46,554 basehttp "GET /catalog/?search=%D0%B0%D0%BB%D0%B3 HTTP/1.1" 200 14983
+INFO 2025-05-12 01:52:07,247 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-12 01:52:09,026 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-12 01:52:18,889 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-12 01:52:25,296 basehttp "GET /catalog/?search=%D0%B0%D0%BB%D0%B3 HTTP/1.1" 200 14983
+INFO 2025-05-12 01:52:54,316 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-12 01:52:55,184 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-12 01:52:55,748 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 20197
+INFO 2025-05-12 01:52:56,054 basehttp "GET /catalog/?sort=author_asc HTTP/1.1" 200 20691
+INFO 2025-05-12 01:52:56,618 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-12 01:53:05,907 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 20504
+INFO 2025-05-12 01:53:10,714 basehttp "GET /catalog/?search=%D0%B0%D0%BB%D0%B3 HTTP/1.1" 200 14983
+INFO 2025-05-12 01:53:16,498 basehttp "GET /catalog/description_book/2/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:53:16,507 basehttp "GET /login/?next=/catalog/description_book/2/ HTTP/1.1" 200 4142
+INFO 2025-05-12 01:53:52,829 basehttp "GET /catalog/ HTTP/1.1" 200 20514
+INFO 2025-05-12 01:54:16,188 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-12 01:54:28,685 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 20083
+INFO 2025-05-12 01:54:34,538 basehttp "GET /catalog/?search=%D0%B0%D0%BB%D0%B3 HTTP/1.1" 200 14983
+INFO 2025-05-12 01:54:40,498 basehttp "GET /catalog/description_book/2/ HTTP/1.1" 302 0
+INFO 2025-05-12 01:54:40,507 basehttp "GET /login/?next=/catalog/description_book/2/ HTTP/1.1" 200 4142

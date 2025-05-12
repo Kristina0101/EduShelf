@@ -28,7 +28,7 @@ urlpatterns = [
     path('register/', user_views.register, name='register'),
     path('notification/read/<int:notification_id>/', mark_notification_read, name='mark_notification_read'),
     path('login/', CustomLoginView.as_view(), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(template_name='bookLibrary/main_page.html'), name='logout'),
+    path('logout/', auth_views.LogoutView.as_view(next_page='bookLibrary:main_page'), name='logout'),
     path('accounts/profile/', user_views.profile, name='profile'),
     path('', include('bookLibrary.urls')),
 ]
