@@ -1,2 +1,0 @@
-WARNING 2025-05-13 20:12:38,827 log Not Found: /api/notifications/count/
-WARNING 2025-05-13 20:12:38,828 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
