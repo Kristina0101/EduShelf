@@ -1,4 +1,3 @@
-/* ========== BASE STYLES ========== */
 :root {
   --primary-bg: #FEEED7;
   --primary-color: #8b5e3c;
@@ -17,14 +16,12 @@ body {
   font-family: inherit;
 }
 
-/* ========== LAYOUT ========== */
 .content-wrapper {
   padding: 30px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* ========== HEADER & NAVIGATION ========== */
 header {
   text-align: center;
 }
@@ -104,7 +101,7 @@ nav ul li a:hover,
   padding: 0;
 }
 
-/* ========== FOOTER ========== */
+/* Футер */
 .foot1 {
   padding: 30px 20px;
   border-top: 1px solid var(--border-color);
@@ -133,7 +130,7 @@ nav ul li a:hover,
   font-size: 28px;
 }
 
-/* ========== TABLES ========== */
+/* Таблицы */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -153,7 +150,7 @@ nav ul li a:hover,
   font-weight: bold;
 }
 
-/* ========== BUTTONS ========== */
+/* Кнопки */
 .btn-action {
   background-color: var(--primary-color);
   color: white;
@@ -207,7 +204,7 @@ nav ul li a:hover,
   max-height: 300px;
 }
 
-/* ========== PAGINATION ========== */
+/* Пагинация */
 .pagination {
   display: flex;
   justify-content: center;
@@ -237,7 +234,7 @@ nav ul li a:hover,
   background-color: var(--hover-bg);
 }
 
-/* ========== NOTIFICATIONS ========== */
+/* Уведомления */
 .notifications-menu {
   position: relative;
 }
@@ -349,7 +346,7 @@ nav ul li a:hover,
   font-size: 12px;
 }
 
-/* ========== UTILITY CLASSES ========== */
+/* Подробная информация */
 .name-operation {
   text-align: center;
   font-size: 32px;
@@ -374,7 +371,7 @@ nav ul li a:hover,
   margin-bottom: 10px;
 }
 
-/* ========== MEDIA QUERIES ========== */
+/* Адаптивность */
 @media (max-width: 1600px) {
   nav ul {
     gap: 12px;
@@ -458,7 +455,6 @@ nav ul li a:hover,
     min-width: 800px;
   }
   
-  /* Mobile menu button */
   .mobile-menu-btn {
     background: none;
     border: none;
@@ -546,7 +542,6 @@ nav ul li a:hover,
     margin: 0 5px;
   }
   
-  /* Notifications menu */
   .menu-toggle {
     width: 40px;
     height: 40px;
@@ -558,7 +553,6 @@ nav ul li a:hover,
     top: 50px;
   }
   
-  /* Footer */
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -601,7 +595,6 @@ nav ul li a:hover,
     margin-top: 10px;
   }
   
-  /* Стиль для кнопки "Назад" */
   a.btn-action {
     display: inline-block;
     padding: 8px 12px;
@@ -622,19 +615,16 @@ nav ul li a:hover,
     padding: 15px;
   }
   
-  /* Заголовок страницы */
   .name_oparetion {
     font-size: 24px;
     margin-bottom: 15px;
   }
   
-  /* Данные пользователя */
   .status-name {
     font-size: 20px;
     margin-bottom: 8px;
   }
   
-  /* Кнопки действий */
   .up-del-buttons {
     flex-direction: column;
     gap: 10px;
@@ -832,7 +822,6 @@ nav ul li a:hover,
     font-size: 13px;
   }
   
-  /* Кнопка "Назад" */
   a.btn-action {
     padding: 6px 10px;
     font-size: 13px;

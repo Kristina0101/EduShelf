@@ -8,7 +8,6 @@
 {% endblock %}
 
 {% block content %}
-<!-- Мобильная сортировка -->
 <div class="mobile-sort">
     <select class="mobile-sort-select" onchange="location = this.value;">
         <option value="{% url 'bookLibrary:catalog' %}?sort=none" {% if sort_field == 'none' %}selected{% endif %}>По умолчанию</option>
@@ -19,7 +18,6 @@
     </select>
 </div>
 
-<!-- Десктопная сортировка -->
 <div class="sort-options">
     <span>Сортировать:</span>
     <a href="{% url 'bookLibrary:catalog' %}?sort=none" {% if sort_field == 'none' %}class="selected"{% endif %}>По умолчанию</a> |
@@ -30,7 +28,6 @@
 </div>
 
 <div class="profile-container">
-    <!-- Мобильные фильтры -->
     <div class="mobile-filters">
         <button class="mobile-filters-toggle">Фильтры ▼</button>
         <div class="mobile-filters-content">
@@ -58,7 +55,6 @@
         </div>
     </div>
     
-    <!-- Десктопные фильтры -->
     <aside class="category-panel">
         <h2>Категории</h2>
         <form method="GET">
@@ -113,7 +109,6 @@
 </div>
 
 <script>
-// Переключение мобильных фильтров
 document.querySelector('.mobile-filters-toggle').addEventListener('click', function() {
     const content = document.querySelector('.mobile-filters-content');
     content.style.display = content.style.display === 'block' ? 'none' : 'block';

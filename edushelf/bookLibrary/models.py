@@ -103,6 +103,7 @@ class Students(models.Model):
     
     class Meta:
         db_table = 'students'
+        ordering = ['last_name', 'first_name']
 
 class Genres(models.Model):
     genre_id = models.AutoField(primary_key=True)

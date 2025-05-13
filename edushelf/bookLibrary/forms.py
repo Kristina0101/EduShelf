@@ -1,5 +1,6 @@
 from django import forms
 from .models import *
+from django.core.validators import validate_email
 from django.contrib.auth.hashers import make_password
 
 
@@ -117,6 +118,10 @@ class StudentsForm(forms.ModelForm):
             'specialty': 'Специальность',
             'user': 'Пользователь'
         }
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        validate_email(email)
+        return email
 
 
 class GenresForm(forms.ModelForm):

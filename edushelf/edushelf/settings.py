@@ -29,7 +29,7 @@ if not os.path.exists(LOG_FILE):
 SECRET_KEY = 'django-insecure-pn+x^1zer&c#i!oma84+jc+*h@4@p@n6=yi!u63dtw!#3h4vni'
 
 
-DEBUG = True
+DEBUG = False
 X_FRAME_OPTIONS = 'SAMEORIGIN' 
 SECURE_CONTENT_TYPE_NOSNIFF = False
 

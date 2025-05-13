@@ -22,7 +22,6 @@
         </div>
     </div>
 
-    <!-- График соотношения пользователей -->
     <h3 class="name-operation" style="margin-top: 30px;">Соотношение пользователей</h3>
     <div class="status-details" style="display: flex; justify-content: center; align-items: center; padding: 10px;">
         <div style="width: 220px; height: 220px;">
@@ -30,7 +29,6 @@
         </div>
     </div>
     
-    <!-- Статистика регистраций -->
     <h3 class="name-operation" style="margin-top: 40px;">Регистрация пользователей за последние 7 дней</h3>
     <div class="status-details">
         <table class="table">
@@ -55,7 +53,6 @@
         </table>
     </div>
 
-    <!-- Статистика авторизаций -->
     <h3 class="name-operation" style="margin-top: 40px;">Авторизации пользователей за последние 7 дней</h3>
     <div class="status-details">
         <table class="table">
@@ -83,7 +80,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    // График соотношения пользователей
     const ctx = document.getElementById('userPieChart').getContext('2d');
     const total = parseInt("{{ total_users }}"); 
     const students = parseInt("{{ registered_students }}");  
@@ -122,7 +118,6 @@
         }
     });
         document.addEventListener('DOMContentLoaded', function() {
-        // Функция для переключения мобильного меню
         function toggleMobileMenu() {
             const nav = document.querySelector('nav ul');
             if (nav) {
@@ -130,7 +125,6 @@
             }
         }
         
-        // Добавляем кнопку меню для мобильных устройств
         function addMobileMenuButton() {
             const nav = document.querySelector('nav');
             if (nav && !document.querySelector('.mobile-menu-btn')) {
@@ -142,7 +136,6 @@
             }
         }
         
-        // Проверяем размер экрана и добавляем/удаляем кнопку меню
         function checkScreenSize() {
             if (window.innerWidth <= 992) {
                 addMobileMenuButton();
@@ -154,7 +147,6 @@
             }
         }
         
-        // Проверяем размер экрана при загрузке и изменении размера
         checkScreenSize();
         window.addEventListener('resize', checkScreenSize);
     });

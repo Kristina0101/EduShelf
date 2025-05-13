@@ -61,7 +61,6 @@
 </header>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Функция для переключения мобильного меню
         function toggleMobileMenu() {
             const nav = document.querySelector('nav ul');
             if (nav) {
@@ -69,7 +68,6 @@
             }
         }
         
-        // Добавляем кнопку меню для мобильных устройств
         function addMobileMenuButton() {
             const nav = document.querySelector('nav');
             if (nav && !document.querySelector('.mobile-menu-btn')) {
@@ -81,7 +79,6 @@
             }
         }
         
-        // Проверяем размер экрана и добавляем/удаляем кнопку меню
         function checkScreenSize() {
             if (window.innerWidth <= 992) {
                 addMobileMenuButton();
@@ -93,7 +90,6 @@
             }
         }
         
-        // Проверяем размер экрана при загрузке и изменении размера
         checkScreenSize();
         window.addEventListener('resize', checkScreenSize);
     });

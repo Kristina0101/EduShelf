@@ -1,4 +1,4 @@
-/* ========== БАЗОВЫЕ СТИЛИ ========== */
+/* БАЗОВЫЕ СТИЛИ */
 body {
   background-color: #FEEED7;
   font-family: serif;
@@ -7,7 +7,7 @@ body {
   color: #000;
 }
 
-/* ========== ШАПКА ========== */
+/* ШАПКА */
 header {
   text-align: center;
 }
@@ -28,7 +28,7 @@ header {
   color: #666;
 }
 
-/* ========== НАВИГАЦИЯ ========== */
+/* НАВИГАЦИЯ */
 nav {
   display: flex;
   justify-content: space-between;
@@ -67,7 +67,7 @@ nav ul li a:hover,
   text-decoration: none;
 }
 
-/* ========== ПОИСК ========== */
+/* ПОИСК */
 .search-box {
   display: flex;
   align-items: center;
@@ -92,7 +92,7 @@ nav ul li a:hover,
   cursor: pointer;
 }
 
-/* ========== ФУТЕР ========== */
+/* ФУТЕР */
 .foot1 {
   padding: 30px 20px;
   border-top: 1px solid #000;
@@ -122,7 +122,7 @@ nav ul li a:hover,
   font-size: 28px;
 }
 
-/* ========== КНИГИ И КАТАЛОГ ========== */
+/* КНИГИ И КАТАЛОГ */
 .book-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -196,7 +196,7 @@ nav ul li a:hover,
   border-radius: 5px;
 }
 
-/* ========== PDF ПРОСМОТРЩИК ========== */
+/* PDF ПРОСМОТРЩИК */
 .pdf-viewer {
   margin-top: 10px;
   text-align: center;
@@ -276,7 +276,7 @@ nav ul li a:hover,
   text-align: center;
 }
 
-/* ========== БАННЕР ========== */
+/* БАННЕР */
 .baner_catalog {
   text-align: center;
   margin: 10px;
@@ -287,7 +287,7 @@ nav ul li a:hover,
   width: 100%;
 }
 
-/* ========== ФОРМЫ АВТОРИЗАЦИИ ========== */
+/* ФОРМЫ АВТОРИЗАЦИИ */
 .login-container,
 .register-container {
   display: flex;
@@ -350,7 +350,7 @@ nav ul li a:hover,
   background-color: #724b2f;
 }
 
-/* ========== ПРОФИЛЬ ========== */
+/* ПРОФИЛЬ */
 .profile-container-custom {
   display: flex;
   justify-content: center;
@@ -417,7 +417,7 @@ nav ul li a:hover,
   background: none;
 }
 
-/* ========== КАТАЛОГ ========== */
+/* КАТАЛОГ */
 .profile-container {
   display: flex;
   gap: 20px;
@@ -454,7 +454,7 @@ nav ul li a:hover,
   flex-grow: 1;
 }
 
-/* ========== ПАГИНАЦИЯ ========== */
+/* ПАГИНАЦИЯ */
 .pagination {
   display: flex;
   justify-content: center;
@@ -484,7 +484,7 @@ nav ul li a:hover,
   background-color: #e0d4c4;
 }
 
-/* ========== ФИЛЬТРЫ ========== */
+/* ФИЛЬТРЫ */
 .filter-link {
   text-decoration: none;
   color: inherit;
@@ -526,7 +526,7 @@ nav ul li a:hover,
   font-size: 20px;
 }
 
-/* ========== ЗАКЛАДКИ И ЗАМЕТКИ ========== */
+/* ЗАКЛАДКИ*/
 .notes-section,
 .reviews-section,
 .bookmarks-section {
@@ -579,7 +579,7 @@ nav ul li a:hover,
   font-weight: 100;
 }
 
-/* ========== КНОПКИ ДЕЙСТВИЙ ========== */
+/* КНОПКИ ДЕЙСТВИЙ */
 .btn-action {
   background-color: #8b5e3c;
   color: white;
@@ -618,7 +618,7 @@ nav ul li a:hover,
   background-color: #ff1a1a;
 }
 
-/* ========== УВЕДОМЛЕНИЯ ========== */
+/* УВЕДОМЛЕНИЯ */
 .notifications-menu {
   position: fixed;
   top: 20px;
@@ -701,7 +701,7 @@ nav ul li a:hover,
   z-index: 1001;
 }
 
-/* ========== АДАПТИВНОСТЬ ========== */
+/* АДАПТИВНОСТЬ */
 .mobile-sort {
     display: none;
     margin: 15px 20px;
@@ -876,7 +876,7 @@ nav ul li a:hover,
 
 }
 @media (max-width: 768px) {
-  /* Общие стили для планшетов и мобильных */
+
   .header-top {
     padding: 10px;
     position: relative;
@@ -1063,7 +1063,7 @@ nav ul li a:hover,
 }
 
 @media (max-width: 480px) {
-  /* Стили для маленьких мобильных устройств */
+
   .logo-text h1 {
     font-size: 20px;
   }
@@ -1116,7 +1116,6 @@ nav ul li a:hover,
     max-width: 300px;
   }
   
-  /* Баннер */
   .baner_catalog img {
     height: auto;
     max-height: 200px;

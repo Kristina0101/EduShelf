@@ -176,16 +176,13 @@
                 document.getElementById('page-input').value = pageNum;
                 currentPage = pageNum;
 
-                // Обновляем состояние кнопок навигации
                 updateNavButtons();
                 
-                // Обновляем URL без перезагрузки страницы
                 history.pushState(null, null, `?page=${pageNum}`);
             });
         }
 
         function updateNavButtons() {
-            // Исправлено: используем правильные ID кнопок
             document.getElementById('prev-page-btn').disabled = currentPage <= 1;
             document.getElementById('next-page-btn').disabled = currentPage >= totalPages;
         }
@@ -240,7 +237,6 @@
             });
         }
 
-        // Инициализация кнопок при загрузке
         document.addEventListener('DOMContentLoaded', function() {
             updateNavButtons();
         });
