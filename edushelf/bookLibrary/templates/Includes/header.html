@@ -1,4 +1,3 @@
-<!-- Добавляем в шапку кнопку для мобильного меню -->
 <header>
   <div class="header-top">
     <div class="logo">
@@ -69,7 +68,7 @@
           id="search"
           name="search"
           placeholder="Поиск по названию или автору"
-          value="{{ search_query }}"
+          value="{{ search_query|default:'' }}"
         />
         <button type="submit" class="search-icon">&#128269;</button>
       </form>
@@ -80,7 +79,6 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Мобильное меню
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mainNav = document.getElementById('main-nav');
     
@@ -91,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Уведомления
     const toggleBtn = document.getElementById('notifications-toggle');
     const menu = document.getElementById('notifications-menu');
     

@@ -133,18 +133,23 @@ LOGGING = {
             'formatter': 'verbose',
             'encoding': 'utf-8',
         },
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
-            'handlers': ['file'],
+            'handlers': ['console', 'file'],
             'level': 'INFO',
             'propagate': True,
         },
     },
+
 }
 
 
-
+SILENCED_SYSTEM_CHECKS = ['staticfiles.W004']
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 

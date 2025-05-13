@@ -100,6 +100,7 @@ def description_book(request, id):
         "review_form": ReviewsForm(),
     }
     return render(request, "bookLibrary/description_book.html", context)
+
 @login_required(login_url="login")
 def delete_note(request, note_id):
     note = get_object_or_404(Notes, note_id=note_id)

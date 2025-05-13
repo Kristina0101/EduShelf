@@ -23,12 +23,10 @@ def register(request):
             password1 = form.cleaned_data.get('password1')
             password2 = form.cleaned_data.get('password2')
             
-            # Проверка совпадения паролей
             if password1 != password2:
                 messages.error(request, 'Пароли не совпадают.')
                 return render(request, 'users/register.html', {'form': form})
-            
-            # Проверка сложности пароля
+
             if len(password1) < 8:
                 messages.error(request, 'Пароль должен содержать минимум 8 символов.')
                 return render(request, 'users/register.html', {'form': form})
@@ -39,7 +37,6 @@ def register(request):
                 messages.error(request, 'Пользователь с таким email отсутствует в реестре студентов.')
                 return render(request, 'users/register.html', {'form': form})
             
-            # Проверка, не зарегистрирован ли уже пользователь с этим email
             if User.objects.filter(email=email).exists():
                 messages.error(request, 'Пользователь с таким email уже зарегистрирован.')
                 return render(request, 'users/register.html', {'form': form})
@@ -61,7 +58,6 @@ def register(request):
                 user.role = reader_role
                 user.save()
                 
-                # Уведомление для нового пользователя
                 Notification.objects.create(
                     user=user,
                     title="Добро пожаловать!",

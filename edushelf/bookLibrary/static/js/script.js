@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Функция для адаптации таблицы
     function adaptTable() {
         const table = document.querySelector('.table');
         if (!table) return;
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const headers = table.querySelectorAll('thead th');
         const rows = table.querySelectorAll('tbody tr');
         
-        // Добавляем data-label для всех ячеек
         headers.forEach((header, index) => {
             const label = header.textContent.trim();
             rows.forEach(row => {
@@ -18,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Адаптация для мобильных устройств
         if (window.innerWidth <= 768) {
             table.classList.add('mobile-table');
         } else {
@@ -26,13 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Инициализация при загрузке
     adaptTable();
     
-    // Адаптация при изменении размера
     window.addEventListener('resize', adaptTable);
     
-    // Мобильное меню
     function initMobileMenu() {
         const nav = document.querySelector('nav');
         if (!nav) return;
