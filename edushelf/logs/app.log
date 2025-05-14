@@ -2580,3 +2580,6 @@ INFO 2025-05-14 17:46:19,226 autoreload Watching for file changes with StatReloa
 INFO 2025-05-14 18:20:46,900 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
 INFO 2025-05-14 18:20:48,137 autoreload Watching for file changes with StatReloader
 INFO 2025-05-14 18:20:50,685 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 18:20:51,252 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 18:22:42,572 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 18:22:43,233 autoreload Watching for file changes with StatReloader
