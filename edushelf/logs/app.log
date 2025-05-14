@@ -2583,3 +2583,216 @@ INFO 2025-05-14 18:20:50,685 autoreload /usr/src/edushelf/edushelf/settings.py c
 INFO 2025-05-14 18:20:51,252 autoreload Watching for file changes with StatReloader
 INFO 2025-05-14 18:22:42,572 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
 INFO 2025-05-14 18:22:43,233 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:32:15,689 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:32:55,501 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-14 21:32:56,463 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 18:32:56,752 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 18:32:57,429 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 18:32:59,744 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 21:33:00,183 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-14 18:33:00,425 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:33:01,109 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 18:33:04,032 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 18:33:05,108 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:33:05,239 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-14 21:33:06,281 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:33:12,294 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-14 18:33:13,073 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 21:33:13,091 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 18:33:13,733 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:33:17,631 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-14 18:33:17,998 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 21:33:18,630 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 18:33:18,766 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:33:31,107 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-14 18:33:31,356 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 18:33:31,912 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:33:31,993 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:34:43,278 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-14 18:34:44,197 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 21:34:44,268 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 18:34:45,077 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 21:36:30,836 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-14 21:36:31,526 autoreload Watching for file changes with StatReloader
+INFO 2025-05-14 18:36:32,020 autoreload /usr/src/edushelf/edushelf/settings.py changed, reloading.
+INFO 2025-05-14 18:36:32,689 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-14 18:36:47,028 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:47,036 log Bad Request: /bd_admin/users/
+WARNING 2025-05-14 18:36:47,036 basehttp "GET /bd_admin/users/ HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:47,129 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:47,131 log Bad Request: /favicon.ico
+WARNING 2025-05-14 18:36:47,132 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:47,686 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:47,688 log Bad Request: /bd_admin/users/
+WARNING 2025-05-14 18:36:47,689 basehttp "GET /bd_admin/users/ HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:47,742 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:47,745 log Bad Request: /favicon.ico
+WARNING 2025-05-14 18:36:47,745 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:48,160 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:48,162 log Bad Request: /bd_admin/users/
+WARNING 2025-05-14 18:36:48,163 basehttp "GET /bd_admin/users/ HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:48,208 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:48,211 log Bad Request: /favicon.ico
+WARNING 2025-05-14 18:36:48,211 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:50,225 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:50,228 log Bad Request: /favicon.ico
+WARNING 2025-05-14 18:36:50,229 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:51,820 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:51,822 log Bad Request: /logs/
+WARNING 2025-05-14 18:36:51,822 basehttp "GET /logs/ HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:51,873 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:51,875 log Bad Request: /favicon.ico
+WARNING 2025-05-14 18:36:51,876 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:52,684 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:52,686 log Bad Request: /favicon.ico
+WARNING 2025-05-14 18:36:52,687 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:57,755 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:57,757 log Bad Request: /
+WARNING 2025-05-14 18:36:57,758 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-05-14 18:36:57,807 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:36:57,809 log Bad Request: /favicon.ico
+WARNING 2025-05-14 18:36:57,809 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-14 18:38:09,705 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:38:10,333 log Bad Request: /
+ERROR 2025-05-14 18:38:10,381 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-14 18:38:10,383 log Bad Request: /favicon.ico
