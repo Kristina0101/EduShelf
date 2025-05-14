@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-pn+x^1zer&c#i!oma84+jc+*h@4@p@n6=yi!u63dtw!#3h4vni
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['edu.edushelf.webtm.ru', '46.149.70.98']
+ALLOWED_HOSTS = ['*']
 ENCRYPTION_KEY = b'7tUuRLIg3ELrwfgF-qDNf3XaopmorlP8fyNHgCYVaL0='
 
 # Application definition
