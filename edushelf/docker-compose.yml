@@ -4,7 +4,7 @@ services:
   django:
     build: .
     container_name: django
-    command: gunicorn your_project.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn edushelf.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - .:/usr/src/edushelf
       - static_volume:/usr/src/edushelf/staticfiles
