@@ -30,10 +30,8 @@ SECRET_KEY = 'django-insecure-pn+x^1zer&c#i!oma84+jc+*h@4@p@n6=yi!u63dtw!#3h4vni
 
 
 DEBUG = False
-X_FRAME_OPTIONS = 'SAMEORIGIN' 
-SECURE_CONTENT_TYPE_NOSNIFF = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['edushelf.webtm.ru', '46.149.70.98']
 ENCRYPTION_KEY = b'7tUuRLIg3ELrwfgF-qDNf3XaopmorlP8fyNHgCYVaL0='
 
 # Application definition
@@ -45,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.postgres',
     'bookLibrary',
     'users',
     'django_extensions',
@@ -92,7 +91,7 @@ DATABASES = {
         'NAME': 'bdedushelf',
         'USER': 'postgres',
         'PASSWORD': 'petrova-05',
-        'HOST': 'localhost',
+        'HOST': 'pgdb',
         'PORT': 5432,
     }
 }
@@ -133,23 +132,18 @@ LOGGING = {
             'formatter': 'verbose',
             'encoding': 'utf-8',
         },
-        'console': {
-            'class': 'logging.StreamHandler',
-            'formatter': 'verbose',
-        },
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'file'],
+            'handlers': ['file'],
             'level': 'INFO',
             'propagate': True,
         },
     },
-
 }
 
 
-SILENCED_SYSTEM_CHECKS = ['staticfiles.W004']
+
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -166,18 +160,25 @@ AUTH_USER_MODEL = 'bookLibrary.User'
 LOGIN_REDIRECT_URL = 'bookLibrary:main_page'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    os.path.join(BASE_DIR, 'static'),
 ]
+
+
 MEDIA_URL = '/media/'
-MEDIA_ROOT= os.path.join(BASE_DIR,'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if DEBUG:
-    import mimetypes
-    mimetypes.add_type("application/pdf", ".pdf", True)
 
-    MEDIAFILES_DIRS = [MEDIA_ROOT]
+if not DEBUG:
+    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
+import mimetypes
+mimetypes.add_type("application/pdf", ".pdf", True)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
