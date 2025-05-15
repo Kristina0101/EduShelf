@@ -8,7 +8,6 @@ services:
     volumes:
       - .:/usr/src/edushelf
       - static_volume:/usr/src/edushelf/staticfiles
-      - media_volume:/usr/src/edushelf/media
       - ./bookLibrary/static:/usr/src/edushelf/bookLibrary/static
     ports:
       - 8000:8000
@@ -30,4 +29,3 @@ services:
 volumes:
   pgdbdata:
   static_volume:
-  media_volume:
