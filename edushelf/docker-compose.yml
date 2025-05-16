@@ -9,6 +9,7 @@ services:
       - .:/usr/src/edushelf
       - static_volume:/usr/src/edushelf/staticfiles
       - ./bookLibrary/static:/usr/src/edushelf/bookLibrary/static
+      - ./media:/usr/src/edushelf/media
     ports:
       - 8000:8000
     depends_on:
