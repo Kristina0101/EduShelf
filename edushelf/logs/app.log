@@ -5443,3 +5443,1589 @@ LINE 1: SELECT COUNT(*) AS "__count" FROM "books"
                                           ^
 
 WARNING 2025-05-15 22:21:23,790 log Not Found: /favicon.ico
+INFO 2025-05-16 09:03:57,549 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:04:49,383 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:04:50,162 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:04:52,635 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:04:53,397 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:05:30,144 basehttp "GET / HTTP/1.1" 200 9953
+WARNING 2025-05-16 09:05:30,329 log Not Found: /media/book/2025/03/13/Bash_и_кибербезопасность._Атака_защита_и_анализ_из_командной_строки.webp
+WARNING 2025-05-16 09:05:30,338 log Not Found: /media/book/2025/03/13/Создаем_нейронную_сеть_Тарик_Рашид.webp
+WARNING 2025-05-16 09:05:30,338 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 404 29276
+WARNING 2025-05-16 09:05:30,338 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 404 28960
+WARNING 2025-05-16 09:05:30,623 log Not Found: /media/book/2025/03/13/Распределенные_системы._Принципы_и_парадигмы.webp
+WARNING 2025-05-16 09:05:30,630 log Not Found: /media/book/2025/03/13/Современные_операционные_системы.webp
+WARNING 2025-05-16 09:05:30,632 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 404 29072
+INFO 2025-05-16 09:05:30,633 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-05-16 09:05:30,634 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 404 28952
+INFO 2025-05-16 09:05:30,636 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 304 0
+WARNING 2025-05-16 09:05:30,648 log Not Found: /media/book/2025/03/13/компьютерные_сети.webp
+WARNING 2025-05-16 09:05:30,651 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 404 28780
+WARNING 2025-05-16 09:05:30,659 log Not Found: /media/book/2025/03/13/МАТЕМАТИЧЕСКОЕ_МОДЕЛИРОВАНИЕ.png
+WARNING 2025-05-16 09:05:30,662 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 404 28908
+WARNING 2025-05-16 09:05:30,676 log Not Found: /media/book/2025/03/13/Изучаем_Python.webp
+WARNING 2025-05-16 09:05:30,686 log Not Found: /media/book/2025/03/13/грокаем_глубокое_обучение.webp
+WARNING 2025-05-16 09:05:30,686 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 404 28868
+WARNING 2025-05-16 09:05:30,687 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 404 28696
+INFO 2025-05-16 09:05:30,942 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 304 0
+INFO 2025-05-16 09:05:53,209 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:05:55,587 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:05:55,619 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-16 09:05:55,623 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 304 0
+WARNING 2025-05-16 09:05:55,633 log Not Found: /media/book/2025/03/13/Распределенные_системы._Принципы_и_парадигмы.webp
+WARNING 2025-05-16 09:05:55,634 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 404 29072
+WARNING 2025-05-16 09:05:55,729 log Not Found: /media/book/2025/03/13/Bash_и_кибербезопасность._Атака_защита_и_анализ_из_командной_строки.webp
+WARNING 2025-05-16 09:05:55,729 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 404 29276
+WARNING 2025-05-16 09:05:55,933 log Not Found: /media/book/2025/03/13/компьютерные_сети.webp
+WARNING 2025-05-16 09:05:55,934 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 404 28780
+WARNING 2025-05-16 09:05:55,943 log Not Found: /media/book/2025/03/13/Создаем_нейронную_сеть_Тарик_Рашид.webp
+WARNING 2025-05-16 09:05:55,949 log Not Found: /media/book/2025/03/13/Современные_операционные_системы.webp
+WARNING 2025-05-16 09:05:55,952 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 404 28960
+WARNING 2025-05-16 09:05:55,960 log Not Found: /media/book/2025/03/13/МАТЕМАТИЧЕСКОЕ_МОДЕЛИРОВАНИЕ.png
+WARNING 2025-05-16 09:05:55,961 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 404 28952
+WARNING 2025-05-16 09:05:55,961 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 404 28908
+WARNING 2025-05-16 09:05:55,969 log Not Found: /media/book/2025/03/13/Изучаем_Python.webp
+WARNING 2025-05-16 09:05:55,969 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 404 28696
+WARNING 2025-05-16 09:05:56,049 log Not Found: /media/book/2025/03/13/грокаем_глубокое_обучение.webp
+WARNING 2025-05-16 09:05:56,050 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 404 28868
+INFO 2025-05-16 09:05:56,249 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 304 0
+INFO 2025-05-16 09:05:56,271 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 304 0
+INFO 2025-05-16 09:06:19,707 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:06:19,958 basehttp "GET /static/css/style.css HTTP/1.1" 200 20318
+INFO 2025-05-16 09:06:19,964 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 200 330852
+WARNING 2025-05-16 09:06:19,975 log Not Found: /media/book/2025/03/13/Bash_и_кибербезопасность._Атака_защита_и_анализ_из_командной_строки.webp
+WARNING 2025-05-16 09:06:19,976 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 404 29276
+WARNING 2025-05-16 09:06:20,070 log Not Found: /media/book/2025/03/13/Распределенные_системы._Принципы_и_парадигмы.webp
+WARNING 2025-05-16 09:06:20,074 log Not Found: /media/book/2025/03/13/Создаем_нейронную_сеть_Тарик_Рашид.webp
+WARNING 2025-05-16 09:06:20,084 log Not Found: /media/book/2025/03/13/Современные_операционные_системы.webp
+WARNING 2025-05-16 09:06:20,084 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 404 29072
+WARNING 2025-05-16 09:06:20,085 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 404 28960
+WARNING 2025-05-16 09:06:20,094 log Not Found: /media/book/2025/03/13/компьютерные_сети.webp
+WARNING 2025-05-16 09:06:20,094 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 404 28952
+WARNING 2025-05-16 09:06:20,095 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 404 28780
+WARNING 2025-05-16 09:06:20,102 log Not Found: /media/book/2025/03/13/МАТЕМАТИЧЕСКОЕ_МОДЕЛИРОВАНИЕ.png
+WARNING 2025-05-16 09:06:20,104 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 404 28908
+WARNING 2025-05-16 09:06:20,286 log Not Found: /media/book/2025/03/13/Изучаем_Python.webp
+WARNING 2025-05-16 09:06:20,287 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 404 28696
+WARNING 2025-05-16 09:06:20,404 log Not Found: /media/book/2025/03/13/грокаем_глубокое_обучение.webp
+WARNING 2025-05-16 09:06:20,405 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 404 28868
+INFO 2025-05-16 09:06:20,456 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:06:20,682 basehttp "GET /static/css/style.css HTTP/1.1" 200 20318
+INFO 2025-05-16 09:06:20,687 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 200 330852
+WARNING 2025-05-16 09:06:20,698 log Not Found: /media/book/2025/03/13/Bash_и_кибербезопасность._Атака_защита_и_анализ_из_командной_строки.webp
+WARNING 2025-05-16 09:06:20,698 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 404 29276
+WARNING 2025-05-16 09:06:20,812 log Not Found: /media/book/2025/03/13/Современные_операционные_системы.webp
+WARNING 2025-05-16 09:06:20,819 log Not Found: /media/book/2025/03/13/Создаем_нейронную_сеть_Тарик_Рашид.webp
+WARNING 2025-05-16 09:06:20,826 log Not Found: /media/book/2025/03/13/Распределенные_системы._Принципы_и_парадигмы.webp
+WARNING 2025-05-16 09:06:20,826 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 404 28952
+WARNING 2025-05-16 09:06:20,835 log Not Found: /media/book/2025/03/13/компьютерные_сети.webp
+WARNING 2025-05-16 09:06:20,835 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 404 28960
+WARNING 2025-05-16 09:06:20,836 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 404 29072
+WARNING 2025-05-16 09:06:20,837 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 404 28780
+INFO 2025-05-16 09:06:20,870 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:06:21,010 basehttp "GET /static/css/style.css HTTP/1.1" 200 20318
+INFO 2025-05-16 09:06:21,015 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 200 330852
+WARNING 2025-05-16 09:06:21,025 log Not Found: /media/book/2025/03/13/Bash_и_кибербезопасность._Атака_защита_и_анализ_из_командной_строки.webp
+WARNING 2025-05-16 09:06:21,026 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 404 29276
+WARNING 2025-05-16 09:06:21,146 log Not Found: /media/book/2025/03/13/Создаем_нейронную_сеть_Тарик_Рашид.webp
+WARNING 2025-05-16 09:06:21,157 log Not Found: /media/book/2025/03/13/Современные_операционные_системы.webp
+WARNING 2025-05-16 09:06:21,158 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 404 28960
+WARNING 2025-05-16 09:06:21,158 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 404 28952
+WARNING 2025-05-16 09:06:21,169 log Not Found: /media/book/2025/03/13/Распределенные_системы._Принципы_и_парадигмы.webp
+WARNING 2025-05-16 09:06:21,170 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 404 29072
+WARNING 2025-05-16 09:06:21,214 log Not Found: /media/book/2025/03/13/компьютерные_сети.webp
+WARNING 2025-05-16 09:06:21,220 log Not Found: /media/book/2025/03/13/МАТЕМАТИЧЕСКОЕ_МОДЕЛИРОВАНИЕ.png
+WARNING 2025-05-16 09:06:21,220 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 404 28780
+WARNING 2025-05-16 09:06:21,220 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 404 28908
+WARNING 2025-05-16 09:06:21,341 log Not Found: /media/book/2025/03/13/Изучаем_Python.webp
+WARNING 2025-05-16 09:06:21,341 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 404 28696
+WARNING 2025-05-16 09:06:21,468 log Not Found: /media/book/2025/03/13/грокаем_глубокое_обучение.webp
+WARNING 2025-05-16 09:06:21,468 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 404 28868
+INFO 2025-05-16 09:06:21,471 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 200 2997
+INFO 2025-05-16 09:06:21,484 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 200 16182
+INFO 2025-05-16 09:06:43,428 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:06:44,445 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:06:50,574 basehttp "GET / HTTP/1.1" 200 9953
+WARNING 2025-05-16 09:06:50,617 log Not Found: /media/book/2025/03/13/Bash_и_кибербезопасность._Атака_защита_и_анализ_из_командной_строки.webp
+WARNING 2025-05-16 09:06:50,617 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 404 29276
+WARNING 2025-05-16 09:06:50,735 log Not Found: /media/book/2025/03/13/Создаем_нейронную_сеть_Тарик_Рашид.webp
+WARNING 2025-05-16 09:06:50,735 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 404 28960
+WARNING 2025-05-16 09:06:50,925 log Not Found: /media/book/2025/03/13/Распределенные_системы._Принципы_и_парадигмы.webp
+WARNING 2025-05-16 09:06:50,930 log Not Found: /media/book/2025/03/13/компьютерные_сети.webp
+WARNING 2025-05-16 09:06:50,932 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 404 29072
+WARNING 2025-05-16 09:06:50,939 log Not Found: /media/book/2025/03/13/Современные_операционные_системы.webp
+WARNING 2025-05-16 09:06:50,941 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 404 28780
+WARNING 2025-05-16 09:06:50,949 log Not Found: /media/book/2025/03/13/МАТЕМАТИЧЕСКОЕ_МОДЕЛИРОВАНИЕ.png
+WARNING 2025-05-16 09:06:50,949 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 404 28952
+WARNING 2025-05-16 09:06:50,956 log Not Found: /media/book/2025/03/13/Изучаем_Python.webp
+WARNING 2025-05-16 09:06:50,957 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 404 28696
+WARNING 2025-05-16 09:06:50,957 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 404 28908
+WARNING 2025-05-16 09:06:51,060 log Not Found: /media/book/2025/03/13/грокаем_глубокое_обучение.webp
+WARNING 2025-05-16 09:06:51,060 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 404 28868
+INFO 2025-05-16 09:08:40,625 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:08:41,813 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-16 09:08:57,752 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:08:57,865 log Bad Request: /
+WARNING 2025-05-16 09:08:57,865 basehttp "GET / HTTP/1.1" 400 80359
+ERROR 2025-05-16 09:08:57,983 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:08:58,012 log Bad Request: /favicon.ico
+WARNING 2025-05-16 09:08:58,012 basehttp "GET /favicon.ico HTTP/1.1" 400 80042
+INFO 2025-05-16 09:09:13,721 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:09:14,519 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-16 09:09:18,634 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:09:18,664 log Bad Request: /
+WARNING 2025-05-16 09:09:18,665 basehttp "GET / HTTP/1.1" 400 80289
+ERROR 2025-05-16 09:09:18,734 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:09:18,766 log Bad Request: /favicon.ico
+WARNING 2025-05-16 09:09:18,767 basehttp "GET /favicon.ico HTTP/1.1" 400 79972
+ERROR 2025-05-16 09:09:19,481 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:09:19,500 log Bad Request: /
+WARNING 2025-05-16 09:09:19,500 basehttp "GET / HTTP/1.1" 400 80289
+ERROR 2025-05-16 09:09:19,794 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:09:19,811 log Bad Request: /favicon.ico
+WARNING 2025-05-16 09:09:19,811 basehttp "GET /favicon.ico HTTP/1.1" 400 79972
+ERROR 2025-05-16 09:09:24,315 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:09:24,347 log Bad Request: /
+WARNING 2025-05-16 09:09:24,348 basehttp "GET / HTTP/1.1" 400 79337
+ERROR 2025-05-16 09:09:24,757 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:09:24,777 log Bad Request: /favicon.ico
+WARNING 2025-05-16 09:09:24,777 basehttp "GET /favicon.ico HTTP/1.1" 400 79157
+INFO 2025-05-16 09:09:45,040 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:09:45,973 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:09:46,943 basehttp "GET / HTTP/1.1" 200 46920
+INFO 2025-05-16 09:09:46,977 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-16 09:09:46,981 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 304 0
+WARNING 2025-05-16 09:09:46,989 log Not Found: /media/book/2025/03/13/Bash_и_кибербезопасность._Атака_защита_и_анализ_из_командной_строки.webp
+WARNING 2025-05-16 09:09:46,996 log Not Found: /media/book/2025/03/13/Создаем_нейронную_сеть_Тарик_Рашид.webp
+WARNING 2025-05-16 09:09:46,998 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 404 29276
+WARNING 2025-05-16 09:09:47,006 log Not Found: /media/book/2025/03/13/Современные_операционные_системы.webp
+WARNING 2025-05-16 09:09:47,021 log Not Found: /media/book/2025/03/13/Распределенные_системы._Принципы_и_парадигмы.webp
+WARNING 2025-05-16 09:09:47,022 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 404 28960
+WARNING 2025-05-16 09:09:47,032 log Not Found: /media/book/2025/03/13/МАТЕМАТИЧЕСКОЕ_МОДЕЛИРОВАНИЕ.png
+WARNING 2025-05-16 09:09:47,046 log Not Found: /media/book/2025/03/13/Изучаем_Python.webp
+WARNING 2025-05-16 09:09:47,048 log Not Found: /media/book/2025/03/13/компьютерные_сети.webp
+WARNING 2025-05-16 09:09:47,049 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 404 28952
+WARNING 2025-05-16 09:09:47,050 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 404 28696
+WARNING 2025-05-16 09:09:47,050 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 404 29072
+WARNING 2025-05-16 09:09:47,051 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 404 28780
+WARNING 2025-05-16 09:09:47,051 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 404 28908
+WARNING 2025-05-16 09:09:47,070 log Not Found: /api/notifications/count/
+INFO 2025-05-16 09:09:47,072 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 304 0
+WARNING 2025-05-16 09:09:47,082 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 09:09:47,086 log Not Found: /media/book/2025/03/13/грокаем_глубокое_обучение.webp
+WARNING 2025-05-16 09:09:47,089 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 404 28868
+INFO 2025-05-16 09:09:47,106 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 304 0
+ERROR 2025-05-16 09:09:50,118 log Internal Server Error: /catalog/description_book/6/
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\bookLibrary\views.py", line 51, in description_book
+    doc = fitz.open(pdf_path)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\pymupdf\__init__.py", line 2918, in __init__
+    raise FileNotFoundError(msg)
+pymupdf.FileNotFoundError: no such file: 'C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\media\file_books\2025\03\13\Компьютерные_сети_Эндрю_Та__Z-Library.pdf'
+ERROR 2025-05-16 09:09:50,122 basehttp "GET /catalog/description_book/6/ HTTP/1.1" 500 88212
+WARNING 2025-05-16 09:09:50,233 log Not Found: /favicon.ico
+WARNING 2025-05-16 09:09:50,234 basehttp "GET /favicon.ico HTTP/1.1" 404 28214
+INFO 2025-05-16 09:12:11,756 basehttp "GET /catalog/description_book/6/ HTTP/1.1" 200 48233
+INFO 2025-05-16 09:12:11,786 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 200 117332
+WARNING 2025-05-16 09:12:11,826 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:12:11,828 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:12:12,074 basehttp "GET /media/file_books/2025/03/13/%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8_%D0%AD%D0%BD%D0%B4%D1%80%D1%8E_%D0%A2%D0%B0__Z-Library.pdf HTTP/1.1" 200 24290094
+INFO 2025-05-16 09:12:14,016 basehttp "GET / HTTP/1.1" 200 46920
+INFO 2025-05-16 09:12:14,060 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 200 23234
+INFO 2025-05-16 09:12:14,065 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 200 7914
+INFO 2025-05-16 09:12:14,066 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 200 34942
+INFO 2025-05-16 09:12:14,067 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 200 96298
+INFO 2025-05-16 09:12:14,071 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 200 20908
+WARNING 2025-05-16 09:12:14,084 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:12:14,085 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:12:14,087 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 200 44488
+INFO 2025-05-16 09:12:14,087 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 200 12322
+INFO 2025-05-16 09:12:23,846 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:12:24,576 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:12:26,874 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:12:28,109 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:12:34,827 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:12:35,622 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:12:40,498 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:12:41,345 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:12:50,463 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:12:51,259 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:12:53,676 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:12:54,744 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:12:59,581 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:13:00,872 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:13:11,716 basehttp "GET / HTTP/1.1" 200 46920
+WARNING 2025-05-16 09:13:11,760 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:13:11,761 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 179
+INFO 2025-05-16 09:13:12,920 basehttp "GET / HTTP/1.1" 200 46920
+WARNING 2025-05-16 09:13:12,966 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:13:12,967 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 179
+INFO 2025-05-16 09:13:13,722 basehttp "GET / HTTP/1.1" 200 46920
+WARNING 2025-05-16 09:13:13,766 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:13:13,766 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 179
+INFO 2025-05-16 09:13:14,619 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 49758
+WARNING 2025-05-16 09:13:14,670 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:13:14,670 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 179
+WARNING 2025-05-16 09:13:14,756 log Not Found: /media/file_books/2025/03/13/Bash_и_кибербезопасность_ат__Z-Library.pdf
+WARNING 2025-05-16 09:13:14,756 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 404 179
+INFO 2025-05-16 09:13:17,781 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 49758
+WARNING 2025-05-16 09:13:17,825 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:13:17,826 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 179
+WARNING 2025-05-16 09:13:17,907 log Not Found: /media/file_books/2025/03/13/Bash_и_кибербезопасность_ат__Z-Library.pdf
+WARNING 2025-05-16 09:13:17,908 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 404 179
+INFO 2025-05-16 09:13:28,858 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:13:29,657 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:13:31,965 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:13:32,796 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:13:48,520 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 49758
+WARNING 2025-05-16 09:13:48,565 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:13:48,566 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 179
+WARNING 2025-05-16 09:13:48,629 log Not Found: /media/file_books/2025/03/13/Bash_и_кибербезопасность_ат__Z-Library.pdf
+WARNING 2025-05-16 09:13:48,629 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 404 179
+INFO 2025-05-16 09:13:49,348 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 49758
+WARNING 2025-05-16 09:13:49,394 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:13:49,394 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 179
+WARNING 2025-05-16 09:13:49,486 log Not Found: /media/file_books/2025/03/13/Bash_и_кибербезопасность_ат__Z-Library.pdf
+WARNING 2025-05-16 09:13:49,486 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 404 179
+INFO 2025-05-16 09:13:52,807 basehttp "GET /catalog/description_book/3/ HTTP/1.1" 200 48108
+WARNING 2025-05-16 09:13:52,849 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:13:52,850 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 179
+WARNING 2025-05-16 09:13:52,929 log Not Found: /media/file_books/2025/03/13/Создаем_нейронную_сеть_Тар__Z-Library.pdf
+WARNING 2025-05-16 09:13:52,929 basehttp "GET /media/file_books/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80__Z-Library.pdf HTTP/1.1" 404 179
+INFO 2025-05-16 09:13:57,657 basehttp "GET /catalog/description_book/4/ HTTP/1.1" 200 48416
+WARNING 2025-05-16 09:13:57,697 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:13:57,697 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 179
+WARNING 2025-05-16 09:13:57,784 log Not Found: /media/file_books/2025/03/13/Современные_операционные_си__Z-Library.pdf
+WARNING 2025-05-16 09:13:57,785 basehttp "GET /media/file_books/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8__Z-Library.pdf HTTP/1.1" 404 179
+INFO 2025-05-16 09:14:08,778 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:14:09,800 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-16 09:14:18,306 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:14:18,342 log Bad Request: /catalog/description_book/4/
+WARNING 2025-05-16 09:14:18,342 basehttp "GET /catalog/description_book/4/ HTTP/1.1" 400 79999
+ERROR 2025-05-16 09:14:19,391 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:14:19,408 log Bad Request: /catalog/description_book/4/
+WARNING 2025-05-16 09:14:19,409 basehttp "GET /catalog/description_book/4/ HTTP/1.1" 400 79999
+INFO 2025-05-16 09:14:29,010 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:14:30,038 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:14:32,785 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:14:33,630 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-16 09:14:36,764 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:14:36,796 log Bad Request: /catalog/description_book/4/
+WARNING 2025-05-16 09:14:36,797 basehttp "GET /catalog/description_book/4/ HTTP/1.1" 400 79929
+ERROR 2025-05-16 09:14:37,515 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:14:37,531 log Bad Request: /catalog/description_book/4/
+WARNING 2025-05-16 09:14:37,532 basehttp "GET /catalog/description_book/4/ HTTP/1.1" 400 79929
+ERROR 2025-05-16 09:14:39,088 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:14:39,115 log Bad Request: /api/notifications/count/
+WARNING 2025-05-16 09:14:39,115 basehttp "GET /api/notifications/count/ HTTP/1.1" 400 79236
+ERROR 2025-05-16 09:14:40,028 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:14:40,045 log Bad Request: /
+WARNING 2025-05-16 09:14:40,046 basehttp "GET / HTTP/1.1" 400 79659
+INFO 2025-05-16 09:14:53,643 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:14:54,553 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-16 09:14:56,259 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:14:56,296 log Bad Request: /
+WARNING 2025-05-16 09:14:56,297 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:14:56,988 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:14:57,006 log Bad Request: /
+WARNING 2025-05-16 09:14:57,006 basehttp "GET / HTTP/1.1" 400 79677
+INFO 2025-05-16 09:15:04,455 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-16 09:15:08,247 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:08,278 log Bad Request: /
+WARNING 2025-05-16 09:15:08,278 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:08,990 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:09,008 log Bad Request: /
+WARNING 2025-05-16 09:15:09,008 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:09,582 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:09,598 log Bad Request: /
+WARNING 2025-05-16 09:15:09,598 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:10,164 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:10,178 log Bad Request: /
+WARNING 2025-05-16 09:15:10,179 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:10,358 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:10,375 log Bad Request: /
+WARNING 2025-05-16 09:15:10,375 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:10,541 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:10,556 log Bad Request: /
+WARNING 2025-05-16 09:15:10,556 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:10,723 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:10,737 log Bad Request: /
+WARNING 2025-05-16 09:15:10,739 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:10,895 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:10,914 log Bad Request: /
+WARNING 2025-05-16 09:15:10,915 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:11,113 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:11,131 log Bad Request: /
+WARNING 2025-05-16 09:15:11,131 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:11,303 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:11,324 log Bad Request: /
+WARNING 2025-05-16 09:15:11,324 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:11,499 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:11,526 log Bad Request: /
+WARNING 2025-05-16 09:15:11,527 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:11,685 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:11,708 log Bad Request: /
+WARNING 2025-05-16 09:15:11,708 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:11,882 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:11,946 log Bad Request: /
+WARNING 2025-05-16 09:15:11,947 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:12,094 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:12,115 log Bad Request: /
+WARNING 2025-05-16 09:15:12,116 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:12,270 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:12,293 log Bad Request: /
+WARNING 2025-05-16 09:15:12,293 basehttp "GET / HTTP/1.1" 400 79677
+ERROR 2025-05-16 09:15:12,503 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\env\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-16 09:15:12,520 log Bad Request: /
+WARNING 2025-05-16 09:15:12,520 basehttp "GET / HTTP/1.1" 400 79677
+INFO 2025-05-16 09:15:28,692 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-16 09:15:29,375 autoreload Watching for file changes with StatReloader
+INFO 2025-05-16 09:16:14,729 basehttp "GET / HTTP/1.1" 200 46920
+WARNING 2025-05-16 09:16:14,791 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:16:14,792 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:16:17,105 basehttp "GET /catalog/description_book/3/ HTTP/1.1" 200 48108
+WARNING 2025-05-16 09:16:17,169 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:16:17,170 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:16:17,954 basehttp "GET /media/file_books/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80__Z-Library.pdf HTTP/1.1" 200 45570389
+INFO 2025-05-16 09:16:21,027 basehttp "GET / HTTP/1.1" 200 46920
+WARNING 2025-05-16 09:16:21,097 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:16:21,097 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:16:32,270 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:16:32,334 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:16:35,299 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:16:37,702 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:16:37,705 basehttp "GET /login/?next=/catalog/description_book/1/ HTTP/1.1" 200 3985
+INFO 2025-05-16 09:16:47,180 basehttp "POST /login/?next=/catalog/description_book/1/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:16:47,254 basehttp "GET /bd_admin/ HTTP/1.1" 200 2453
+INFO 2025-05-16 09:16:47,282 basehttp "GET /static/css/bd_admin.css HTTP/1.1" 304 0
+INFO 2025-05-16 09:16:47,283 basehttp "GET /static/js/script.js HTTP/1.1" 304 0
+INFO 2025-05-16 09:16:51,287 basehttp "GET /bd_admin/users/ HTTP/1.1" 200 8276
+INFO 2025-05-16 09:17:14,398 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:17:14,453 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:17:15,855 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:19:12,672 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 09:19:22,179 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:19:22,284 basehttp "GET /administrator/ HTTP/1.1" 200 60559
+WARNING 2025-05-16 09:19:22,343 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:19:22,343 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:19:24,192 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 65963
+WARNING 2025-05-16 09:19:24,262 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:19:24,263 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:19:25,047 basehttp "GET /administrator/students/ HTTP/1.1" 200 68988
+WARNING 2025-05-16 09:19:25,113 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:19:25,115 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:19:37,335 basehttp "POST /import_students/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:19:37,422 basehttp "GET /administrator/students/ HTTP/1.1" 200 69245
+WARNING 2025-05-16 09:19:37,483 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:19:37,484 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:20:01,006 basehttp "GET /administrator/students/ HTTP/1.1" 200 68988
+WARNING 2025-05-16 09:20:01,061 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:20:01,062 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:20:04,064 basehttp "GET /statistic/ HTTP/1.1" 200 65695
+WARNING 2025-05-16 09:20:04,605 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:20:04,606 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:20:13,649 basehttp "GET /administrator/students/ HTTP/1.1" 200 68988
+WARNING 2025-05-16 09:20:13,706 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:20:13,707 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:20:19,233 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:20:19,305 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:20:26,815 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 09:20:37,089 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:20:37,152 basehttp "GET /administrator/ HTTP/1.1" 200 62461
+WARNING 2025-05-16 09:20:37,214 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:20:37,216 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:20:47,381 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:20:47,446 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:20:49,414 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 09:21:01,467 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:21:01,534 basehttp "GET / HTTP/1.1" 200 31434
+WARNING 2025-05-16 09:21:01,585 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:21:01,585 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:21:03,325 basehttp "GET / HTTP/1.1" 200 31434
+WARNING 2025-05-16 09:21:03,383 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:21:03,383 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 09:22:03,371 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:22:03,371 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:22:39,249 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:22:39,314 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:28:33,258 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 09:28:45,864 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:28:45,942 basehttp "GET / HTTP/1.1" 200 32314
+WARNING 2025-05-16 09:28:46,007 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:28:46,007 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:29:34,200 basehttp "GET /my_shelf/ HTTP/1.1" 200 32503
+INFO 2025-05-16 09:29:34,244 basehttp "GET /media/book/2025/03/13/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B._%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D0%B8_%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 304 0
+INFO 2025-05-16 09:29:34,244 basehttp "GET /media/book/2025/03/13/%D0%93%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+WARNING 2025-05-16 09:29:34,280 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:29:34,280 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:29:35,832 basehttp "GET /catalog/ HTTP/1.1" 200 42458
+INFO 2025-05-16 09:29:35,860 basehttp "GET /media/book/2025/03/13/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8._C%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B_%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B8_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B_%D0%B8_%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F.webp HTTP/1.1" 304 0
+WARNING 2025-05-16 09:29:35,888 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:29:35,888 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:29:37,089 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 37897
+WARNING 2025-05-16 09:29:37,160 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:29:37,160 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:29:37,262 basehttp "GET /media/file_books/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D1%82__Z-Library.pdf HTTP/1.1" 200 5039880
+INFO 2025-05-16 09:29:42,124 basehttp "POST /book/1/add_bookmark/ HTTP/1.1" 200 178
+INFO 2025-05-16 09:29:43,637 basehttp "GET /catalog/description_book/1/?page=14 HTTP/1.1" 200 38409
+WARNING 2025-05-16 09:29:43,702 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:29:43,703 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:29:46,969 basehttp "GET /catalog/ HTTP/1.1" 200 42458
+WARNING 2025-05-16 09:29:47,111 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:29:47,112 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:29:48,626 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 42448
+WARNING 2025-05-16 09:29:48,693 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:29:48,694 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:29:51,336 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 42141
+WARNING 2025-05-16 09:29:51,393 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:29:51,394 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:29:53,053 basehttp "GET /catalog/?sort=author_asc HTTP/1.1" 200 42635
+WARNING 2025-05-16 09:29:53,105 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:29:53,105 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:29:54,550 basehttp "GET /catalog/?sort=none HTTP/1.1" 200 42448
+WARNING 2025-05-16 09:29:54,607 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:29:54,607 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 09:30:54,593 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:30:54,593 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 09:31:54,577 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:31:54,577 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 09:32:54,577 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:32:54,577 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 09:33:55,098 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:33:55,098 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 09:34:55,100 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:34:55,100 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 09:35:56,100 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:35:56,100 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 09:36:54,577 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:36:54,577 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:37:30,022 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:37:30,084 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:37:31,343 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 09:37:44,777 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:37:44,847 basehttp "GET /administrator/ HTTP/1.1" 200 64363
+WARNING 2025-05-16 09:37:44,909 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:37:44,909 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:37:46,354 basehttp "GET /administrator/students/ HTTP/1.1" 200 72792
+WARNING 2025-05-16 09:37:46,412 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:37:46,412 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:37:53,535 basehttp "GET /administrator/students/?page=2 HTTP/1.1" 200 72932
+WARNING 2025-05-16 09:37:53,593 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:37:53,594 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:37:57,985 basehttp "GET /administrator/students/?page=3 HTTP/1.1" 200 73008
+WARNING 2025-05-16 09:37:58,038 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:37:58,039 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:05,441 basehttp "GET /administrator/students/?page=2 HTTP/1.1" 200 72932
+WARNING 2025-05-16 09:38:05,496 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:05,496 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:22,334 basehttp "GET /administrator/students/65/update/ HTTP/1.1" 200 68889
+WARNING 2025-05-16 09:38:22,390 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:22,390 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:25,668 basehttp "GET /administrator/students/ HTTP/1.1" 200 72792
+WARNING 2025-05-16 09:38:25,721 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:25,721 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:32,334 basehttp "GET /administrator/students/detail/69/ HTTP/1.1" 200 65637
+WARNING 2025-05-16 09:38:32,400 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:32,401 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:36,077 basehttp "GET /administrator/students/ HTTP/1.1" 200 72792
+WARNING 2025-05-16 09:38:36,134 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:36,134 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:40,034 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 70576
+WARNING 2025-05-16 09:38:40,096 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:40,098 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:49,754 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 70576
+WARNING 2025-05-16 09:38:49,811 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:49,811 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:50,868 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 70576
+WARNING 2025-05-16 09:38:50,915 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:50,917 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:52,060 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 70576
+WARNING 2025-05-16 09:38:52,116 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:52,116 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:38:55,232 basehttp "GET /administrator/institutions/5/update/ HTTP/1.1" 200 65636
+WARNING 2025-05-16 09:38:55,283 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:38:55,284 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:39:15,270 basehttp "POST /administrator/institutions/5/update/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:39:15,343 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 70848
+WARNING 2025-05-16 09:39:15,409 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:39:15,409 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:39:19,055 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:39:19,115 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:39:20,499 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 09:39:33,014 basehttp "POST /login/ HTTP/1.1" 200 4300
+INFO 2025-05-16 09:39:51,172 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:39:51,239 basehttp "GET /administrator/ HTTP/1.1" 200 66265
+WARNING 2025-05-16 09:39:51,302 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:39:51,302 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:39:53,237 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 72470
+WARNING 2025-05-16 09:39:53,285 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:39:53,285 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:40:01,969 basehttp "GET /administrator/institutions/?page=2 HTTP/1.1" 200 68257
+WARNING 2025-05-16 09:40:02,025 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:40:02,026 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:40:06,949 basehttp "GET /administrator/institutions/18/delete/ HTTP/1.1" 200 66826
+WARNING 2025-05-16 09:40:07,012 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:40:07,014 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:40:10,358 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 72470
+WARNING 2025-05-16 09:40:10,425 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:40:10,426 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:40:12,768 basehttp "GET /administrator/institutions/?page=2 HTTP/1.1" 200 68257
+WARNING 2025-05-16 09:40:12,830 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:40:12,830 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:40:23,868 basehttp "GET /administrator/institutions/5/update/ HTTP/1.1" 200 67538
+WARNING 2025-05-16 09:40:23,926 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:40:23,926 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:40:27,572 basehttp "POST /administrator/institutions/5/update/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:40:27,643 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 72750
+WARNING 2025-05-16 09:40:27,691 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:40:27,692 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:40:28,977 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:40:29,045 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 09:40:30,589 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 09:40:42,058 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:40:42,133 basehttp "GET / HTTP/1.1" 200 33194
+WARNING 2025-05-16 09:40:42,194 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 09:40:42,195 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 09:40:45,546 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 09:40:45,608 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 10:12:39,574 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 10:13:12,001 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-16 10:13:12,076 basehttp "GET / HTTP/1.1" 200 34074
+WARNING 2025-05-16 10:13:12,135 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:13:12,136 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:13:16,277 basehttp "GET / HTTP/1.1" 200 34074
+WARNING 2025-05-16 10:13:16,331 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:13:16,332 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:13:44,624 basehttp "POST /notification/read/66/ HTTP/1.1" 302 0
+INFO 2025-05-16 10:13:44,723 basehttp "GET /accounts/profile/ HTTP/1.1" 200 30944
+INFO 2025-05-16 10:13:44,756 basehttp "GET /media/profile/2025/05/14/60ae9cadfd8fe009c913d6a3413fdcff.jpg HTTP/1.1" 200 121616
+WARNING 2025-05-16 10:13:44,786 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:13:44,787 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:14:05,967 basehttp "GET /catalog/ HTTP/1.1" 200 43785
+WARNING 2025-05-16 10:14:06,025 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:14:06,026 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:14:07,230 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 39742
+WARNING 2025-05-16 10:14:07,285 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:14:07,286 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:02,158 basehttp "GET /accounts/profile/ HTTP/1.1" 200 30944
+WARNING 2025-05-16 10:15:02,229 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:02,230 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:17,150 basehttp "GET /catalog/ HTTP/1.1" 200 43785
+WARNING 2025-05-16 10:15:17,211 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:17,212 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:25,340 basehttp "GET /catalog/?page=2&sort=title_asc HTTP/1.1" 200 39180
+WARNING 2025-05-16 10:15:25,418 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:25,419 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:29,547 basehttp "GET /catalog/?genre=2 HTTP/1.1" 200 44121
+WARNING 2025-05-16 10:15:29,598 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:29,598 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:31,474 basehttp "GET /catalog/?subject=8&genre=2 HTTP/1.1" 200 36830
+WARNING 2025-05-16 10:15:31,535 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:31,535 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:33,569 basehttp "GET /catalog/?subject=2&genre=2 HTTP/1.1" 200 40111
+WARNING 2025-05-16 10:15:33,621 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:33,621 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:38,059 basehttp "GET /catalog/?subject=14&genre=2 HTTP/1.1" 200 36841
+WARNING 2025-05-16 10:15:38,123 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:38,123 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:41,086 basehttp "GET /my_shelf/ HTTP/1.1" 200 33830
+WARNING 2025-05-16 10:15:41,143 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:41,144 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:47,283 basehttp "POST /remove-from-shelf/1/ HTTP/1.1" 302 0
+INFO 2025-05-16 10:15:47,359 basehttp "GET /my_shelf/ HTTP/1.1" 200 32483
+WARNING 2025-05-16 10:15:47,417 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:47,417 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:50,528 basehttp "GET / HTTP/1.1" 200 33641
+WARNING 2025-05-16 10:15:50,590 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:50,590 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:53,128 basehttp "GET /catalog/description_book/1/ HTTP/1.1" 200 35485
+WARNING 2025-05-16 10:15:53,185 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:15:53,186 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:15:59,046 basehttp "POST /book/1/add_bookmark/ HTTP/1.1" 200 178
+INFO 2025-05-16 10:16:00,762 basehttp "GET /catalog/description_book/1/?page=1 HTTP/1.1" 200 35922
+WARNING 2025-05-16 10:16:00,826 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:16:00,826 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:16:02,781 basehttp "POST /book/1/add_bookmark/ HTTP/1.1" 200 248
+INFO 2025-05-16 10:16:19,800 basehttp "GET / HTTP/1.1" 200 33641
+WARNING 2025-05-16 10:16:19,872 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:16:19,872 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:16:23,334 basehttp "GET /catalog/description_book/4/ HTTP/1.1" 200 35137
+WARNING 2025-05-16 10:16:23,386 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:16:23,387 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:16:23,825 basehttp "GET /media/file_books/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8__Z-Library.pdf HTTP/1.1" 200 14229645
+INFO 2025-05-16 10:17:00,334 basehttp "GET / HTTP/1.1" 200 33641
+WARNING 2025-05-16 10:17:00,395 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:17:00,396 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:17:04,449 basehttp "GET /catalog/description_book/4/ HTTP/1.1" 200 35137
+WARNING 2025-05-16 10:17:04,509 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:17:04,509 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 10:18:04,500 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:18:04,500 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 10:19:04,498 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:19:04,498 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:19:09,064 basehttp "GET / HTTP/1.1" 200 33641
+WARNING 2025-05-16 10:19:09,142 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:19:09,142 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:19:28,497 basehttp "GET /my_shelf/ HTTP/1.1" 200 33830
+WARNING 2025-05-16 10:19:28,549 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:19:28,550 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:19:33,340 basehttp "GET /catalog/ HTTP/1.1" 200 43785
+WARNING 2025-05-16 10:19:33,397 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:19:33,397 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:19:35,694 basehttp "GET /catalog/?sort=title_desc HTTP/1.1" 200 43468
+WARNING 2025-05-16 10:19:35,750 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:19:35,750 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:19:37,794 basehttp "GET /catalog/?sort=author_asc HTTP/1.1" 200 43962
+WARNING 2025-05-16 10:19:37,846 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:19:37,846 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:19:39,156 basehttp "GET /catalog/?sort=author_desc HTTP/1.1" 200 43354
+WARNING 2025-05-16 10:19:39,210 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:19:39,210 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:19:41,239 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 10:19:41,302 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 10:19:42,642 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 10:19:55,436 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-16 10:19:55,503 basehttp "GET /administrator/ HTTP/1.1" 200 68167
+WARNING 2025-05-16 10:19:55,567 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:19:55,567 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:20:39,011 basehttp "GET /administrator/students/ HTTP/1.1" 200 76596
+WARNING 2025-05-16 10:20:39,070 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:20:39,071 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 10:21:39,061 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:21:39,061 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-16 10:22:39,045 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:22:39,045 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:22:49,479 basehttp "GET /statistic/ HTTP/1.1" 200 73170
+WARNING 2025-05-16 10:22:49,570 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:22:49,571 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:23:12,067 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 74372
+WARNING 2025-05-16 10:23:12,128 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:23:12,129 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:23:15,791 basehttp "GET /administrator/institutions/?page=2 HTTP/1.1" 200 70159
+WARNING 2025-05-16 10:23:15,847 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:23:15,848 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:23:19,198 basehttp "GET /administrator/institutions/5/update/ HTTP/1.1" 200 69440
+WARNING 2025-05-16 10:23:19,257 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:23:19,259 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:23:23,469 basehttp "POST /administrator/institutions/5/update/ HTTP/1.1" 302 0
+INFO 2025-05-16 10:23:23,542 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 74652
+WARNING 2025-05-16 10:23:23,599 log Not Found: /api/notifications/count/
+WARNING 2025-05-16 10:23:23,599 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-16 10:23:25,523 basehttp "POST /logout/ HTTP/1.1" 302 0
+INFO 2025-05-16 10:23:25,585 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-16 10:23:27,123 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-16 10:24:04,760 basehttp "POST /login/ HTTP/1.1" 200 4300
+INFO 2025-05-19 22:52:24,588 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-19 22:52:25,990 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 23:32:27,026 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-19 23:32:28,155 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 23:32:33,359 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-19 23:32:34,607 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 23:32:46,747 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-19 23:32:47,437 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 23:32:50,845 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-19 23:32:51,582 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 23:32:55,543 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-19 23:32:55,781 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,789 basehttp "GET /static/img/Frame_79.png HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,789 basehttp "GET /media/book/2025/03/13/Bash_%D0%B8_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C._%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B8%D0%B7_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8.webp HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,791 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,793 basehttp "GET /media/book/2025/03/13/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B._%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B_%D0%B8_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,794 basehttp "GET /media/book/2025/03/13/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%83%D1%8E_%D1%81%D0%B5%D1%82%D1%8C_%D0%A2%D0%B0%D1%80%D0%B8%D0%BA_%D0%A0%D0%B0%D1%88%D0%B8%D0%B4.webp HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,841 basehttp "GET /media/book/2025/03/13/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D0%B5%D1%82%D0%B8.webp HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,841 basehttp "GET /media/book/2025/03/13/%D0%9C%D0%90%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%9E%D0%95_%D0%9C%D0%9E%D0%94%D0%95%D0%9B%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%95.png HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,841 basehttp "GET /media/book/2025/03/13/%D0%B3%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,842 basehttp "GET /media/book/2025/03/13/%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC_Python.webp HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:55,842 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png HTTP/1.1" 304 0
+INFO 2025-05-19 23:32:58,624 basehttp "GET / HTTP/1.1" 200 9953
+INFO 2025-05-19 23:32:59,523 basehttp "GET /login/ HTTP/1.1" 200 3985
+INFO 2025-05-19 23:33:10,501 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-19 23:33:10,649 basehttp "GET /administrator/ HTTP/1.1" 200 70069
+INFO 2025-05-19 23:33:10,680 basehttp "GET /static/css/bd_admin.css HTTP/1.1" 304 0
+INFO 2025-05-19 23:33:10,683 basehttp "GET /static/js/script.js HTTP/1.1" 304 0
+WARNING 2025-05-19 23:33:10,741 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:33:10,742 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:33:12,194 basehttp "GET /administrator/subjects/ HTTP/1.1" 200 75473
+WARNING 2025-05-19 23:33:12,254 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:33:12,255 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:34:12,228 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:34:12,228 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:34:44,259 basehttp "GET /administrator/subjects/?page=2 HTTP/1.1" 200 72781
+WARNING 2025-05-19 23:34:44,316 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:34:44,317 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:35:22,567 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 76816
+WARNING 2025-05-19 23:35:22,635 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:35:22,636 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:35:26,064 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 76274
+WARNING 2025-05-19 23:35:26,124 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:35:26,124 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:36:26,101 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:36:26,102 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:37:26,099 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:37:26,099 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:38:05,341 basehttp "GET /administrator/institutions/?page=2 HTTP/1.1" 200 72061
+WARNING 2025-05-19 23:38:05,401 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:38:05,402 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:38:13,762 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 76816
+WARNING 2025-05-19 23:38:13,821 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:38:13,822 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:39:14,299 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:39:14,299 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:40:13,819 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:40:13,819 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:41:13,804 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:41:13,805 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:42:13,799 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:42:13,799 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:43:10,170 basehttp "GET /administrator/institutions/ HTTP/1.1" 200 76274
+WARNING 2025-05-19 23:43:10,230 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:43:10,231 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:43:15,021 basehttp "GET /administrator/institutions/?page=2 HTTP/1.1" 200 72061
+WARNING 2025-05-19 23:43:15,082 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:43:15,083 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:44:00,429 basehttp "GET /administrator/specialties/ HTTP/1.1" 200 76816
+WARNING 2025-05-19 23:44:00,485 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:44:00,485 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:44:15,306 basehttp "GET /administrator/specialties/?page=2 HTTP/1.1" 200 72484
+WARNING 2025-05-19 23:44:15,364 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:44:15,365 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:44:17,395 basehttp "GET /administrator/specialties/?page=1 HTTP/1.1" 200 76816
+WARNING 2025-05-19 23:44:17,453 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:44:17,453 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:45:17,425 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:45:17,425 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:45:49,230 basehttp "GET /administrator/specialties/?page=2 HTTP/1.1" 200 72484
+WARNING 2025-05-19 23:45:49,299 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:45:49,299 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:46:13,165 basehttp "GET /administrator/genres/ HTTP/1.1" 200 75039
+WARNING 2025-05-19 23:46:13,224 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:46:13,225 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:47:13,200 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:47:13,201 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:47:17,638 basehttp "GET /administrator/authors/ HTTP/1.1" 200 76004
+WARNING 2025-05-19 23:47:17,709 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:47:17,710 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:48:17,679 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:48:17,679 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:49:12,063 basehttp "GET /administrator/authors/?page=2 HTTP/1.1" 200 72453
+WARNING 2025-05-19 23:49:12,128 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:49:12,129 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:49:50,796 basehttp "GET /administrator/publishers/ HTTP/1.1" 200 75260
+WARNING 2025-05-19 23:49:50,857 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:49:50,858 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:50:35,117 basehttp "GET /administrator/publishers/?page=2 HTTP/1.1" 200 71228
+WARNING 2025-05-19 23:50:35,172 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:50:35,174 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:50:42,286 basehttp "GET /administrator/status/ HTTP/1.1" 200 75142
+WARNING 2025-05-19 23:50:42,349 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:50:42,349 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:51:32,919 basehttp "GET /administrator/subjectSpecialtyLink/ HTTP/1.1" 200 77450
+WARNING 2025-05-19 23:51:32,979 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:51:32,980 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:52:32,959 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:52:32,959 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:53:32,969 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:53:32,969 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:53:44,503 basehttp "GET /administrator/subjectSpecialtyLink/?page=2 HTTP/1.1" 200 71524
+WARNING 2025-05-19 23:53:44,557 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:53:44,558 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:54:27,323 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+INFO 2025-05-19 23:54:27,374 basehttp "GET /media/book/2025/03/13/%D0%93%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B.webp HTTP/1.1" 304 0
+INFO 2025-05-19 23:54:27,377 basehttp "GET /media/book/2025/03/13/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8._C%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B_%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B8_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B_%D0%B8_%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F.webp HTTP/1.1" 304 0
+WARNING 2025-05-19 23:54:27,406 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:54:27,407 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:55:24,424 basehttp "GET /administrator/books/detail/1/ HTTP/1.1" 200 72095
+WARNING 2025-05-19 23:55:24,492 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:55:24,492 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-19 23:56:24,463 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:56:24,463 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:56:24,987 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-19 23:56:25,040 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:56:25,041 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:56:27,852 basehttp "GET /administrator/books/detail/3/ HTTP/1.1" 200 71918
+WARNING 2025-05-19 23:56:27,913 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:56:27,914 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:57:21,539 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-19 23:57:21,595 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:57:21,596 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:57:23,167 basehttp "GET /administrator/books/detail/4/ HTTP/1.1" 200 71914
+WARNING 2025-05-19 23:57:23,228 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:57:23,229 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:58:14,333 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-19 23:58:14,394 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:58:14,395 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:58:16,978 basehttp "GET /administrator/books/detail/5/ HTTP/1.1" 200 71988
+WARNING 2025-05-19 23:58:17,036 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:58:17,037 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:59:04,640 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-19 23:59:04,698 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:59:04,699 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:59:07,478 basehttp "GET /administrator/books/detail/6/ HTTP/1.1" 200 71776
+WARNING 2025-05-19 23:59:07,539 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:59:07,540 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-19 23:59:55,609 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-19 23:59:55,665 log Not Found: /api/notifications/count/
+WARNING 2025-05-19 23:59:55,665 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:00:00,579 basehttp "GET /administrator/books/detail/7/ HTTP/1.1" 200 71864
+WARNING 2025-05-20 00:00:00,642 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:00:00,642 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:00:51,628 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-20 00:00:51,691 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:00:51,692 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:00:54,239 basehttp "GET /administrator/books/detail/8/ HTTP/1.1" 200 71854
+WARNING 2025-05-20 00:00:54,299 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:00:54,299 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:01:44,118 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-20 00:01:44,174 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:01:44,175 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:01:46,878 basehttp "GET /administrator/books/detail/9/ HTTP/1.1" 200 71870
+WARNING 2025-05-20 00:01:46,939 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:01:46,939 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:02:34,872 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-20 00:02:34,926 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:02:34,926 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:02:38,192 basehttp "GET /administrator/books/detail/10/ HTTP/1.1" 200 71943
+WARNING 2025-05-20 00:02:38,253 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:02:38,253 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:03:28,276 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-20 00:03:28,329 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:03:28,330 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:03:30,807 basehttp "GET /administrator/books/detail/11/ HTTP/1.1" 200 72253
+WARNING 2025-05-20 00:03:30,869 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:03:30,869 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:04:14,008 basehttp "GET /administrator/books/ HTTP/1.1" 200 82561
+WARNING 2025-05-20 00:04:14,071 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:04:14,072 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:04:16,475 basehttp "GET /administrator/books/?page=2 HTTP/1.1" 200 72207
+INFO 2025-05-20 00:04:16,516 basehttp "GET /media/book/2025/03/13/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B._%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D0%B8_%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5.webp HTTP/1.1" 304 0
+WARNING 2025-05-20 00:04:16,543 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:04:16,544 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:04:17,835 basehttp "GET /administrator/books/detail/2/ HTTP/1.1" 200 71938
+WARNING 2025-05-20 00:04:17,894 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:04:17,895 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-20 00:05:17,867 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:05:17,867 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-20 00:06:18,292 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:06:18,292 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-20 00:07:18,301 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:07:18,302 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:08:12,651 basehttp "GET /administrator/students/ HTTP/1.1" 200 78498
+WARNING 2025-05-20 00:08:12,712 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:08:12,712 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:08:16,495 basehttp "GET /administrator/students/?page=2 HTTP/1.1" 200 78638
+WARNING 2025-05-20 00:08:16,559 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:08:16,559 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-20 00:09:17,288 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:09:17,289 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-20 00:10:17,286 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:10:17,287 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-20 00:11:17,285 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:11:17,286 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-20 00:12:17,324 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:12:17,325 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-20 00:12:51,700 log Not Found: /admin
+WARNING 2025-05-20 00:12:51,700 basehttp "GET /admin HTTP/1.1" 404 28196
+WARNING 2025-05-20 00:12:52,875 log Not Found: /admin
+WARNING 2025-05-20 00:12:52,875 basehttp "GET /admin HTTP/1.1" 404 28196
+WARNING 2025-05-20 00:12:52,969 log Not Found: /favicon.ico
+WARNING 2025-05-20 00:12:52,969 basehttp "GET /favicon.ico HTTP/1.1" 404 28214
+WARNING 2025-05-20 00:12:57,829 log Not Found: /admin
+WARNING 2025-05-20 00:12:57,829 basehttp "GET /admin HTTP/1.1" 404 28196
+INFO 2025-05-20 00:13:06,163 basehttp "GET /administrator/students/?page=2 HTTP/1.1" 200 78638
+WARNING 2025-05-20 00:13:06,208 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:13:06,209 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+INFO 2025-05-20 00:13:06,235 basehttp "GET /static/img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.ico HTTP/1.1" 304 0
+INFO 2025-05-20 00:13:06,998 basehttp "GET /administrator/students/?page=2 HTTP/1.1" 200 78638
+WARNING 2025-05-20 00:13:07,064 log Not Found: /api/notifications/count/
+WARNING 2025-05-20 00:13:07,064 basehttp "GET /api/notifications/count/ HTTP/1.1" 404 28253
+WARNING 2025-05-20 00:13:11,205 log Not Found: /admin
+WARNING 2025-05-20 00:13:11,205 basehttp "GET /admin HTTP/1.1" 404 28196
+WARNING 2025-05-20 00:13:12,025 log Not Found: /admin
+WARNING 2025-05-20 00:13:12,026 basehttp "GET /admin HTTP/1.1" 404 28196
+INFO 2025-05-20 00:13:18,162 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-05-20 00:13:18,341 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3697
+INFO 2025-05-20 00:13:18,386 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2938
+INFO 2025-05-20 00:13:18,387 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 1012
+INFO 2025-05-20 00:13:18,387 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 23337
+INFO 2025-05-20 00:13:18,388 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2960
+INFO 2025-05-20 00:13:18,388 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17540
+INFO 2025-05-20 00:13:18,398 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1704
+INFO 2025-05-20 00:13:18,424 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3142
+INFO 2025-05-20 00:13:20,999 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3867
+INFO 2025-05-20 00:13:28,244 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3867
+INFO 2025-05-20 00:13:35,177 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-05-20 00:13:35,289 basehttp "GET /admin/ HTTP/1.1" 200 20902
+INFO 2025-05-20 00:13:35,329 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 470
+INFO 2025-05-20 00:13:35,347 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 383
+INFO 2025-05-20 00:13:35,348 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 334
+INFO 2025-05-20 00:13:35,348 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 395
+INFO 2025-05-20 00:13:41,605 basehttp "GET /admin/bookLibrary/notification/ HTTP/1.1" 200 53730
+INFO 2025-05-20 00:13:41,650 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 7221
+INFO 2025-05-20 00:13:41,659 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 355
+INFO 2025-05-20 00:13:41,672 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 10029
+INFO 2025-05-20 00:13:41,672 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6392
+INFO 2025-05-20 00:13:41,682 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8280
+INFO 2025-05-20 00:13:41,698 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 8056
+INFO 2025-05-20 00:13:41,700 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1574
+INFO 2025-05-20 00:13:41,726 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 296030
+INFO 2025-05-20 00:13:41,768 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:13:41,796 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 1008
+INFO 2025-05-20 00:13:41,816 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 331297
+INFO 2025-05-20 00:13:41,849 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 334
+INFO 2025-05-20 00:13:47,539 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:13:47,631 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:14:07,516 basehttp "GET /admin/bookLibrary/reviews/38/change/ HTTP/1.1" 200 23034
+INFO 2025-05-20 00:14:07,562 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 9023
+INFO 2025-05-20 00:14:07,567 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 601
+INFO 2025-05-20 00:14:07,585 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 12604
+INFO 2025-05-20 00:14:07,603 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 584
+INFO 2025-05-20 00:14:07,615 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:14:07,626 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 622
+INFO 2025-05-20 00:14:31,063 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:14:31,145 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:14:32,464 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:14:35,574 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:14:35,656 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:14:40,177 basehttp "GET /admin/bookLibrary/reviews/27/change/ HTTP/1.1" 200 22720
+INFO 2025-05-20 00:14:40,281 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:15:26,059 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:15:26,149 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:15:33,241 basehttp "GET /admin/bookLibrary/reviews/26/change/ HTTP/1.1" 200 23040
+INFO 2025-05-20 00:15:33,332 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:15:52,676 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:16:01,190 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:16:01,276 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:16:04,536 basehttp "GET /admin/bookLibrary/notes/50/change/ HTTP/1.1" 200 22524
+INFO 2025-05-20 00:16:04,617 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:16:28,678 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:16:28,757 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:16:30,827 basehttp "GET /admin/bookLibrary/notes/49/change/ HTTP/1.1" 200 22540
+INFO 2025-05-20 00:16:30,914 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:16:52,840 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:16:52,921 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:16:55,212 basehttp "GET /admin/bookLibrary/notes/48/change/ HTTP/1.1" 200 22526
+INFO 2025-05-20 00:16:55,298 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:16:59,456 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:16:59,538 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:17:03,275 basehttp "GET /admin/bookLibrary/notes/34/change/ HTTP/1.1" 200 22551
+INFO 2025-05-20 00:17:03,364 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:17:30,888 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:17:30,972 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:17:38,148 basehttp "GET /admin/bookLibrary/notes/33/change/ HTTP/1.1" 200 22561
+INFO 2025-05-20 00:17:38,228 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:18:44,641 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:18:44,732 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:18:50,808 basehttp "GET /admin/bookLibrary/notes/30/change/ HTTP/1.1" 200 22545
+INFO 2025-05-20 00:18:50,994 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:19:20,581 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:19:20,662 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:19:33,429 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:19:38,493 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:19:38,574 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:19:43,725 basehttp "GET /admin/bookLibrary/bookmarks/51/change/ HTTP/1.1" 200 22220
+INFO 2025-05-20 00:19:43,934 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:19:50,443 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:19:50,531 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:19:54,425 basehttp "GET /admin/bookLibrary/bookmarks/51/change/ HTTP/1.1" 200 22220
+INFO 2025-05-20 00:19:54,503 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:20:12,370 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:20:12,455 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:20:26,871 basehttp "GET /admin/bookLibrary/bookmarks/48/change/ HTTP/1.1" 200 22035
+INFO 2025-05-20 00:20:26,959 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:20:46,714 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:20:46,792 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:20:50,789 basehttp "GET /admin/bookLibrary/bookmarks/46/change/ HTTP/1.1" 200 22004
+INFO 2025-05-20 00:20:50,974 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:21:21,355 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:21:21,443 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:21:26,219 basehttp "GET /admin/bookLibrary/bookmarks/30/change/ HTTP/1.1" 200 21946
+INFO 2025-05-20 00:21:26,300 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:21:42,618 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:21:42,699 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:21:47,481 basehttp "GET /admin/bookLibrary/bookmarks/29/change/ HTTP/1.1" 200 21946
+INFO 2025-05-20 00:21:47,560 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:22:00,466 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:22:00,661 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:22:05,914 basehttp "GET /admin/bookLibrary/bookmarks/24/change/ HTTP/1.1" 200 22297
+INFO 2025-05-20 00:22:05,999 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:22:21,642 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:22:21,728 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:22:23,394 basehttp "GET /admin/bookLibrary/bookmarks/23/change/ HTTP/1.1" 200 22297
+INFO 2025-05-20 00:22:23,475 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:22:41,087 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:22:41,169 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:22:44,952 basehttp "GET /admin/ HTTP/1.1" 200 20902
+INFO 2025-05-20 00:22:55,167 basehttp "GET /admin/bookLibrary/user/ HTTP/1.1" 200 23504
+INFO 2025-05-20 00:22:55,209 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 461
+INFO 2025-05-20 00:22:55,250 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:22:55,277 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1116
+INFO 2025-05-20 00:22:57,655 basehttp "GET /admin/bookLibrary/user/25/change/ HTTP/1.1" 200 37440
+INFO 2025-05-20 00:22:57,724 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 16016
+INFO 2025-05-20 00:22:57,725 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19727
+INFO 2025-05-20 00:22:57,726 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4646
+INFO 2025-05-20 00:22:57,727 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9380
+INFO 2025-05-20 00:22:57,768 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:22:57,841 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1095
+INFO 2025-05-20 00:22:57,841 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3325
+INFO 2025-05-20 00:22:57,841 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 686
+INFO 2025-05-20 00:24:45,938 basehttp "GET /admin/bookLibrary/user/ HTTP/1.1" 200 23504
+INFO 2025-05-20 00:24:46,019 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:24:48,049 basehttp "GET /admin/bookLibrary/user/18/change/ HTTP/1.1" 200 37442
+INFO 2025-05-20 00:24:48,134 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:25:20,456 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:25:25,467 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:25:25,551 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:25:31,884 basehttp "GET /admin/bookLibrary/bookmarks/42/change/ HTTP/1.1" 200 22289
+INFO 2025-05-20 00:25:31,966 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:25:54,800 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:25:58,833 basehttp "GET /admin/bookLibrary/bookmarks/41/change/ HTTP/1.1" 200 21996
+INFO 2025-05-20 00:25:58,911 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:26:16,153 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:26:16,240 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:26:18,475 basehttp "GET /admin/bookLibrary/bookmarks/40/change/ HTTP/1.1" 200 21996
+INFO 2025-05-20 00:26:18,560 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:26:26,013 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:26:26,091 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:26:33,636 basehttp "GET /admin/bookLibrary/bookmarks/39/change/ HTTP/1.1" 200 22084
+INFO 2025-05-20 00:26:33,719 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:26:58,869 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:26:58,951 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:27:01,792 basehttp "GET /admin/bookLibrary/bookmarks/38/change/ HTTP/1.1" 200 22084
+INFO 2025-05-20 00:27:01,881 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:27:23,725 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:27:23,814 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:27:28,178 basehttp "GET /admin/bookLibrary/bookmarks/37/change/ HTTP/1.1" 200 21961
+INFO 2025-05-20 00:27:28,275 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:28:03,493 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:28:03,601 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:28:11,347 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:28:13,021 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:28:13,111 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:28:15,601 basehttp "GET /admin/bookLibrary/notes/45/change/ HTTP/1.1" 200 22555
+INFO 2025-05-20 00:28:15,686 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:28:37,720 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:28:37,814 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:28:40,099 basehttp "GET /admin/bookLibrary/notes/44/change/ HTTP/1.1" 200 22530
+INFO 2025-05-20 00:28:40,199 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:28:58,573 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:29:00,676 basehttp "GET /admin/bookLibrary/notes/43/change/ HTTP/1.1" 200 22542
+INFO 2025-05-20 00:29:00,764 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:29:13,166 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:29:16,393 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:29:16,477 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:29:20,473 basehttp "GET /admin/bookLibrary/notes/42/change/ HTTP/1.1" 200 22550
+INFO 2025-05-20 00:29:20,554 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:29:44,986 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:29:45,070 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:29:47,972 basehttp "GET /admin/bookLibrary/notes/41/change/ HTTP/1.1" 200 22542
+INFO 2025-05-20 00:29:48,056 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:30:04,777 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:30:04,860 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:30:07,338 basehttp "GET /admin/bookLibrary/notes/40/change/ HTTP/1.1" 200 22523
+INFO 2025-05-20 00:30:07,523 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:30:08,853 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:30:08,937 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:30:11,692 basehttp "GET /admin/bookLibrary/notes/42/change/ HTTP/1.1" 200 22550
+INFO 2025-05-20 00:30:11,777 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:30:14,196 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:30:14,287 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:30:33,184 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:30:34,859 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:30:34,945 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:30:39,293 basehttp "GET /admin/bookLibrary/reviews/35/change/ HTTP/1.1" 200 23075
+INFO 2025-05-20 00:30:39,378 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:30:59,856 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:30:59,937 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:31:04,629 basehttp "GET /admin/bookLibrary/reviews/33/change/ HTTP/1.1" 200 22803
+INFO 2025-05-20 00:31:04,716 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:31:23,867 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:31:23,954 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:31:26,388 basehttp "GET /admin/bookLibrary/reviews/32/change/ HTTP/1.1" 200 22825
+INFO 2025-05-20 00:31:26,475 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:31:49,597 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:31:49,675 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:31:51,362 basehttp "GET /admin/bookLibrary/reviews/31/change/ HTTP/1.1" 200 23022
+INFO 2025-05-20 00:31:51,448 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:32:02,956 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:32:03,040 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:32:55,996 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:32:59,175 basehttp "GET /admin/bookLibrary/students/ HTTP/1.1" 200 26581
+INFO 2025-05-20 00:32:59,254 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:33:03,843 basehttp "GET /admin/bookLibrary/students/39/change/ HTTP/1.1" 200 26952
+INFO 2025-05-20 00:33:03,928 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:34:19,577 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:34:23,127 basehttp "GET /admin/bookLibrary/bookmarks/ HTTP/1.1" 200 26681
+INFO 2025-05-20 00:34:23,208 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:35:58,910 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:36:01,662 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:36:01,742 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:36:06,245 basehttp "GET /admin/bookLibrary/notes/40/change/ HTTP/1.1" 200 22523
+INFO 2025-05-20 00:36:06,328 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:36:30,786 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:36:30,872 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:36:33,411 basehttp "GET /admin/bookLibrary/notes/39/change/ HTTP/1.1" 200 22544
+INFO 2025-05-20 00:36:33,497 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:36:49,206 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:36:49,398 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:36:52,402 basehttp "GET /admin/bookLibrary/notes/38/change/ HTTP/1.1" 200 22543
+INFO 2025-05-20 00:36:52,477 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:37:06,480 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:37:06,565 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:37:10,058 basehttp "GET /admin/bookLibrary/notes/37/change/ HTTP/1.1" 200 22554
+INFO 2025-05-20 00:37:10,149 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:37:29,281 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:37:29,358 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:37:35,096 basehttp "GET /admin/bookLibrary/notes/36/change/ HTTP/1.1" 200 22505
+INFO 2025-05-20 00:37:35,178 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:37:56,529 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:37:56,615 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:38:05,139 basehttp "GET /admin/bookLibrary/notes/35/change/ HTTP/1.1" 200 22552
+INFO 2025-05-20 00:38:05,218 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:38:32,003 basehttp "GET /admin/bookLibrary/notes/ HTTP/1.1" 200 23820
+INFO 2025-05-20 00:38:32,090 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:38:43,846 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:38:45,887 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:38:45,970 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:39:06,160 basehttp "GET /admin/bookLibrary/reviews/30/change/ HTTP/1.1" 200 22772
+INFO 2025-05-20 00:39:06,244 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:39:23,293 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:39:23,373 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:39:25,603 basehttp "GET /admin/bookLibrary/reviews/29/change/ HTTP/1.1" 200 23027
+INFO 2025-05-20 00:39:25,690 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:39:38,140 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:39:38,219 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:39:40,190 basehttp "GET /admin/bookLibrary/reviews/28/change/ HTTP/1.1" 200 22971
+INFO 2025-05-20 00:39:40,274 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:39:58,771 basehttp "GET /admin/bookLibrary/reviews/ HTTP/1.1" 200 22072
+INFO 2025-05-20 00:39:58,854 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 00:41:45,399 basehttp "GET /admin/bookLibrary/ HTTP/1.1" 200 15252
+INFO 2025-05-20 00:41:48,004 basehttp "GET /admin/bookLibrary/user/ HTTP/1.1" 200 23504
+INFO 2025-05-20 00:41:48,089 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-20 01:04:30,283 autoreload C:\Users\krist\OneDrive\Рабочий стол\College\4 курс\Курсовая работа ТРПО\EduShelf\EduShelf\edushelf\edushelf\settings.py changed, reloading.
+INFO 2025-05-20 01:04:31,216 autoreload Watching for file changes with StatReloader

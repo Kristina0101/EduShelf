@@ -764,30 +764,39 @@ def import_students(request):
 
     return redirect("bookLibrary:StudListView")
 
+
 @login_required
 def backup_database(request):
     backup_dir = os.path.join(settings.BASE_DIR, 'backups')
     os.makedirs(backup_dir, exist_ok=True)
 
     timestamp = now().strftime("%Y-%m-%d_%H-%M-%S")
-    backup_file = os.path.join(backup_dir, f"backup_{timestamp}.sql")
-
-    backup_file = f'"{backup_file}"'
+    backup_file_path = os.path.join(backup_dir, f"backup_{timestamp}.sql")
 
     db_settings = settings.DATABASES['default']
+    password = db_settings["PASSWORD"]
 
-    dump_command = f'$env:PGPASSWORD="{db_settings["PASSWORD"]}"; pg_dump -U {db_settings["USER"]} -h {db_settings["HOST"]} -p {db_settings["PORT"]} -d {db_settings["NAME"]} > {backup_file}'
+    dump_command = [
+        "pg_dump",
+        "-U", db_settings["USER"],
+        "-h", db_settings["HOST"],
+        "-p", str(db_settings["PORT"]),
+        "-d", db_settings["NAME"],
+        "-f", backup_file_path
+    ]
+
+    env = os.environ.copy()
+    env["PGPASSWORD"] = password
 
     try:
-        result = subprocess.run(['powershell', '-Command', dump_command], capture_output=True, text=True)
+        result = subprocess.run(dump_command, env=env, capture_output=True, text=True)
 
         if result.returncode == 0:
-            return HttpResponse(f"Резервная копия создана: {backup_file}")
+            return HttpResponse(f"Резервная копия создана: {backup_file_path}")
         else:
-            return HttpResponse(f"Ошибка при создании резервной копии: {result.stderr}", status=500)
+            return HttpResponse(f"Ошибка при создании: {result.stderr}", status=500)
     except Exception as e:
         return HttpResponse(f"Неизвестная ошибка: {str(e)}", status=500)
-
 
 
 class SubjectsListView(ListView):
